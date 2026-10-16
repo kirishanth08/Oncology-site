@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care Documents & Plans | My OncoAid</title>
+  <meta name="description" content="Access your personalized care plan summaries, clinical consultation notes, and supportive oncology guides in the OncoAid Document Library.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link active">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="oa-dash-content">
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa fw-bold">Care Documents & Medical Summaries</h5>
+            <span class="small text-muted">Secure patient record downloads, treatment blueprints, and lab results</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+          <button class="btn btn-primary btn-sm ms-2" type="button" onclick="openUploadModal()">
+            <i class="bi bi-cloud-upload me-1"></i> Upload Document
+          </button>
+        </div>
+      </div>
+
+      <div class="oa-card p-3 p-md-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 border-bottom pb-2">
+          <div>
+            <h5 class="mb-0 text-cocoa fw-bold">Available Care Documents</h5>
+            <span class="small text-muted">All documents are verified electronic health records</span>
+          </div>
+          <span class="oa-demo-pill">5 Available Files</span>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <!-- Document 1 -->
+          <div class="p-3 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-file-earmark-pdf-fill fs-2 text-danger"></i>
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Personalized Cancer Care Plan Summary (Cycle 1–6)</h6>
+                <div class="small text-muted">Oct 05, 2026 · 1.4 MB · Issued by Dr. Maya Carter, MD</div>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-brand" type="button" onclick="openDocumentPreview('Personalized Cancer Care Plan Summary', 'Oct 05, 2026', 'Dr. Maya Carter, MD', 'Protocol: 6 Cycles Adjuvant Paclitaxel/Carboplatin. Tumor Staging: Stage II IDC. Multidisciplinary consensus signed by Dr. Maya Carter, Dr. James Chen, and RN Elena Jensen.')">
+                <i class="bi bi-eye me-1"></i> View
+              </button>
+              <button class="btn btn-sm btn-primary" type="button" onclick="triggerDocumentDownload('Personalized Cancer Care Plan Summary', 'Oct 05, 2026', 'Dr. Maya Carter, MD')">
+                <i class="bi bi-download me-1"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Document 2 -->
+          <div class="p-3 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-file-earmark-pdf-fill fs-2 text-danger"></i>
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Complete Blood Count (CBC) Laboratory Recap</h6>
+                <div class="small text-muted">Oct 08, 2026 · 420 KB · Clinical Laboratory Results</div>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-brand" type="button" onclick="openDocumentPreview('Complete Blood Count (CBC) Laboratory Recap', 'Oct 08, 2026', 'Clinical Laboratory Results', 'Absolute Neutrophil Count (ANC): 2.4 k/uL (Target > 1.5). Platelets: 210,000 /uL. Hemoglobin: 12.1 g/dL. WBC: 5.8 k/uL. Status: Normal baseline clearance.')">
+                <i class="bi bi-eye me-1"></i> View
+              </button>
+              <button class="btn btn-sm btn-primary" type="button" onclick="triggerDocumentDownload('Complete Blood Count Laboratory Recap', 'Oct 08, 2026', 'Clinical Laboratory Results')">
+                <i class="bi bi-download me-1"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Document 3 -->
+          <div class="p-3 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-file-earmark-pdf-fill fs-2 text-danger"></i>
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Chemotherapy Infusion Orientation & Premed Protocol</h6>
+                <div class="small text-muted">Oct 02, 2026 · 860 KB · Nurse Elena Jensen, MSN, RN</div>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-brand" type="button" onclick="openDocumentPreview('Chemotherapy Infusion Orientation & Premed Protocol', 'Oct 02, 2026', 'Elena Jensen, MSN, RN', 'Pre-medication instructions: Dexamethasone 20mg PO 12h and 6h prior to infusion. Ondansetron 8mg PO 30 mins prior to breakfast. Hydration: aim for 64 oz fluid daily.')">
+                <i class="bi bi-eye me-1"></i> View
+              </button>
+              <button class="btn btn-sm btn-primary" type="button" onclick="triggerDocumentDownload('Chemotherapy Infusion Orientation & Premed Protocol', 'Oct 02, 2026', 'Elena Jensen, MSN, RN')">
+                <i class="bi bi-download me-1"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Document 4 -->
+          <div class="p-3 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-file-earmark-pdf-fill fs-2 text-danger"></i>
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Oncology Nutrition & High-Calorie Meal Recipes</h6>
+                <div class="small text-muted">Oct 11, 2026 · 2.1 MB · Nora Bennett, MS, RD</div>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-brand" type="button" onclick="openDocumentPreview('Oncology Nutrition & High-Calorie Meal Recipes', 'Oct 11, 2026', 'Nora Bennett, MS, RD', 'Dietary recommendations during systemic chemotherapy: ginger & lemon hydration smoothies, high-protein plant & dairy bowls, and strategies for managing taste changes.')">
+                <i class="bi bi-eye me-1"></i> View
+              </button>
+              <button class="btn btn-sm btn-primary" type="button" onclick="triggerDocumentDownload('Oncology Nutrition Recipes & Guidance', 'Oct 11, 2026', 'Nora Bennett, MS, RD')">
+                <i class="bi bi-download me-1"></i> Download
+              </button>
+            </div>
+          </div>
+
+          <!-- Document 5 -->
+          <div class="p-3 rounded-3 d-flex flex-wrap align-items-center justify-content-between gap-3" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-file-earmark-pdf-fill fs-2 text-danger"></i>
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Insurance Pre-Authorization Approval & Billing Summary</h6>
+                <div class="small text-muted">Sep 30, 2026 · 540 KB · Financial Navigation Desk</div>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-outline-brand" type="button" onclick="openDocumentPreview('Insurance Pre-Authorization Approval & Billing Summary', 'Sep 30, 2026', 'Financial Navigation Desk', 'Prior authorization approved for 6 cycles of adjuvant chemotherapy, infusion suite fees, and premedication specialty pharmacy coverage. Out-of-pocket cap verified.')">
+                <i class="bi bi-eye me-1"></i> View
+              </button>
+              <button class="btn btn-sm btn-primary" type="button" onclick="triggerDocumentDownload('Insurance Pre-Authorization Approval', 'Sep 30, 2026', 'Financial Navigation Desk')">
+                <i class="bi bi-download me-1"></i> Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oa-safety-notice mt-4">
+        <i class="bi bi-info-circle"></i>
+        <span>Document downloads and previews are frontend demonstration simulations. To request formal copies of your clinical health records, contact our medical records department.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

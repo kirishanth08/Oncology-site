@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Outer supportive protective path -->
+  <path d="M24 4C12.954 4 4 12.954 4 24C4 32.8 9.728 40.264 17.65 42.85C18.8 43.226 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.163 15.163 8 24 8C32.837 8 40 15.163 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.954 35.046 4 24 4Z" fill="url(#oaBrandGrad)"/>
+  <!-- Ascending journey trajectory / inner supportive arc -->
+  <path d="M16 26C16 20.477 20.477 16 26 16C28.5 16 30.8 16.9 32.5 18.4C33.2 19.02 34.25 18.9 34.85 18.2C35.45 17.5 35.35 16.45 34.65 15.85C32.3 13.8 29.3 12.5 26 12.5C18.544 12.5 12.5 18.544 12.5 26C12.5 30.6 14.8 34.6 18.3 37.1C19.05 37.64 20.1 37.45 20.65 36.7C21.2 35.95 21 34.9 20.25 34.35C17.65 32.4 16 29.4 16 26Z" fill="#F0BB78"/>
+  <!-- Central guiding beacon of hope / rising light point -->
+  <circle cx="26" cy="24" r="4.5" fill="#543A14" class="oa-logo-center-dot"/>
+  <circle cx="27.5" cy="22.5" r="1.5" fill="#FFF0DC"/>
+  <defs>
+    <linearGradient id="oaBrandGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#543A14"/>
+      <stop offset="60%" stop-color="#7B5622"/>
+      <stop offset="100%" stop-color="#F0BB78"/>
+    </linearGradient>
+  </defs>
+</svg>

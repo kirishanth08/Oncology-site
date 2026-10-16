@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care Team Notes | My OncoAid</title>
+  <meta name="description" content="Review visit summaries, care coordination notes, and pre-treatment instructions from your oncology navigators and physicians.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link active">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="oa-dash-content">
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa">Care Team Notes & Visit Summaries</h5>
+            <span class="small text-muted">Clear clinical recaps from your oncology physicians and nurse navigators</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+          <a href="../contact.html" class="btn btn-primary btn-sm ms-2">
+            <i class="bi bi-chat-dots me-1"></i> Contact Care Desk
+          </a>
+        </div>
+      </div>
+
+      <!-- Demo Note Notice Banner -->
+      <div class="oa-demo-pill mb-4 p-2 text-center d-block">
+        Demo content for template purposes. No real clinical records or PHI are displayed.
+      </div>
+
+      <!-- Notes Feed -->
+      <div class="d-flex flex-column gap-4">
+        <!-- Note 1 -->
+        <div class="oa-card p-4">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 border-bottom pb-3 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="../assets/images/nurse-navigator-elena.jpg" alt="Nurse Elena Jensen" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;">
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Elena Jensen, MSN, RN, OCN</h6>
+                <span class="small text-muted">Lead Oncology Nurse Coordinator · Care Coordination Note</span>
+              </div>
+            </div>
+            <div class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Oct 14, 2026 at 03:45 PM</div>
+          </div>
+
+          <h5 class="text-cocoa mb-2">Cycle 2 Pre-Treatment Infusion Preparation</h5>
+          <p class="text-muted small mb-3">
+            Spoke with Alex this afternoon regarding preparations for Cycle 2 infusion on Oct 21. Confirmed laboratory draw is scheduled for Oct 20 at 9:00 AM. Reviewed oral hydration guidelines (aiming for 64 oz fluid daily). Patient reported mild fatigue following Cycle 1 which resolved by Day 5. Pre-medication prescription sent to specialty pharmacy for home delivery.
+          </p>
+
+          <div class="p-3 rounded-3 small" style="background-color: var(--oa-bg-subtle);">
+            <strong class="text-cocoa">Next Steps & Patient Action Items:</strong>
+            <ul class="mb-0 ps-3 mt-1 text-muted">
+              <li>Attend blood draw on Oct 20 (no fasting needed).</li>
+              <li>Take oral anti-nausea premed 30 minutes before arrival on Oct 21.</li>
+              <li>Notify clinic if fever over 100.4°F occurs prior to cycle day.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Note 2 -->
+        <div class="oa-card p-4">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 border-bottom pb-3 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80" alt="Dr. Maya Carter" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;">
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Dr. Maya Carter, MD</h6>
+                <span class="small text-muted">Chief of Medical Oncology · Clinical Consultation Summary</span>
+              </div>
+            </div>
+            <div class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Sep 28, 2026 at 12:15 PM</div>
+          </div>
+
+          <h5 class="text-cocoa mb-2">Initial Oncology Treatment Planning Consensus</h5>
+          <p class="text-muted small mb-3">
+            Patient attended unhurried 60-minute diagnostic review with spouse present. Pathology and genomic biomarker reports re-evaluated. Multidisciplinary consensus confirms proceeding with 6 cycles of adjuvant paclitaxel and carboplatin. Staging scans show no distant metastatic involvement. Discussed side effect mitigation, emergency symptom thresholds, and fertility/wellness considerations.
+          </p>
+
+          <div class="p-3 rounded-3 small" style="background-color: var(--oa-bg-subtle);">
+            <strong class="text-cocoa">Clinical Consensus:</strong>
+            <p class="mb-0 text-muted mt-1">
+              Patient feels comfortable with proposed schedule. Nurse Navigator Clara assigned as primary point of contact. Next physician exam scheduled for Oct 18 prior to Cycle 2.
+            </p>
+          </div>
+        </div>
+
+        <!-- Note 3 -->
+        <div class="oa-card p-4">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 border-bottom pb-3 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1594824813511-2098691515ef?auto=format&fit=crop&w=200&q=80" alt="Nora Bennett" class="rounded-circle" style="width: 44px; height: 44px; object-fit: cover;">
+              <div>
+                <h6 class="mb-0 text-cocoa fw-bold">Nora Bennett, MS, RD, CSO</h6>
+                <span class="small text-muted">Board-Certified Oncology Dietitian · Nutrition & Metabolic Note</span>
+              </div>
+            </div>
+            <div class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Oct 05, 2026 at 11:30 AM</div>
+          </div>
+
+          <h5 class="text-cocoa mb-2">Digestive Support & Weight Preservation Assessment</h5>
+          <p class="text-muted small mb-0">
+            Initial nutritional assessment conducted. Weight is stable. Discussed strategies to safeguard protein intake and preserve digestive tolerance during upcoming infusion cycles. Recommended high-calorie fruit and nut butter smoothies. Provided safe food handling guidelines for neutropenic protection.
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-safety-notice mt-4">
+        <i class="bi bi-info-circle"></i>
+        <span>Care team notes displayed are fictional demonstrations. For clinical questions or medical advice, please communicate directly with your assigned healthcare team.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

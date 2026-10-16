@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care Team Messages | My OncoAid</title>
+  <meta name="description" content="Communicate non-urgent questions with your oncology nurse navigator and supportive care team in My OncoAid.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link active">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="oa-dash-content">
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa">Care Team Messaging</h5>
+            <span class="small text-muted">Direct communication channel with your oncology navigators</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Demo Messaging Warning -->
+      <div class="oa-safety-notice mb-4">
+        <i class="bi bi-exclamation-octagon text-amber"></i>
+        <span>
+          <strong>Non-Emergency Communication Demo:</strong> Messages are responded to during routine clinic hours. For immediate medical issues or fever over 100.4°F, please call the 24/7 clinic triage line directly.
+        </span>
+      </div>
+
+      <!-- Chat Interface -->
+      <div class="row g-3">
+        <!-- Contacts List -->
+        <div class="col-lg-4">
+          <div class="oa-card p-3 h-100">
+            <h6 class="text-cocoa fw-bold mb-3 px-2">Your Care Contacts</h6>
+            <div class="d-flex flex-column gap-2">
+              <a href="javascript:void(0)" class="p-2 rounded-3 text-decoration-none d-flex align-items-center gap-3" style="background-color: var(--oa-bg-subtle);">
+                <img src="../assets/images/nurse-navigator-elena.jpg" alt="Elena Jensen" class="rounded-circle" style="width: 42px; height: 42px; object-fit: cover;">
+                <div class="flex-grow-1 overflow-hidden">
+                  <div class="d-flex justify-content-between">
+                    <strong class="text-cocoa small d-block text-truncate">Nurse Elena Jensen</strong>
+                    <span class="small text-muted" style="font-size: 0.72rem;">03:10 PM</span>
+                  </div>
+                  <span class="small text-muted d-block text-truncate">Pre-infusion review ready...</span>
+                </div>
+              </a>
+
+              <a href="javascript:void(0)" class="p-2 rounded-3 text-decoration-none d-flex align-items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1594824813511-2098691515ef?auto=format&fit=crop&w=150&q=80" alt="Nora Bennett" class="rounded-circle" style="width: 42px; height: 42px; object-fit: cover;">
+                <div class="flex-grow-1 overflow-hidden">
+                  <div class="d-flex justify-content-between">
+                    <strong class="text-cocoa small d-block text-truncate">Nora Bennett (Dietitian)</strong>
+                    <span class="small text-muted" style="font-size: 0.72rem;">Oct 11</span>
+                  </div>
+                  <span class="small text-muted d-block text-truncate">Smoothie recipes uploaded</span>
+                </div>
+              </a>
+
+              <a href="javascript:void(0)" class="p-2 rounded-3 text-decoration-none d-flex align-items-center gap-3">
+                <div class="oa-card-icon mb-0" style="width: 42px; height: 42px; font-size: 1rem;">
+                  <i class="bi bi-question-circle"></i>
+                </div>
+                <div class="flex-grow-1 overflow-hidden">
+                  <div class="d-flex justify-content-between">
+                    <strong class="text-cocoa small d-block text-truncate">Intake & Scheduling Desk</strong>
+                    <span class="small text-muted" style="font-size: 0.72rem;">Oct 05</span>
+                  </div>
+                  <span class="small text-muted d-block text-truncate">Appointment reminder</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Conversation Area -->
+        <div class="col-lg-8">
+          <div class="oa-card p-4 d-flex flex-column" style="min-height: 520px;">
+            <!-- Chat Header -->
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+              <div class="d-flex align-items-center gap-3">
+                <img src="../assets/images/nurse-navigator-elena.jpg" alt="Elena Jensen" class="rounded-circle" style="width: 46px; height: 46px; object-fit: cover;">
+                <div>
+                  <h6 class="mb-0 text-cocoa fw-bold">Elena Jensen, MSN, RN, OCN</h6>
+                  <span class="small text-muted"><i class="bi bi-circle-fill text-success" style="font-size: 0.5rem;"></i> Active Oncology Navigator</span>
+                </div>
+              </div>
+              <span class="oa-badge oa-badge-amber">Response within 2 hours</span>
+            </div>
+
+            <!-- Messages Stream -->
+            <div class="flex-grow-1 overflow-y-auto pe-2" id="oaChatMessages" style="max-height: 340px;">
+              <!-- Coordinator message -->
+              <div class="d-flex justify-content-start mb-3">
+                <div class="oa-card p-3 rounded-4 shadow-sm" style="max-width: 75%;">
+                  <div class="small font-weight-bold text-cocoa mb-1">Nurse Elena Jensen</div>
+                  <p class="mb-1 text-muted small">
+                    Good afternoon Alex, I wanted to confirm that your premedication prescription has been dispatched by the pharmacy. Please let me know if you received the delivery or have questions before your lab draw on Oct 20!
+                  </p>
+                  <div class="text-end text-muted" style="font-size: 0.72rem;">Oct 14 · 03:10 PM</div>
+                </div>
+              </div>
+
+              <!-- Patient message -->
+              <div class="d-flex justify-content-end mb-3">
+                <div class="p-3 rounded-4 shadow-sm" style="max-width: 75%; background-color: var(--oa-soft-amber); color: var(--oa-near-black);">
+                  <div class="small font-weight-bold mb-1">You (Alex Morgan)</div>
+                  <p class="mb-1 small">
+                    Hi Clara, yes! The package arrived this morning with clear labels. I will take the dose 30 minutes before breakfast as noted.
+                  </p>
+                  <div class="text-end" style="font-size: 0.72rem; opacity: 0.8;">Oct 14 · 03:25 PM · Read</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Input Box -->
+            <form id="oaChatForm" class="mt-3 pt-3 border-top">
+              <div class="input-group">
+                <input type="text" class="form-control" id="oaChatInput" placeholder="Type a message to Nurse Clara (Demo)..." required>
+                <button class="btn btn-primary" type="submit">
+                  <i class="bi bi-send-fill me-1"></i> Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

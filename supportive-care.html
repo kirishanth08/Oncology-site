@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supportive Care & Integrative Oncology | OncoAid</title>
+  <meta name="description" content="Discover OncoAid's supportive oncology care: clinical nutrition, counseling, caregiver support, and holistic wellness to sustain dignity and quality of life.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarSupp" aria-controls="oncoaidNavbarSupp" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarSupp">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="oa-section oa-hero-with-bg py-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="oa-badge oa-badge-amber mb-3">Integrative Oncology</span>
+          <h1 class="display-4 fw-bold mb-4">
+            SUPPORT BEYOND THE APPOINTMENT.
+          </h1>
+          <p class="lead text-muted mb-4">
+            Managing cancer involves physical stamina, emotional clarity, and family harmony. Our supportive care disciplines protect your everyday well-being throughout every phase of treatment.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="appointment.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-calendar2-heart"></i> Request Supportive Consultation
+            </a>
+            <a href="about.html#patient-support" class="btn btn-outline-brand btn-lg">
+              <i class="bi bi-book"></i> Patient & Caregiver Guides
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="oa-hero-visual-frame" style="height: 420px;">
+            <img src="assets/images/hero-supportive-care.jpg" alt="Specialist providing supportive oncology guidance and emotional comfort" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: PATIENT SUPPORT PILLARS ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Patient Comfort</span>
+        <h2 class="display-6 fw-bold">PROACTIVE SYMPTOM & FATIGUE CARE</h2>
+        <p class="text-muted mx-auto">
+          We help you manage treatment side effects early so you can continue participating in life with comfort and dignity.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card oa-card-has-media h-100 d-flex flex-column">
+            <div class="oa-card-media">
+              <img src="assets/images/hero-supportive-care.jpg" alt="Fatigue management and gentle restorative pacing" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-activity"></i> Energy Restoration</span>
+            </div>
+            <div class="oa-card-body d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold mb-2">Fatigue Management</h5>
+              <p class="text-muted small mb-3">Evidence-based pacing strategies, circadian rhythm optimization, and gentle restorative activity routines.</p>
+              <a href="supportive-details.html?discipline=fatigue-management" class="btn btn-outline-brand btn-sm mt-auto w-100">
+                <i class="bi bi-arrow-right-circle me-1"></i> Fatigue Protocol Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card oa-card-has-media h-100 d-flex flex-column">
+            <div class="oa-card-media">
+              <img src="assets/images/therapeutic-innovation-lab.jpg" alt="Pain and neuropathy physical therapy and thermal support" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-shield-plus"></i> Comfort</span>
+            </div>
+            <div class="oa-card-body d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold mb-2">Pain & Neuropathy Support</h5>
+              <p class="text-muted small mb-3">Multidisciplinary pain protocols combining gentle physical therapy, thermal relief, and non-pharmacologic modalities.</p>
+              <a href="supportive-details.html?discipline=neuropathy-support" class="btn btn-outline-brand btn-sm mt-auto w-100">
+                <i class="bi bi-arrow-right-circle me-1"></i> Neuropathy Relief Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card oa-card-has-media h-100 d-flex flex-column">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-oral-medications.jpg" alt="Electrolyte-balanced hydration and kidney safeguarding" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-droplet"></i> Hydration</span>
+            </div>
+            <div class="oa-card-body d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold mb-2">Hydration Optimization</h5>
+              <p class="text-muted small mb-3">Electrolyte-balanced hydration formulas designed to safeguard kidney function and ease dry mouth symptoms.</p>
+              <a href="supportive-details.html?discipline=hydration-support" class="btn btn-outline-brand btn-sm mt-auto w-100">
+                <i class="bi bi-arrow-right-circle me-1"></i> Hydration Protocol Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: CAREGIVER SUPPORT ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="oa-badge oa-badge-amber mb-3">Family Care</span>
+          <h2 class="display-6 fw-bold mb-4">NURTURING THOSE WHO NURTURE</h2>
+          <p class="text-muted mb-4">
+            Caregivers often put their own emotional and physical health on pause. OncoAid provides dedicated spaces for partners and family members to recharge and receive practical guidance.
+          </p>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-people-fill text-amber fs-4"></i>
+              <div>
+                <strong class="d-block text-cocoa">Caregiver Respite Check-Ins</strong>
+                <span class="small text-muted">Confidential sessions to express stress, worry, and fatigue safely.</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-list-check text-amber fs-4"></i>
+              <div>
+                <strong class="d-block text-cocoa">Home Routine Organization</strong>
+                <span class="small text-muted">Tools to delegate grocery runs, meal prep, and visitors among willing friends.</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-heart-pulse text-amber fs-4"></i>
+              <div>
+                <strong class="d-block text-cocoa">Communication Guidance</strong>
+                <span class="small text-muted">Approaches for speaking with children, extended family, and employers about cancer.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="supportive-details.html?discipline=caregiver-support" class="btn btn-primary">
+              <i class="bi bi-people me-1"></i> Caregiver Protocol Details
+            </a>
+            <a href="appointment.html" class="btn btn-outline-brand">
+              <i class="bi bi-calendar2-check me-1"></i> Book Respite Session
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="oa-card p-4" style="background-color: var(--oa-bg-subtle);">
+            <h5 class="text-cocoa mb-3">Caregiver Support Circle Hours</h5>
+            <div class="d-flex justify-content-between border-bottom py-2 small">
+              <span>Tuesdays (Virtual)</span>
+              <strong>6:00 PM – 7:15 PM</strong>
+            </div>
+            <div class="d-flex justify-content-between border-bottom py-2 small">
+              <span>Thursdays (In-Person Lounge)</span>
+              <strong>10:30 AM – 11:45 AM</strong>
+            </div>
+            <p class="text-muted small mt-3 mb-0">
+              Facilitated by David Chen, LCSW. Open to all family members and caregivers at no cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: NUTRITION AND WELLNESS RESOURCES ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Oncology Dietetics</span>
+        <h2 class="display-6 fw-bold">NUTRITION TAILORED FOR CANCER TREATMENT</h2>
+        <p class="text-muted mx-auto">
+          Our registered dietitians evaluate blood work and digestive tolerance to create pleasant, nourishing meals that maintain caloric density and strength.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="supportive-details.html?discipline=oncology-nutrition" class="text-decoration-none">
+            <div class="oa-card p-4 text-center h-100 hover-elevate">
+              <i class="bi bi-egg-fried fs-1 text-amber mb-3"></i>
+              <h5 class="text-cocoa">Taste Recovery</h5>
+              <p class="text-muted small mb-0">Flavor enhancement strategies using gentle herbs and marinades to overcome metallic treatment tastes.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="supportive-details.html?discipline=oncology-nutrition" class="text-decoration-none">
+            <div class="oa-card p-4 text-center h-100 hover-elevate">
+              <i class="bi bi-shield-check fs-1 text-amber mb-3"></i>
+              <h5 class="text-cocoa">Neutropenic Safety</h5>
+              <p class="text-muted small mb-0">Safe food handling, pasteurization principles, and microbial defense when white blood cells are low.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="supportive-details.html?discipline=oncology-nutrition" class="text-decoration-none">
+            <div class="oa-card p-4 text-center h-100 hover-elevate">
+              <i class="bi bi-cup-hot fs-1 text-amber mb-3"></i>
+              <h5 class="text-cocoa">High-Calorie Smoothies</h5>
+              <p class="text-muted small mb-0">Easy-to-digest liquid meal templates packed with healthy fats, clean proteins, and gut-friendly fiber.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="supportive-details.html?discipline=oncology-nutrition" class="text-decoration-none">
+            <div class="oa-card p-4 text-center h-100 hover-elevate">
+              <i class="bi bi-flower3 fs-1 text-amber mb-3"></i>
+              <h5 class="text-cocoa">Digestive Harmony</h5>
+              <p class="text-muted small mb-0">Targeted nutritional adjustments for bloating, bowel regularity, and acid reflux management.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="supportive-details.html?discipline=oncology-nutrition" class="btn btn-primary btn-lg">
+          <i class="bi bi-egg-fried me-1"></i> Explore Clinical Oncology Nutrition Protocol
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: EMOTIONAL SUPPORT RESOURCES ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Mental Well-Being</span>
+        <h2 class="display-6 fw-bold">SAFE SPACES FOR EMOTIONAL HEALING</h2>
+        <p class="text-muted mx-auto">
+          Fear, uncertainty, and grief are natural responses to a serious diagnosis. We offer judgment-free counseling to help you process emotional transitions.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card p-4 h-100 d-flex flex-column">
+            <h5 class="text-cocoa"><i class="bi bi-person-heart text-amber me-2"></i> Individual Counseling</h5>
+            <p class="text-muted small mb-3">Confidential one-on-one sessions with licensed oncology social workers to explore coping techniques and emotional safety.</p>
+            <a href="supportive-details.html?discipline=emotional-counseling" class="btn btn-outline-brand btn-sm mt-auto w-100">
+              <i class="bi bi-arrow-right-circle me-1"></i> Counseling Protocol
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card p-4 h-100 d-flex flex-column">
+            <h5 class="text-cocoa"><i class="bi bi-people text-amber me-2"></i> Peer Support Circles</h5>
+            <p class="text-muted small mb-3">Moderated groups connecting patients walking through similar diagnoses and treatment stages.</p>
+            <a href="supportive-details.html?discipline=emotional-counseling" class="btn btn-outline-brand btn-sm mt-auto w-100">
+              <i class="bi bi-arrow-right-circle me-1"></i> Peer Circles Details
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card p-4 h-100 d-flex flex-column">
+            <h5 class="text-cocoa"><i class="bi bi-sun text-amber me-2"></i> Guided Mindfulness</h5>
+            <p class="text-muted small mb-3">Gentle breathwork and guided relaxation audio programs designed specifically for waiting rooms and scans.</p>
+            <a href="supportive-details.html?discipline=emotional-counseling" class="btn btn-outline-brand btn-sm mt-auto w-100">
+              <i class="bi bi-arrow-right-circle me-1"></i> Scanxiety & Mindfulness
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 1: INTEGRATIVE NEUROPATHY & MOVEMENT ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 800px;">
+        <span class="oa-badge oa-badge-cocoa"><i class="bi bi-activity"></i> Neuropathy & Vitality</span>
+        <h2 class="display-6 fw-bold">EVIDENCE-INFORMED INTEGRATIVE THERAPIES</h2>
+        <p class="text-muted mx-auto">
+          We integrate targeted physical modalities into your care trajectory to alleviate peripheral neuropathy, lymphedema, and musculoskeletal stiffness.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4 d-flex flex-column">
+            <div class="oa-card-icon mb-3"><i class="bi bi-pin-angle"></i></div>
+            <h5 class="fw-bold mb-2">Oncology Acupuncture</h5>
+            <p class="text-muted small mb-3">
+              Gentle acupuncture administered by licensed hospital-affiliated practitioners to ease chemotherapy-induced tingling and chronic joint discomfort.
+            </p>
+            <a href="supportive-details.html?discipline=acupuncture" class="btn btn-outline-brand btn-sm mt-auto w-100">
+              <i class="bi bi-arrow-right-circle me-1"></i> Acupuncture Protocol
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4 d-flex flex-column">
+            <div class="oa-card-icon mb-3"><i class="bi bi-water"></i></div>
+            <h5 class="fw-bold mb-2">Lymphedema Therapy</h5>
+            <p class="text-muted small mb-3">
+              Certified lymphedema therapists providing gentle manual lymphatic drainage, personalized compression garment fitting, and fluid movement exercises.
+            </p>
+            <a href="supportive-details.html?discipline=lymphedema-therapy" class="btn btn-outline-brand btn-sm mt-auto w-100">
+              <i class="bi bi-arrow-right-circle me-1"></i> Lymphedema Care Details
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4 d-flex flex-column">
+            <div class="oa-card-icon mb-3"><i class="bi bi-person-walking"></i></div>
+            <h5 class="fw-bold mb-2">Restorative Mobility</h5>
+            <p class="text-muted small mb-3">
+              Gentle supervised movement and balance training specifically calibrated for patients undergoing active hormonal or systemic therapies.
+            </p>
+            <a href="supportive-details.html?discipline=restorative-mobility" class="btn btn-outline-brand btn-sm mt-auto w-100">
+              <i class="bi bi-arrow-right-circle me-1"></i> Mobility Therapy Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 2: CAREGIVER SHIFT PLANNING & RESPITE ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5" style="background: linear-gradient(135deg, var(--oa-card-bg) 0%, var(--oa-bg-subtle) 100%);">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="oa-badge oa-badge-amber mb-3">Family Support</span>
+            <h3 class="display-6 fw-bold mb-3">CAREGIVER SHIFT PLANNING & RESPITE NAVIGATION</h3>
+            <p class="text-muted mb-4">
+              Caring for someone with cancer can lead to physical and emotional exhaustion. Our social work team helps families establish sustainable caregiving shifts.
+            </p>
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-calendar-range text-amber fs-4 flex-shrink-0"></i>
+                <div>
+                  <strong class="d-block text-cocoa">Family Delegation Templates</strong>
+                  <span class="small text-muted">Clear scheduling sheets to assign grocery runs, meal prep, and appointment rides across family and friends.</span>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-cup-hot text-amber fs-4 flex-shrink-0"></i>
+                <div>
+                  <strong class="d-block text-cocoa">Caregiver Decompression Circles</strong>
+                  <span class="small text-muted">A dedicated peer space held twice monthly where family members can speak candidly without burdening the patient.</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="supportive-details.html?discipline=caregiver-support" class="btn btn-primary">
+                <i class="bi bi-people me-1"></i> Caregiver Protocol Details
+              </a>
+              <a href="appointment.html" class="btn btn-outline-brand">
+                <i class="bi bi-calendar2-check me-1"></i> Connect With Counselor
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="oa-hero-visual-frame" style="height: 380px;">
+              <img src="assets/images/blog-caregiver-burnout.jpg" alt="Caregiver support discussion in calm healing lounge" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: CONTACT CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 860px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">Integrative Oncology</span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          CONNECT WITH OUR SUPPORTIVE CARE TEAM.
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 600px;">
+          Meet our nutritionists, counselors, and fatigue specialists. We ensure every aspect of your well-being is tended to with warmth and clinical expertise.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar2-check"></i> Book Supportive Care Session
+          </a>
+          <a href="supportive-details.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-compass"></i> Explore Discipline Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Supportive Care</h5>
+          <ul class="oa-footer-links">
+            <li><a href="supportive-details.html?discipline=oncology-nutrition">Clinical Nutrition</a></li>
+            <li><a href="supportive-details.html?discipline=fatigue-management">Fatigue Pacing</a></li>
+            <li><a href="supportive-details.html?discipline=neuropathy-support">Neuropathy Relief</a></li>
+            <li><a href="supportive-details.html?discipline=caregiver-support">Caregiver Respite</a></li>
+            <li><a href="supportive-details.html?discipline=emotional-counseling">Emotional Counseling</a></li>
+            <li><a href="supportive-details.html?discipline=acupuncture">Oncology Acupuncture</a></li>
+            <li><a href="supportive-details.html?discipline=lymphedema-therapy">Lymphedema Care</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

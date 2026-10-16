@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Sarah Jenkins, MD | Lead Medical Oncologist | OncoAid</title>
+  <meta name="description" content="View clinical background, areas of focus, education, and patient care philosophy of Dr. Sarah Jenkins, Chief of Medical Oncology at OncoAid.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarDoc" aria-controls="oncoaidNavbarDoc" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarDoc">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: DOCTOR HERO PROFILE ================= -->
+  <section class="oa-section oa-hero-with-bg pb-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="oa-doctor-card shadow-lg">
+            <div class="oa-doctor-media-wrap" style="height: 480px;">
+              <img src="assets/images/doctor-sarah-jenkins.jpg" alt="Dr. Sarah Jenkins, Chief of Medical Oncology at OncoAid" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-patch-check-fill text-amber"></i> Board Certified</span>
+              <span class="oa-doctor-status"><span class="oa-pulse-indicator"></span> Available for Consults</span>
+            </div>
+            <div class="p-3 bg-subtle border-top text-center small text-muted">
+              <i class="bi bi-hospital me-1 text-amber"></i> Clinical Director, OncoAid Center for Solid Tumors
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="our-team.html" class="text-amber">Our Team</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Dr. Sarah Jenkins</li>
+            </ol>
+          </nav>
+          <span class="oa-badge oa-badge-amber mb-3">Chief Medical Oncologist</span>
+          <h1 class="display-4 fw-bold mb-2">DR. SARAH JENKINS, MD</h1>
+          <p class="fs-5 text-amber fw-bold mb-3">Chief of Medical Oncology & Clinical Navigation</p>
+          <p class="text-muted mb-4 lead" style="font-size: 1.1rem; line-height: 1.7;">
+            Board-certified in Medical Oncology and Internal Medicine, Dr. Jenkins brings over 16 years of academic and clinical expertise specializing in solid tumors, targeted genomic therapeutics, and coordinated cancer care.
+          </p>
+
+          <!-- At-a-Glance Stats Bar -->
+          <div class="row g-3 mb-4">
+            <div class="col-sm-4">
+              <div class="p-3 rounded-4 border bg-surface text-center">
+                <div class="h4 fw-bold text-cocoa mb-0">16+ Yrs</div>
+                <div class="small text-muted">Oncology Practice</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 rounded-4 border bg-surface text-center">
+                <div class="h4 fw-bold text-cocoa mb-0">60 Min</div>
+                <div class="small text-muted">Default Consult Length</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 rounded-4 border bg-surface text-center">
+                <div class="h4 fw-bold text-cocoa mb-0">Harvard</div>
+                <div class="small text-muted">MD & Fellowship</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="appointment.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-calendar2-plus me-1"></i> Request Consultation with Dr. Jenkins
+            </a>
+            <a href="about.html#care-journey" class="btn btn-outline-brand btn-lg">
+              <i class="bi bi-signpost me-1"></i> Explore Care Stages
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: ABOUT DR. JENKINS ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <span class="oa-badge oa-badge-cocoa mb-3">Background & Focus</span>
+          <h2 class="display-6 fw-bold mb-4">A LIFELONG DEVOTION TO COMPASSIONATE SCIENCE</h2>
+          <p class="text-muted mb-3">
+            Dr. Jenkins earned her medical degree from Harvard Medical School and completed her advanced hematology/oncology fellowship at Dana-Farber Cancer Institute. She has authored over 25 peer-reviewed papers on biomarker-guided therapeutics and targeted treatments for solid tumors.
+          </p>
+          <p class="text-muted mb-4">
+            At OncoAid, Dr. Jenkins leads our multidisciplinary tumor board and champions the philosophy that scientific rigor must always walk hand-in-hand with active listening, clear explanations, and emotional comfort for patients and families.
+          </p>
+
+          <div class="p-4 rounded-4" style="background-color: var(--oa-bg-surface); border-left: 4px solid var(--oa-soft-amber);">
+            <p class="fst-italic text-cocoa mb-2">
+              “Our goal is to demystify complex medical choices. When patients and their loved ones truly understand the ‘why’ behind their treatment plan, anxiety begins to give way to clarity and confidence.”
+            </p>
+            <div class="small fw-bold text-muted">— Dr. Sarah Jenkins</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="oa-card">
+            <h5 class="text-cocoa mb-3">Quick Facts</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2 small text-muted mb-0">
+              <li><strong>Board Certifications:</strong> Medical Oncology, Internal Medicine</li>
+              <li><strong>Clinical Experience:</strong> 16+ Years</li>
+              <li><strong>Primary Hospital Affiliate:</strong> Massachusetts General Hospital (Courtesy Staff)</li>
+              <li><strong>Languages:</strong> English, Spanish</li>
+              <li><strong>Consultation Style:</strong> Unhurried (60 min default)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: CLINICAL EXPERTISE ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Specialized Scope</span>
+        <h2 class="display-6 fw-bold">AREAS OF CLINICAL EXPERTISE</h2>
+        <p class="text-muted mx-auto">
+          Tailoring modern medical oncology options to the precise biological and genomic characteristics of each patient.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card h-100">
+            <div class="oa-card-icon"><i class="bi bi-dna"></i></div>
+            <h5 class="fw-bold mb-2">Targeted Genomic Therapies</h5>
+            <p class="text-muted small mb-0">Employing molecular profiling to match specific receptor alterations with targeted oral and IV therapeutics.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card h-100">
+            <div class="oa-card-icon"><i class="bi bi-shield-check"></i></div>
+            <h5 class="fw-bold mb-2">Chemotherapy Coordination</h5>
+            <p class="text-muted small mb-0">Overseeing customized infusion sequencing, proactive anti-emetic premedications, and blood count safety thresholds.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card h-100">
+            <div class="oa-card-icon"><i class="bi bi-journal-check"></i></div>
+            <h5 class="fw-bold mb-2">Comprehensive Second Opinions</h5>
+            <p class="text-muted small mb-0">Independent, thoughtful reassessment of prior biopsies, imaging, and treatment protocols for patients seeking peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: EDUCATION & CERTIFICATIONS ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Academic Credentials</span>
+        <h2 class="display-6 fw-bold">EDUCATION & PROFESSIONAL TRAINING</h2>
+        <p class="text-muted mx-auto">
+          A foundation of continuous medical training and leadership across accredited oncology societies.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-8">
+          <div class="oa-card">
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between border-bottom pb-2">
+                <div>
+                  <h6 class="mb-0 text-cocoa">Fellowship in Hematology / Oncology</h6>
+                  <span class="small text-muted">Dana-Farber Cancer Institute / Brigham and Women's Hospital</span>
+                </div>
+                <span class="oa-badge oa-badge-amber">2010 – 2013</span>
+              </div>
+              <div class="d-flex justify-content-between border-bottom pb-2">
+                <div>
+                  <h6 class="mb-0 text-cocoa">Residency in Internal Medicine</h6>
+                  <span class="small text-muted">Massachusetts General Hospital</span>
+                </div>
+                <span class="oa-badge oa-badge-cocoa">2007 – 2010</span>
+              </div>
+              <div class="d-flex justify-content-between border-bottom pb-2">
+                <div>
+                  <h6 class="mb-0 text-cocoa">Doctor of Medicine (MD), Magna Cum Laude</h6>
+                  <span class="small text-muted">Harvard Medical School</span>
+                </div>
+                <span class="oa-badge oa-badge-cocoa">2003 – 2007</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h6 class="mb-0 text-cocoa">Bachelor of Science in Biochemistry</h6>
+                  <span class="small text-muted">Cornell University</span>
+                </div>
+                <span class="oa-badge oa-badge-cocoa">1999 – 2003</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: PATIENT TESTIMONIAL ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Patient Voices</span>
+        <h2 class="display-6 fw-bold">WHAT PATIENTS SAY ABOUT DR. CARTER</h2>
+        <p class="text-muted mx-auto">
+          Fictional patient feedback demonstrating our standard of dignity, attentiveness, and clinical warmth.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6">
+          <div class="oa-card p-4">
+            <div class="d-flex gap-1 text-amber mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-muted">
+              “Dr. Carter pulled her chair right next to my husband and me. She answered all 14 questions on our list with complete calmness. We left knowing we had found our true advocate.”
+            </p>
+            <div class="small fw-bold text-cocoa">— Evelyn R., Coordinated Care Patient</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 1: RESEARCH, PUBLICATIONS & TRIALS ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-cocoa"><i class="bi bi-journal-bookmark-fill"></i> Scientific Leadership</span>
+        <h2 class="display-6 fw-bold">PUBLICATIONS & CLINICAL INVESTIGATIONS</h2>
+        <p class="text-muted mx-auto">
+          Dr. Carter contributes actively to oncology clinical research to ensure OncoAid patients receive the newest validated biomarker-directed therapies.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4">
+            <span class="oa-badge oa-badge-amber mb-3 align-self-start">Journal Article (2025)</span>
+            <h5 class="fw-bold mb-2">Targeted Sequencing in Recurrent Breast Malignancies</h5>
+            <p class="text-muted small flex-grow-1">
+              Co-authored retrospective study evaluating response rates to third-line targeted therapies when guided by serial liquid biopsy ctDNA monitoring.
+            </p>
+            <div class="border-top pt-3 small text-muted">
+              <em>Published in Journal of Clinical Oncology</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4">
+            <span class="oa-badge oa-badge-cocoa mb-3 align-self-start">Trial Leadership</span>
+            <h5 class="fw-bold mb-2">Phase II Investigation: Antibody-Drug Conjugates</h5>
+            <p class="text-muted small flex-grow-1">
+              Principal investigator for community site protocol investigating lower toxicity profiles in antibody-drug conjugates for metastatic breast carcinoma.
+            </p>
+            <div class="border-top pt-3 small text-muted">
+              <em>Collaborative Oncology Trials Consortium</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4">
+            <span class="oa-badge oa-badge-amber mb-3 align-self-start">Clinical Practice Guideline</span>
+            <h5 class="fw-bold mb-2">Consensus Paper: Proactive Anti-Emetic Delivery</h5>
+            <p class="text-muted small flex-grow-1">
+              Panelist contributing to multidisciplinary protocols on 72-hour prophylactic nausea mitigation during high-emetogenic chemotherapy cycles.
+            </p>
+            <div class="border-top pt-3 small text-muted">
+              <em>American Society of Clinical Oncology (ASCO)</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 2: MULTIDISCIPLINARY CARE PARTNERS ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-amber"><i class="bi bi-people-fill"></i> Integrated Care</span>
+        <h2 class="display-6 fw-bold">CO-MANAGEMENT TEAM WORKING WITH DR. JENKINS</h2>
+        <p class="text-muted mx-auto">
+          Patients under Dr. Jenkins’ care are closely supported by dedicated nurse coordinators and radiation oncology consultants.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Partner 1 -->
+        <div class="col-lg-6">
+          <div class="oa-doctor-horizontal-card">
+            <div class="oa-doctor-horizontal-media">
+              <img src="assets/images/nurse-navigator-elena.jpg" alt="Elena Jensen, Lead Nurse Navigator" loading="lazy">
+            </div>
+            <div class="oa-doctor-horizontal-body">
+              <h4 class="oa-doctor-name mb-0">Elena Jensen, MSN, RN, OCN</h4>
+              <div class="oa-doctor-role mb-2">Lead Oncology Nurse Navigator</div>
+              <p class="oa-doctor-bio mb-3">
+                Works directly alongside Dr. Jenkins to interpret lab results, handle prescription refills, and answer at-home symptom calls.
+              </p>
+              <a href="appointment.html" class="btn btn-outline-brand btn-sm align-self-start">
+                <i class="bi bi-chat-heart me-1"></i> Connect with Nurse Elena
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner 2 -->
+        <div class="col-lg-6">
+          <div class="oa-doctor-horizontal-card">
+            <div class="oa-doctor-horizontal-media">
+              <img src="assets/images/doctor-michael-sterling.jpg" alt="Dr. Michael Sterling, Radiation Oncologist" loading="lazy">
+            </div>
+            <div class="oa-doctor-horizontal-body">
+              <h4 class="oa-doctor-name mb-0">Dr. Michael Sterling, MD</h4>
+              <div class="oa-doctor-role mb-2">Radiation Oncology Lead & SBRT Specialist</div>
+              <p class="oa-doctor-bio mb-3">
+                Collaborates with Dr. Jenkins on stereotactic radiation protocols for solid tumor targets requiring combined systemic and focal therapy.
+              </p>
+              <a href="our-team.html" class="btn btn-outline-brand btn-sm align-self-start">
+                <i class="bi bi-person me-1"></i> View Radiation Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: APPOINTMENT CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 860px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">Direct Specialist Care</span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          SCHEDULE A CONSULTATION WITH DR. JENKINS.
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 600px;">
+          Connect with Dr. Sarah Jenkins and our oncology care coordination team to review your records and explore your treatment paths.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar2-check"></i> Book An Appointment
+          </a>
+          <a href="our-team.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-people"></i> View Entire Care Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Services</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html">Oncology Consultation</a></li>
+            <li><a href="chemotherapy.html">Chemotherapy Prep</a></li>
+            <li><a href="service-details.html">Treatment Support</a></li>
+            <li><a href="service-details.html">Medication Support</a></li>
+            <li><a href="supportive-care.html">Supportive Care</a></li>
+            <li><a href="about.html#patient-support">Patient Education</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

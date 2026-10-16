@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My OncoAid | Patient Care Overview</title>
+  <meta name="description" content="Personal patient care dashboard for OncoAid: view upcoming treatments, care team notes, and supportive daily reminders.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <!-- ================= DASHBOARD SIDEBAR ================= -->
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link active">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ================= DASHBOARD MAIN CONTENT ================= -->
+    <div class="oa-dash-content">
+      <!-- Topbar -->
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation menu">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa">Patient Care Companion</h5>
+            <span class="small text-muted">MRN: ONC-892401 · Lead Navigator: Elena Jensen, RN</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Evening Care Theme" aria-label="Toggle Evening Care Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+          <a href="../appointment.html" class="btn btn-primary btn-sm ms-2">
+            <i class="bi bi-plus-circle me-1"></i> New Request
+          </a>
+        </div>
+      </div>
+
+      <!-- Welcome Banner -->
+      <div class="oa-card p-3 p-md-4 mb-3 position-relative overflow-hidden" style="background: linear-gradient(135deg, var(--oa-bg-subtle) 0%, var(--oa-bg-surface) 100%);">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="oa-badge oa-badge-amber">Current Journey Stage: 03</span>
+              <span class="oa-demo-pill">Patient Portal Active</span>
+            </div>
+            <h1 class="h2 fw-bold text-cocoa mb-2">WELCOME BACK, ALEX.</h1>
+            <p class="text-muted mb-3">
+              Here’s a clear, calm overview of your upcoming oncology sessions, active clinical roadmap, and daily supportive reminders.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="oa-vitals-pill">
+                <i class="bi bi-heart-pulse-fill text-amber me-1"></i> Active Regimen: Paclitaxel / Carboplatin Cycle 2
+              </span>
+              <span class="oa-vitals-pill">
+                <i class="bi bi-telephone-fill text-amber me-1"></i> Nurse Desk: (555) 234-ONCO
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <img src="../assets/images/hero-oncology-care.jpg" alt="Compassionate oncology care" class="rounded-4 shadow-sm" style="width: 100%; max-width: 240px; height: 150px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Core Quick Overview Cards -->
+      <div class="row g-3 mb-3">
+        <!-- 1: Next Appointment -->
+        <div class="col-sm-6 col-xl-3">
+          <div class="oa-card p-3 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="oa-badge oa-badge-amber">Upcoming</span>
+                <i class="bi bi-calendar-event text-amber fs-4"></i>
+              </div>
+              <div class="small text-muted">Next Appointment</div>
+              <h5 class="text-cocoa fw-bold my-1">Dr. Maya Carter</h5>
+              <p class="small text-muted mb-3"><i class="bi bi-clock text-amber me-1"></i> Oct 18 · 10:30 AM</p>
+            </div>
+            <a href="appointments.html" class="fw-bold small text-cocoa">View Details <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 2: Next Treatment -->
+        <div class="col-sm-6 col-xl-3">
+          <div class="oa-card p-3 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="oa-badge oa-badge-cocoa">Infusion</span>
+                <i class="bi bi-shield-plus text-amber fs-4"></i>
+              </div>
+              <div class="small text-muted">Next Treatment</div>
+              <h5 class="text-cocoa fw-bold my-1">Cycle 2 Infusion</h5>
+              <p class="small text-muted mb-3"><i class="bi bi-calendar3 text-amber me-1"></i> Oct 21 · Suite 4A</p>
+            </div>
+            <a href="treatment-schedule.html" class="fw-bold small text-cocoa">View Schedule <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 3: Medication Reminder -->
+        <div class="col-sm-6 col-xl-3">
+          <div class="oa-card p-3 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="oa-badge oa-badge-amber">Medication</span>
+                <i class="bi bi-capsule text-amber fs-4"></i>
+              </div>
+              <div class="small text-muted">Supportive Reminder</div>
+              <h5 class="text-cocoa fw-bold my-1">Anti-Nausea Pill</h5>
+              <p class="small text-muted mb-3"><i class="bi bi-alarm text-amber me-1"></i> Today at 8:00 PM</p>
+            </div>
+            <a href="medication-reminders.html" class="fw-bold small text-cocoa">Check List <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 4: Clinical History & Notes -->
+        <div class="col-sm-6 col-xl-3">
+          <div class="oa-card p-3 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="oa-badge oa-badge-cocoa">Clinical Notes</span>
+                <i class="bi bi-clock-history text-amber fs-4"></i>
+              </div>
+              <div class="small text-muted">Care History Update</div>
+              <h5 class="text-cocoa fw-bold my-1">Nurse Elena Jensen</h5>
+              <p class="small text-muted mb-3"><i class="bi bi-check2 text-amber me-1"></i> Pre-lab summary ready</p>
+            </div>
+            <a href="treatment-history.html" class="fw-bold small text-cocoa">Read History <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dashboard Grid: Schedule Peek + Care Notes Peek -->
+      <div class="row g-3 mb-3">
+        <!-- Schedule Column -->
+        <div class="col-lg-7">
+          <div class="oa-card p-3 p-md-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>
+                <h5 class="mb-0 text-cocoa fw-bold">Upcoming Care Schedule</h5>
+                <span class="small text-muted">Next 14 days of appointments & clinical monitoring</span>
+              </div>
+              <a href="treatment-schedule.html" class="btn btn-outline-brand btn-sm">Full Calendar</a>
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <!-- Item 1 -->
+              <div class="oa-schedule-card mb-0">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="oa-date-badge">
+                    <div class="day">18</div>
+                    <div class="month">Oct</div>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 text-cocoa fw-bold">Medical Oncology Consultation & Exam</h6>
+                    <span class="small text-muted">Dr. Maya Carter · Exam Suite 402 · 10:30 AM</span>
+                  </div>
+                </div>
+                <span class="oa-status-pill oa-status-upcoming">Upcoming ●</span>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="oa-schedule-card mb-0">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="oa-date-badge">
+                    <div class="day">20</div>
+                    <div class="month">Oct</div>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 text-cocoa fw-bold">Pre-Infusion Blood Count Panel (CBC)</h6>
+                    <span class="small text-muted">Clinical Laboratory · Fasting not required · 09:00 AM</span>
+                  </div>
+                </div>
+                <span class="oa-status-pill oa-status-upcoming">Upcoming ●</span>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="oa-schedule-card mb-0">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="oa-date-badge">
+                    <div class="day">21</div>
+                    <div class="month">Oct</div>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 text-cocoa fw-bold">Chemotherapy Infusion Cycle 2</h6>
+                    <span class="small text-muted">Nurse Elena Jensen · Infusion Suite 4A · 10:00 AM</span>
+                  </div>
+                </div>
+                <span class="oa-status-pill oa-status-upcoming">Upcoming ●</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Care Notes Column -->
+        <div class="col-lg-5">
+          <div class="oa-card p-3 p-md-4 h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>
+                <h5 class="mb-0 text-cocoa fw-bold">Recent Care Notes</h5>
+                <span class="small text-muted">From your oncology navigators</span>
+              </div>
+              <a href="treatment-history.html" class="btn btn-outline-brand btn-sm">All Records</a>
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <div class="p-3 rounded-3" style="background-color: var(--oa-bg-subtle);">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong class="small text-cocoa">Pre-Infusion Preparation Guide</strong>
+                  <span class="small text-muted" style="font-size: 0.75rem;">Oct 14</span>
+                </div>
+                <p class="small text-muted mb-2">
+                  “Alex, please begin taking the prescribed anti-nausea medication 30 minutes prior to your light breakfast on the morning of Oct 21. Stay well hydrated...”
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="small fw-semibold text-amber">— Nurse Elena Jensen, MSN, RN</div>
+                  <button class="btn btn-sm btn-link p-0 text-cocoa fw-bold text-decoration-none" type="button" onclick="openClinicalRecord('Pre-Infusion Preparation Guide', 'Oct 14, 2026', 'Elena Jensen, MSN, RN', 'Spoke with Alex this afternoon regarding preparations for Cycle 2 infusion on Oct 21. Confirmed laboratory draw is scheduled for Oct 20 at 9:00 AM. Reviewed oral hydration guidelines. Pre-medication prescription active.', ['Hydration: 64oz Target', 'Premeds Verified', 'ANC Test Scheduled'])">
+                    Read Note →
+                  </button>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-3" style="background-color: var(--oa-bg-subtle);">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong class="small text-cocoa">Nutrition Assessment Follow-Up</strong>
+                  <span class="small text-muted" style="font-size: 0.75rem;">Oct 11</span>
+                </div>
+                <p class="small text-muted mb-2">
+                  “Recommended high-protein smoothie recipes uploaded to your documents library. If mild metallic taste occurs, try adding lemon or tart marinades...”
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="small fw-semibold text-amber">— Nora Bennett, MS, RD</div>
+                  <button class="btn btn-sm btn-link p-0 text-cocoa fw-bold text-decoration-none" type="button" onclick="openClinicalRecord('Nutrition Assessment Summary', 'Oct 11, 2026', 'Nora Bennett, MS, RD', 'Patient weight stable at 64.2kg. Dietary review completed. Recommended citrus-based marinades and cold electrolyte smoothies to mitigate transient dysgeusia.', ['Weight: 64.2 kg (Stable)', 'Protein Goal: 75g/day'])">
+                    Read Note →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety Disclaimer -->
+      <div class="oa-safety-notice">
+        <i class="bi bi-info-circle"></i>
+        <span>
+          <strong>Notice for Patients:</strong> This portal dashboard is a frontend demonstration template with fictional data for Alex Morgan. For immediate clinical symptoms or emergencies, contact your oncologist directly or call 911.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

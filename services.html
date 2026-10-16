@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancer Treatments & Oncology Services | OncoAid</title>
+  <meta name="description" content="Explore advanced treatments designed to target and clear cancer: Immunotherapy, Precision Targeted Therapy, Radiation Oncology, Chemotherapy, CAR-T, and Robotic Surgical Coordination.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarServ" aria-controls="oncoaidNavbarServ" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarServ">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: SERVICES HERO ================= -->
+  <section class="oa-hero-main oa-hero-with-bg" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="oa-hero-bg-accent"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 oa-hero-content">
+          <span class="oa-badge oa-badge-amber mb-3">
+            <i class="bi bi-stars"></i> Curative Science & Human Compassion
+          </span>
+          <h1 class="display-4 fw-bolder mb-4">
+            ADVANCED CANCER CARE & TREATMENTS THAT CLEAR THE PATH TO HEALING.
+          </h1>
+          <p class="lead mb-4">
+            At OncoAid, our mission is clear: combine the world's most sophisticated therapies—immunotherapy, targeted molecular biology, precision radiation, and personalized chemotherapy—with warm, unhurried human support so you feel empowered at every turn.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="appointment.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-calendar2-check"></i> Consult Our Care Team
+            </a>
+            <a href="#cancer-clearing-treatments" class="btn btn-outline-brand btn-lg">
+              <i class="bi bi-shield-check"></i> Explore Treatments
+            </a>
+          </div>
+
+          <div class="pt-3 border-top border-cocoa border-opacity-10 d-flex flex-wrap align-items-center gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-amber fs-4"></i>
+              <span class="small font-weight-bold">Targeted Cell Clearance</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-amber fs-4"></i>
+              <span class="small font-weight-bold">Multidisciplinary Review Board</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-amber fs-4"></i>
+              <span class="small font-weight-bold">Dedicated Nurse Navigator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="oa-hero-visual-frame position-relative">
+            <img src="assets/images/hero-services.jpg" alt="Comprehensive cancer treatment suites and precision therapies at OncoAid" loading="lazy">
+            <div class="oa-hero-floating-card">
+              <div class="oa-card-icon mb-0" style="width:44px; height:44px; font-size:1.25rem;">
+                <i class="bi bi-heart-pulse-fill"></i>
+              </div>
+              <div>
+                <div class="fw-bold small text-amber">Comprehensive Support</div>
+                <div class="small text-muted">Precision Curative Intent</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: TREATMENTS TO TARGET & CLEAR CANCER ================= -->
+  <section class="oa-section oa-section-subtle" id="cancer-clearing-treatments">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 820px;">
+        <span class="oa-badge oa-badge-cocoa">
+          <i class="bi bi-crosshair"></i> Precision Therapeutic Arsenal
+        </span>
+        <h2 class="display-6 fw-bold">ADVANCED TREATMENTS DESIGNED TO CLEAR CANCER</h2>
+        <p class="mx-auto">
+          Modern oncology combines therapies that specifically destroy, neutralize, and clear malignant cancer cells while protecting healthy tissue and quality of life. Explore the core modalities coordinated by OncoAid specialists.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Treatment 1: Immunotherapy -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service-immunotherapy.jpg" alt="Clinical molecular genomics and immunotherapy laboratory" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-shield-shaded"></i> Immune Clearance
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Immune Activation</span>
+                <h4 class="oa-treatment-title">Immunotherapy & Checkpoint Inhibitors</h4>
+                <p class="oa-treatment-desc">
+                  Trains and activates the patient's own immune T-cells to identify, dismantle, and systematically clear hidden cancer cells with durable systemic defense.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> PD-1 / PD-L1 & CTLA-4 blockers</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> High response in lung, melanoma & renal cancers</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=immunotherapy" class="oa-treatment-btn">
+                  <span>Explore Immunotherapy</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 2: Targeted Molecular Therapy -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service_targeted_immunotherapy_1792059313408.jpg" alt="Precision oncology genomic analysis and molecular targeting" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-bullseye"></i> Molecular Target
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Precision Oncology</span>
+                <h4 class="oa-treatment-title">Precision Targeted Therapy</h4>
+                <p class="oa-treatment-desc">
+                  Designer therapeutics engineered to specifically disable oncogenic driver mutations (EGFR, HER2, BRAF, ALK) and shut off malignant cell survival signaling.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Small-molecule kinase & signal inhibitors</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Spares surrounding healthy tissues</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=targeted-therapy" class="oa-treatment-btn">
+                  <span>Explore Targeted Care</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 3: Precision Radiation Oncology -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service-radiation-oncology.jpg" alt="TrueBeam linear accelerator radiotherapy suite" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-crosshair2"></i> Radiative Clearance
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Sub-Millimeter LINAC</span>
+                <h4 class="oa-treatment-title">Precision Radiation Oncology</h4>
+                <p class="oa-treatment-desc">
+                  Advanced TrueBeam SBRT, IMRT, and stereotactic beam guidance delivering millimeter-focused photon beams to destroy tumor DNA while preserving vital organs.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Stereotactic ablative body radiotherapy (SBRT)</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> 4D real-time motion & organ tracking</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=radiation-oncology" class="oa-treatment-btn">
+                  <span>Explore Radiation</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 4: Chemotherapy & Biologics -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service_chemotherapy_infusion_1792059290445.jpg" alt="Private sunlit garden infusion suite with luxury heated recliner" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-capsule"></i> Daylight Infusion
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Systemic Oncology</span>
+                <h4 class="oa-treatment-title">Chemotherapy & Biologics</h4>
+                <p class="oa-treatment-desc">
+                  Calibrated systemic medicine, monoclonal antibodies, and antibody-drug conjugates (ADCs) delivered in tranquil, garden-facing private infusion suites.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Synergistic combination & biotherapy regimens</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Pre-emptive anti-emetics & scalp cooling</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=chemotherapy" class="oa-treatment-btn">
+                  <span>Explore Chemotherapy</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 5: CAR-T Cell Therapy -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service-cart-cell.jpg" alt="Cellular biotechnology and genetic T-cell engineering" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-cpu"></i> Cellular Engineering
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Living Therapeutics</span>
+                <h4 class="oa-treatment-title">CAR-T Cell Therapy</h4>
+                <p class="oa-treatment-desc">
+                  Living cellular medicine: patient T-cells are genetically modified with chimeric antigen receptors to seek out and eradicate refractory blood cancers.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Breakthrough cellular gene reprogramming</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Durable remissions in leukemia & lymphoma</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=cart-cell" class="oa-treatment-btn">
+                  <span>Explore Cellular Care</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 6: Minimally Invasive Surgical Oncology -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service-robotic-surgery.jpg" alt="Surgical oncology team performing precision minimally invasive resection" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-scissors"></i> Surgical Margins
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Minimally Invasive</span>
+                <h4 class="oa-treatment-title">Robotic & Laparoscopic Surgery</h4>
+                <p class="oa-treatment-desc">
+                  Pinpoint robotic resection achieving clean surgical margins to physically remove tumors while accelerating healing, preserving nerves, and reducing recovery times.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> High-definition 3D magnification optics</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Rapid post-op discharge & minimal scarring</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=robotic-surgery" class="oa-treatment-btn">
+                  <span>Explore Surgery</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 7: Hormone & Endocrine Therapy -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/service-targeted-therapy.jpg" alt="Targeted receptor antagonists and oral endocrine cancer medications" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-droplet-half"></i> Hormone Blockade
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Receptor Antagonists</span>
+                <h4 class="oa-treatment-title">Hormone & Endocrine Therapy</h4>
+                <p class="oa-treatment-desc">
+                  Targeted receptor antagonists that cut off hormone fuel in breast, ovarian, and prostate cancers to prevent recurrence and halt malignant progression.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Aromatase & selective androgen blockers</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Long-term clinical recurrence protection</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=hormone-therapy" class="oa-treatment-btn">
+                  <span>Explore Hormone Care</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Treatment 8: Genomic Profiling & Clinical Trials -->
+        <div class="col-lg-6">
+          <div class="oa-treatment-card">
+            <div class="oa-treatment-media">
+              <img src="assets/images/knowledge-care-journey.jpg" alt="Comprehensive next-generation genomic sequencing and trial consultation" loading="lazy">
+              <span class="oa-treatment-badge">
+                <i class="bi bi-dna"></i> Genomic Sequencing
+              </span>
+            </div>
+            <div class="oa-treatment-content">
+              <div>
+                <span class="oa-treatment-tag">Investigational Access</span>
+                <h4 class="oa-treatment-title">Genomics & Novel Clinical Trials</h4>
+                <p class="oa-treatment-desc">
+                  Next-generation whole-exome sequencing connects patients with breakthrough investigational therapeutics, targeted clinical trials, and novel curative candidates.
+                </p>
+                <div class="oa-treatment-highlights">
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Comprehensive tumor mutation burden (TMB)</div>
+                  <div class="oa-treatment-pill"><i class="bi bi-check2-circle"></i> Expedited clinical trial matching & access</div>
+                </div>
+              </div>
+              <div class="oa-treatment-footer">
+                <a href="service-details.html?service=clinical-trials" class="oa-treatment-btn">
+                  <span>Explore Trials</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: CORE ONCOLOGY SERVICES (SEAMLESS NAVIGATION) ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-amber">
+          <i class="bi bi-diagram-3"></i> Seamless Navigation
+        </span>
+        <h2 class="display-6 fw-bold">COMPREHENSIVE ONCOLOGY SERVICES</h2>
+        <p class="mx-auto">
+          Every cancer journey requires seamless orchestration. OncoAid wraps patient-centered coordination, diagnostic review, and daily supportive care around you.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1: Consultation & 2nd Opinions -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-nav-card">
+            <div class="oa-nav-card-media">
+              <img src="assets/images/service-oncology-consultation.jpg" alt="Unhurried diagnostic oncologist consultation with care charts" loading="lazy">
+              <span class="oa-nav-card-badge">
+                <i class="bi bi-clipboard2-pulse"></i> Diagnostic Care
+              </span>
+            </div>
+            <div class="oa-nav-card-body">
+              <span class="oa-nav-card-category">Personalized Strategy</span>
+              <h4 class="oa-nav-card-title">Oncology Consultation & 2nd Opinions</h4>
+              <p class="oa-nav-card-desc">
+                Unhurried 60-minute diagnostic evaluations with board-certified medical oncologists to confirm pathology, interpret molecular profiling, and map curative options.
+              </p>
+              <div class="oa-nav-card-features">
+                <div class="oa-nav-card-feature-item"><i class="bi bi-check2-circle"></i> Independent pathology & staging re-review</div>
+                <div class="oa-nav-card-feature-item"><i class="bi bi-check2-circle"></i> Direct molecular target breakdown</div>
+              </div>
+              <div class="oa-nav-card-footer">
+                <a href="service-details.html?service=consultation" class="oa-nav-card-link">
+                  <span>Explore Consultation</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Chemotherapy Coordination -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-nav-card">
+            <div class="oa-nav-card-media">
+              <img src="assets/images/hero-chemotherapy.jpg" alt="Sunlit private chemotherapy infusion bay with heated recliner and garden view" loading="lazy">
+              <span class="oa-nav-card-badge">
+                <i class="bi bi-shield-check"></i> Infusion Safety
+              </span>
+            </div>
+            <div class="oa-nav-card-body">
+              <span class="oa-nav-card-category">Chairside Precision</span>
+              <h4 class="oa-nav-card-title">Chemotherapy & Infusion Coordination</h4>
+              <p class="oa-nav-card-desc">
+                Stress-free synchronization of blood lab draws, pre-medication regimens, daylight private infusion suites, and immediate post-infusion recovery checks.
+              </p>
+              <div class="oa-nav-card-features">
+                <div class="oa-nav-card-feature-item"><i class="bi bi-check2-circle"></i> Pre-medicated antiemetic protection</div>
+                <div class="oa-nav-card-feature-item"><i class="bi bi-check2-circle"></i> Heated massage recliners with nurse call</div>
+              </div>
+              <div class="oa-nav-card-footer">
+                <a href="chemotherapy.html" class="oa-nav-card-link">
+                  <span>Explore Infusion Care</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Integrative Supportive Care -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-nav-card">
+            <div class="oa-nav-card-media">
+              <img src="assets/images/hero-supportive-care.jpg" alt="Oncology counseling and restorative psychosocial wellness session" loading="lazy">
+              <span class="oa-nav-card-badge">
+                <i class="bi bi-heart-pulse"></i> Whole-Person Healing
+              </span>
+            </div>
+            <div class="oa-nav-card-body">
+              <span class="oa-nav-card-category">Restorative Wellness</span>
+              <h4 class="oa-nav-card-title">Integrative Supportive Care</h4>
+              <p class="oa-nav-card-desc">
+                Clinical oncology nutrition, gentle physical conditioning, cancer-related fatigue relief, and licensed psychosocial therapy designed to protect your vitality.
+              </p>
+              <div class="oa-nav-card-features">
+                <div class="oa-nav-card-feature-item"><i class="bi bi-check2-circle"></i> Metabolic oncology dietary planning</div>
+                <div class="oa-nav-card-feature-item"><i class="bi bi-check2-circle"></i> Cancer-specialized psychological support</div>
+              </div>
+              <div class="oa-nav-card-footer">
+                <a href="supportive-care.html" class="oa-nav-card-link">
+                  <span>Explore Supportive Care</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: THE MULTIDISCIPLINARY TUMOR BOARD ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="oa-badge oa-badge-amber mb-3">Collaborative Clearance</span>
+          <h2 class="display-6 fw-bold mb-4">THE MULTIDISCIPLINARY TUMOR BOARD</h2>
+          <p class="mb-4">
+            No single oncologist works alone at OncoAid. For every patient facing complex or refractory cancer, our Multidisciplinary Tumor Board convenes weekly to review imaging, molecular biomarkers, and tissue pathology:
+          </p>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="p-3 rounded-4 bg-surface shadow-sm">
+              <h6 class="text-cocoa fw-bold mb-1">
+                <i class="bi bi-check-circle-fill text-amber me-2"></i> Medical Oncologists & Hematologists
+              </h6>
+              <p class="small mb-0">Select targeted drug regimens, systemic immunotherapies, and synergistic combinations.</p>
+            </div>
+            <div class="p-3 rounded-4 bg-surface shadow-sm">
+              <h6 class="text-cocoa fw-bold mb-1">
+                <i class="bi bi-check-circle-fill text-amber me-2"></i> Surgical & Radiation Oncologists
+              </h6>
+              <p class="small mb-0">Evaluate resectability, organ preservation, and precise radiosurgical clearance.</p>
+            </div>
+            <div class="p-3 rounded-4 bg-surface shadow-sm">
+              <h6 class="text-cocoa fw-bold mb-1">
+                <i class="bi bi-check-circle-fill text-amber me-2"></i> Molecular Pathologists & Geneticists
+              </h6>
+              <p class="small mb-0">Decipher somatic genetic mutations and hereditary markers to pinpoint novel drug targets.</p>
+            </div>
+          </div>
+
+          <a href="our-team.html" class="btn btn-secondary">
+            <i class="bi bi-people-fill"></i> Meet Our Specialist Team
+          </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="oa-hero-visual-frame position-relative" style="height: 480px;">
+            <img src="assets/images/collaborative-clearance-board-new.jpg" alt="OncoAid multidisciplinary oncology tumor board conference reviewing complex cancer cases" loading="lazy">
+            <div class="oa-hero-floating-card">
+              <div class="oa-card-icon mb-0" style="width:40px; height:40px; font-size:1.15rem;">
+                <i class="bi bi-people-fill text-amber"></i>
+              </div>
+              <div>
+                <div class="fw-bold small text-amber">7 Specialty Disciplines</div>
+                <div class="small text-muted">Weekly Multidisciplinary Case Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: SURVIVORSHIP & REMISSION ROADMAP ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 740px;">
+        <span class="oa-badge oa-badge-cocoa">Continuous Vigilance</span>
+        <h2 class="display-6 fw-bold">SUSTAINING REMISSION BEYOND CLEARANCE</h2>
+        <p class="mx-auto">
+          Clearing cancer is a momentous milestone. What follows is a dedicated surveillance and survivorship roadmap designed to safeguard your health and empower long-term vitality.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 text-center">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-activity"></i></div>
+            <h5 class="fw-bold">ctDNA Liquid Biopsy</h5>
+            <p class="small text-muted">Ultra-sensitive blood screening tracking circulating tumor DNA to detect potential recurrence months before physical symptoms.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 text-center">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-apple"></i></div>
+            <h5 class="fw-bold">Metabolic Nutrition</h5>
+            <p class="small text-muted">Anti-inflammatory oncology diet protocols tailored to restore gut microbiome health, cellular energy, and lean muscle mass.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 text-center">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-sun"></i></div>
+            <h5 class="fw-bold">Fatigue Recovery</h5>
+            <p class="small text-muted">Specialized restorative physical therapy designed to reverse post-treatment fatigue, improve sleep, and rebuild confidence.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 text-center">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-chat-heart"></i></div>
+            <h5 class="fw-bold">Emotional Harmony</h5>
+            <p class="small text-muted">Supportive psychological counseling addressing scan anxiety, family transitions, and life post-active treatment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= NEW SEGMENT 2: CLINICAL TRIAL MATCHING & INNOVATION ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5" style="background: linear-gradient(135deg, var(--oa-card-bg) 0%, var(--oa-bg-subtle) 100%);">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="oa-badge oa-badge-amber mb-3">Therapeutic Innovation</span>
+            <h3 class="display-6 fw-bold mb-3">CLINICAL TRIAL MATCHING & EMERGING MODALITIES</h3>
+            <p class="text-muted mb-4">
+              When standard protocols need reinforcement, OncoAid specialists screen national clinical trial registries to connect eligible patients with novel therapeutic avenues.
+            </p>
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-bullseye text-amber fs-4 flex-shrink-0"></i>
+                <div>
+                  <strong class="d-block text-cocoa">Molecular Tumor-Agnostic Therapies</strong>
+                  <span class="small text-muted">Accessing approved treatments that target specific gene mutations regardless of where the cancer originated.</span>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-shield-plus text-amber fs-4 flex-shrink-0"></i>
+                <div>
+                  <strong class="d-block text-cocoa">Next-Gen Antibody-Drug Conjugates (ADCs)</strong>
+                  <span class="small text-muted">Smart 'guided missile' medications engineered to deliver cytotoxic agents exclusively to malignant cells.</span>
+                </div>
+              </div>
+            </div>
+            <a href="appointment.html" class="btn btn-primary">
+              <i class="bi bi-search me-1"></i> Request Clinical Trial Screening
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="oa-hero-visual-frame" style="height: 420px;">
+              <img src="assets/images/therapeutic-innovation-lab.jpg" alt="OncoAid precision oncology genomics and clinical trial matching laboratory" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: HOPEFUL ACTION CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 880px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">
+          <i class="bi bi-compass"></i> You Don't Have to Navigate Alone
+        </span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          TAKE THE NEXT STEP TOWARD CLEARANCE AND HEALING WITH ONCOAID.
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 620px;">
+          Reach out today to connect with an oncology nurse coordinator who will review your pathology, explain curative options, and schedule an unhurried consultation.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar2-plus"></i> Request an Appointment
+          </a>
+          <a href="contact.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-telephone"></i> Call Our 24/7 Care Desk
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services & Treatments</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Treatments</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html?service=immunotherapy">Immunotherapy</a></li>
+            <li><a href="service-details.html?service=targeted-therapy">Targeted Therapy</a></li>
+            <li><a href="service-details.html?service=radiation-oncology">Radiation Oncology</a></li>
+            <li><a href="service-details.html?service=chemotherapy">Chemotherapy Coordination</a></li>
+            <li><a href="service-details.html?service=cart-cell">CAR-T Cell Therapy</a></li>
+            <li><a href="service-details.html?service=robotic-surgery">Robotic Surgery</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

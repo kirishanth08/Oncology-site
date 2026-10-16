@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Profile & Settings | My OncoAid</title>
+  <meta name="description" content="Manage your personal contact information, emergency contacts, notification preferences, and account settings in My OncoAid.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link active">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="oa-dash-content">
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa fw-bold">Patient Profile & Contact Preferences</h5>
+            <span class="small text-muted">Alex Morgan · Patient ID: ONC-892401</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-start">
+        <!-- Personal Info Form -->
+        <div class="col-lg-8">
+          <div class="oa-card p-3 p-md-4 mb-3">
+            <h5 class="text-cocoa fw-bold mb-3 border-bottom pb-2">Personal Information</h5>
+            <form onsubmit="event.preventDefault(); showDashToast('Personal profile information saved and synchronized with clinic.', 'success');">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control" value="Alex Morgan" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control" value="alex.morgan@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Primary Phone</label>
+                  <input type="tel" class="form-control" value="(555) 782-9910" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Date of Birth</label>
+                  <input type="date" class="form-control" value="1982-06-14" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Contact Method</label>
+                  <select class="form-select">
+                    <option value="phone" selected>Phone Call & SMS</option>
+                    <option value="email">Email</option>
+                    <option value="portal">Portal Messaging</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Primary Oncology Clinic</label>
+                  <input type="text" class="form-control" value="OncoAid Main Center (Boston)" readonly>
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn btn-primary">Save Profile Changes</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Emergency Contacts Form -->
+          <div class="oa-card p-3 p-md-4">
+            <h5 class="text-cocoa fw-bold mb-3 border-bottom pb-2">Designated Caregiver & Emergency Contact</h5>
+            <form onsubmit="event.preventDefault(); showDashToast('Designated caregiver contact preferences updated.', 'success');">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Caregiver / Emergency Name</label>
+                  <input type="text" class="form-control" value="Jordan Morgan" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Relationship to Patient</label>
+                  <input type="text" class="form-control" value="Spouse / Co-Caregiver" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Emergency Phone</label>
+                  <input type="tel" class="form-control" value="(555) 782-9911" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Authorized to Discuss Medical Information?</label>
+                  <select class="form-select">
+                    <option value="yes" selected>Yes (Full HIPAA Authorization on file)</option>
+                    <option value="emergency-only">Emergency Contact Only</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn btn-outline-brand">Update Emergency Contact</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Settings Sidebar Column -->
+        <div class="col-lg-4">
+          <!-- Notification Preferences -->
+          <div class="oa-card p-3 p-md-4 mb-3">
+            <h6 class="text-cocoa fw-bold mb-3">Notification Preferences</h6>
+            <div class="d-flex flex-column gap-3 small text-muted">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="smsReminders" checked onchange="showDashToast('SMS Notification preference saved.', 'success')">
+                <label class="form-check-label" for="smsReminders">SMS Appointment Reminders (24h prior)</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="emailNotes" checked onchange="showDashToast('Email Alerts preference saved.', 'success')">
+                <label class="form-check-label" for="emailNotes">Email when new care note is posted</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="medAlerts" checked onchange="showDashToast('Daily Push Alerts preference saved.', 'success')">
+                <label class="form-check-label" for="medAlerts">Daily medication push alerts</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="caregiverAlerts" checked onchange="showDashToast('Caregiver Alert preference saved.', 'success')">
+                <label class="form-check-label" for="caregiverAlerts">Notify caregiver of schedule changes</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security Settings -->
+          <div class="oa-card p-3 p-md-4 mb-3" style="background-color: var(--oa-bg-subtle);">
+            <h6 class="text-cocoa fw-bold mb-2">Security & Password</h6>
+            <p class="small text-muted mb-3">Keep your patient portal protected with regular password updates.</p>
+            <button class="btn btn-outline-brand btn-sm w-100" type="button" data-bs-toggle="modal" data-bs-target="#oaPasswordModal">
+              <i class="bi bi-shield-lock me-1"></i> Change Password
+            </button>
+          </div>
+
+          <!-- HIPAA & Patient Privacy Badge -->
+          <div class="oa-card p-3 p-md-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-shield-check text-amber fs-4"></i>
+              <h6 class="text-cocoa fw-bold mb-0">HIPAA & Portal Privacy</h6>
+            </div>
+            <p class="small text-muted mb-2">Your electronic health records are encrypted via 256-bit TLS protocol. Direct access is restricted to verified OncoAid clinicians.</p>
+            <span class="oa-badge oa-badge-amber">Encrypted Record ID: ONC-892401</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Change Password Modal -->
+      <div class="modal fade" id="oaPasswordModal" tabindex="-1" aria-labelledby="oaPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content oa-card border-0 p-4">
+            <div class="modal-header border-bottom pb-3">
+              <h5 class="modal-title text-cocoa fw-bold" id="oaPasswordModalLabel">
+                <i class="bi bi-shield-lock text-amber me-2"></i> Update Portal Password
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form onsubmit="event.preventDefault(); const m = bootstrap.Modal.getInstance(document.getElementById('oaPasswordModal')); if (m) m.hide(); showDashToast('Password updated successfully! Please use new password on next login.', 'success'); this.reset();">
+              <div class="modal-body py-3">
+                <div class="mb-3">
+                  <label class="form-label">Current Password *</label>
+                  <input type="password" class="form-control" required placeholder="Enter current password">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">New Password *</label>
+                  <input type="password" class="form-control" required minlength="8" placeholder="Minimum 8 characters">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Confirm New Password *</label>
+                  <input type="password" class="form-control" required minlength="8" placeholder="Re-enter new password">
+                </div>
+              </div>
+              <div class="modal-footer border-top pt-3">
+                <button type="button" class="btn btn-outline-brand" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save New Password</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="oa-safety-notice mt-4">
+        <i class="bi bi-info-circle"></i>
+        <span>Demo Profile: Changes made here update the local frontend template state only.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

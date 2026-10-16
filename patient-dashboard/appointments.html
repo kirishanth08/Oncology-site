@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Appointments | My OncoAid</title>
+  <meta name="description" content="View and manage upcoming and past oncology consultations, nurse navigator check-ins, and supportive visits.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link active">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="oa-dash-content">
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa fw-bold">Clinic Appointments</h5>
+            <span class="small text-muted">Consultations, follow-ups, and supportive care sessions</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+          <a href="../appointment.html" class="btn btn-primary btn-sm ms-2">
+            <i class="bi bi-calendar2-plus me-1"></i> Book Appointment
+          </a>
+        </div>
+      </div>
+
+      <!-- Appointments Main Grid -->
+      <div class="row g-3 align-items-start">
+        <!-- Main Appointments Content -->
+        <div class="col-lg-8">
+          <!-- Tabs Navigation -->
+          <ul class="nav nav-pills mb-3 gap-2" id="apptTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="btn btn-primary btn-sm active" id="upcoming-tab" data-bs-toggle="pill" data-bs-target="#upcoming" type="button" role="tab" aria-selected="true">
+                Upcoming (2)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="btn btn-outline-brand btn-sm" id="completed-tab" data-bs-toggle="pill" data-bs-target="#completed" type="button" role="tab" aria-selected="false">
+                Completed (3)
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="btn btn-outline-brand btn-sm" id="cancelled-tab" data-bs-toggle="pill" data-bs-target="#cancelled" type="button" role="tab" aria-selected="false">
+                Cancelled / Rescheduled (1)
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="apptTabsContent">
+            <!-- Upcoming Tab -->
+            <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
+              <div class="oa-card p-3 p-md-4 mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="oa-card-icon mb-0" style="width:48px; height:48px;">
+                      <i class="bi bi-person-fill-check"></i>
+                    </div>
+                    <div>
+                      <div class="d-flex align-items-center gap-2">
+                        <h5 class="mb-0 text-cocoa fw-bold">Clinical Exam & Treatment Assessment</h5>
+                        <span class="oa-status-pill oa-status-upcoming">Confirmed ●</span>
+                      </div>
+                      <div class="small text-muted mt-1">
+                        <strong>Dr. Maya Carter, MD</strong> (Medical Oncology) · Exam Suite 402
+                      </div>
+                      <div class="small text-muted">
+                        <i class="bi bi-calendar-event text-amber me-1"></i> Oct 18, 2026 at 10:30 AM (60 minutes)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-sm btn-outline-brand" type="button" onclick="openAppointmentDetails('Clinical Exam & Treatment Assessment', 'Dr. Maya Carter, MD', 'Oct 18, 2026', '10:30 AM (60 mins)', 'Clinical Exam Suite 402', 'Comprehensive oncology exam and review of mid-cycle CBC neutrophil count prior to Cycle 2 infusion. Fasting is not required.')">
+                      <i class="bi bi-info-circle me-1"></i> View Details
+                    </button>
+                    <a href="../appointment.html" class="btn btn-sm btn-outline-brand">
+                      <i class="bi bi-arrow-repeat me-1"></i> Reschedule
+                    </a>
+                    <button class="btn btn-sm btn-outline-secondary text-danger border-danger" type="button" onclick="cancelAppointmentPrompt(this, 'Clinical Exam & Treatment Assessment')">
+                      <i class="bi bi-x-circle me-1"></i> Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="oa-card p-3 p-md-4 mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="oa-card-icon mb-0" style="width:48px; height:48px;">
+                      <i class="bi bi-egg-fried"></i>
+                    </div>
+                    <div>
+                      <div class="d-flex align-items-center gap-2">
+                        <h5 class="mb-0 text-cocoa fw-bold">Supportive Oncology Nutrition Consultation</h5>
+                        <span class="oa-status-pill oa-status-upcoming">Confirmed ●</span>
+                      </div>
+                      <div class="small text-muted mt-1">
+                        <strong>Nora Bennett, MS, RD</strong> (Clinical Dietitian) · Virtual Telehealth Visit
+                      </div>
+                      <div class="small text-muted">
+                        <i class="bi bi-calendar-event text-amber me-1"></i> Oct 25, 2026 at 02:00 PM (45 minutes)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-sm btn-outline-brand" type="button" onclick="openAppointmentDetails('Supportive Oncology Nutrition Consultation', 'Nora Bennett, MS, RD', 'Oct 25, 2026', '02:00 PM (45 mins)', 'Virtual Telehealth Video Portal', 'Evaluation of nutrition goals, metallic taste management strategies, and high-protein recipe plans during active systemic therapy.')">
+                      <i class="bi bi-info-circle me-1"></i> View Details
+                    </button>
+                    <a href="../appointment.html" class="btn btn-sm btn-outline-brand">
+                      <i class="bi bi-arrow-repeat me-1"></i> Reschedule
+                    </a>
+                    <button class="btn btn-sm btn-outline-secondary text-danger border-danger" type="button" onclick="cancelAppointmentPrompt(this, 'Supportive Oncology Nutrition Consultation')">
+                      <i class="bi bi-x-circle me-1"></i> Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Completed Tab -->
+            <div class="tab-pane fade" id="completed" role="tabpanel">
+              <div class="oa-card p-3 p-md-4 mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div>
+                    <div class="d-flex align-items-center gap-2">
+                      <h6 class="mb-0 text-cocoa fw-bold">Initial Oncology Diagnostic Consultation</h6>
+                      <span class="oa-status-pill oa-status-completed">✓ Completed</span>
+                    </div>
+                    <div class="small text-muted mt-1">Dr. Maya Carter, MD · Sep 28, 2026 at 11:00 AM · Suite 402</div>
+                  </div>
+                  <button class="btn btn-sm btn-outline-brand" type="button" onclick="openClinicalRecord('Initial Oncology Diagnostic Consultation Note', 'Sep 28, 2026', 'Dr. Maya Carter, MD', 'Comprehensive diagnostic review. Staging confirmed as Stage II invasive ductal carcinoma. Roadmap initiated.', ['Staging Confirmed', 'ECOG 0', 'Exam Suite 402'])">
+                    <i class="bi bi-journal-medical me-1"></i> View Doctor Note
+                  </button>
+                </div>
+              </div>
+
+              <div class="oa-card p-3 p-md-4 mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div>
+                    <div class="d-flex align-items-center gap-2">
+                      <h6 class="mb-0 text-cocoa fw-bold">Pre-Chemotherapy Infusion Orientation</h6>
+                      <span class="oa-status-pill oa-status-completed">✓ Completed</span>
+                    </div>
+                    <div class="small text-muted mt-1">Nurse Elena Jensen, MSN, RN · Oct 02, 2026 at 01:30 PM · Infusion Suite 4A</div>
+                  </div>
+                  <button class="btn btn-sm btn-outline-brand" type="button" onclick="openClinicalRecord('Pre-Chemotherapy Infusion Orientation', 'Oct 02, 2026', 'Elena Jensen, MSN, RN', 'Infusion protocol orientation completed. Anti-emetic premedication regimen explained. Hydration guidelines given.', ['Hydration Checklist Given', 'Orientation Done', 'Vitals Normal'])">
+                    <i class="bi bi-journal-medical me-1"></i> View Orientation Note
+                  </button>
+                </div>
+              </div>
+
+              <div class="oa-card p-3 p-md-4 mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div>
+                    <div class="d-flex align-items-center gap-2">
+                      <h6 class="mb-0 text-cocoa fw-bold">Post-Cycle 1 Clinical Check-in</h6>
+                      <span class="oa-status-pill oa-status-completed">✓ Completed</span>
+                    </div>
+                    <div class="small text-muted mt-1">Nurse Elena Jensen, MSN, RN · Oct 10, 2026 at 10:00 AM · Triage Call</div>
+                  </div>
+                  <button class="btn btn-sm btn-outline-brand" type="button" onclick="openClinicalRecord('Post-Cycle 1 Clinical Check-in Note', 'Oct 10, 2026', 'Elena Jensen, MSN, RN', 'Outreach call confirmed patient recovery from transient Day 2 fatigue. Normal appetite and oral hydration maintained.', ['Recovery Verified', 'No Hypersensitivity', 'Follow-up Scheduled'])">
+                    <i class="bi bi-journal-medical me-1"></i> View Check-in Note
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cancelled Tab -->
+            <div class="tab-pane fade" id="cancelled" role="tabpanel">
+              <div class="oa-card p-3 p-md-4 mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                  <div>
+                    <h6 class="mb-0 text-muted text-decoration-line-through">Supportive Nutrition Consultation (Original Slot)</h6>
+                    <div class="small text-muted mt-1">Originally scheduled for Oct 12 · Rescheduled to Oct 25 per patient request to accommodate travel.</div>
+                  </div>
+                  <span class="oa-badge oa-badge-cocoa">Rescheduled to Oct 25</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Companion Column: Preparation & Assistance Guidelines -->
+        <div class="col-lg-4">
+          <div class="oa-card p-3 p-md-4 mb-3">
+            <h6 class="text-cocoa fw-bold mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-clipboard2-check text-amber"></i> Visit Preparation
+            </h6>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small text-muted">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-amber mt-1"></i>
+                <span>Arrive 15 minutes before your scheduled appointment time.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-amber mt-1"></i>
+                <span>Bring your valid photo ID and current medical insurance card.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-amber mt-1"></i>
+                <span>Bring your written list of current oral medications and questions.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-amber mt-1"></i>
+                <span>Complimentary valet parking at the North Clinical Entrance.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="oa-card p-3 p-md-4 mb-3" style="background-color: var(--oa-bg-subtle);">
+            <h6 class="text-cocoa fw-bold mb-2 d-flex align-items-center gap-2">
+              <i class="bi bi-headset text-amber"></i> 24/7 Patient Nurse Line
+            </h6>
+            <p class="small text-muted mb-2">Need to reschedule within 24 hours or have symptom questions?</p>
+            <strong class="d-block text-amber mb-2 fs-6"><i class="bi bi-telephone-fill me-1"></i> (555) 234-ONCO</strong>
+            <span class="small text-muted d-block">Extension: 1 for Oncology Triage Desk</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="oa-safety-notice mt-4">
+        <i class="bi bi-info-circle"></i>
+        <span>Sample template appointment data. For changes within 24 hours of an appointment, please contact the clinic desk directly at (555) 234-ONCO.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Service Details | OncoAid Cancer Care Center</title>
+  <meta name="description" id="pageMetaDesc" content="Detailed clinical overview of cancer treatments, mechanisms of action, and patient guidance at OncoAid Cancer Care Center.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarSD" aria-controls="oncoaidNavbarSD" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarSD">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= 1. HERO SECTION (CARD IMAGE AS HERO IMAGE) ================= -->
+  <section class="oa-section oa-hero-with-bg py-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="services.html" class="text-amber">Services</a></li>
+              <li class="breadcrumb-item active text-white" id="serviceBreadcrumb" aria-current="page">Service Overview</li>
+            </ol>
+          </nav>
+
+          <span class="oa-badge oa-badge-amber mb-3" id="serviceBadge">
+            <i class="bi bi-shield-check"></i> Oncology Specialization
+          </span>
+
+          <h1 class="display-4 fw-bold mb-3" id="serviceTitle">
+            CLINICAL ONCOLOGY CARE
+          </h1>
+
+          <p class="lead text-muted mb-4" id="serviceSubtitle">
+            Evidence-based oncology modality coordinated by board-certified specialists, designed for precise cancer clearance and quality of life preservation.
+          </p>
+
+          <!-- Dynamic Key Attribute Highlights -->
+          <div class="d-flex flex-wrap gap-2 mb-4" id="servicePillsContainer">
+            <span class="oa-badge oa-badge-cocoa"><i class="bi bi-check2-circle me-1"></i> Evidence-Based Protocol</span>
+            <span class="oa-badge oa-badge-cocoa"><i class="bi bi-people-fill me-1"></i> Multidisciplinary Board</span>
+            <span class="oa-badge oa-badge-cocoa"><i class="bi bi-shield-check me-1"></i> Personalized Dosing</span>
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="appointment.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-calendar2-check me-1"></i> Book Consultation
+            </a>
+            <a href="contact.html" class="btn btn-outline-brand btn-lg">
+              <i class="bi bi-telephone-inbound me-1"></i> Speak with a Navigator
+            </a>
+          </div>
+        </div>
+
+        <!-- HERO IMAGE: Strictly the exact Service Card Image from services.html -->
+        <div class="col-lg-5">
+          <div class="oa-hero-visual-frame position-relative" style="height: 440px;">
+            <img id="serviceHeroImg" src="assets/images/service-radiation-oncology.jpg" alt="Service modality clinical photograph" loading="lazy">
+            <div class="oa-hero-floating-card">
+              <div class="oa-card-icon mb-0" style="width:40px; height:40px; font-size:1.15rem;">
+                <i class="bi bi-award text-amber"></i>
+              </div>
+              <div>
+                <div class="fw-bold small text-amber" id="serviceFloatingTag">Clinical Excellence</div>
+                <div class="small text-muted" id="serviceFloatingSub">NCCN Guidelines Alignment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. EXPLANATION SECTION (WITH NEWLY GENERATED SECOND IMAGE) ================= -->
+  <section class="oa-section oa-section-subtle" id="explanation">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Text Explanation -->
+        <div class="col-lg-7 order-lg-1 order-2">
+          <span class="oa-badge oa-badge-cocoa mb-3">Clinical Mechanism & Delivery</span>
+          <h2 class="display-6 fw-bold mb-3" id="explanationHeading">HOW THIS TREATMENT WORKS</h2>
+          
+          <p class="text-muted mb-4 lead fs-6" id="explanationLead">
+            Our multidisciplinary team customizes every cycle based on genomic sequencing, anatomical staging, and organ preservation goals.
+          </p>
+
+          <!-- 3 Structured Mechanism Points -->
+          <div class="d-flex flex-column gap-3 mb-4" id="explanationPointsContainer">
+            <!-- Populated dynamically -->
+          </div>
+
+          <!-- Candidacy Callout Box -->
+          <div class="p-3 px-4 rounded-4 bg-surface border" style="border-left: 4px solid var(--oa-soft-amber) !important;">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-info-circle-fill text-amber fs-3 flex-shrink-0"></i>
+              <div>
+                <strong class="text-cocoa d-block" id="candidateTitle">Candidate Evaluation</strong>
+                <span class="small text-muted" id="candidateText">Suitability is verified by our multidisciplinary tumor board after reviewing your outside biopsy slides, molecular genomics, and scan history.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND IMAGE: Clinically distinct for each service modality -->
+        <div class="col-lg-5 order-lg-2 order-1">
+          <div class="oa-hero-visual-frame position-relative" style="height: 480px;">
+            <img id="serviceSecondaryImg" src="assets/images/service-details-consultation-dialogue.jpg" alt="Clinical treatment modality in dedicated suite" loading="lazy">
+            <div class="oa-hero-floating-card">
+              <div class="oa-card-icon mb-0" style="width:40px; height:40px; font-size:1.15rem;">
+                <i class="bi bi-heart-pulse text-amber"></i>
+              </div>
+              <div>
+                <div class="fw-bold small text-amber" id="serviceSecondaryFloatingTag">Unhurried Dialogue</div>
+                <div class="small text-muted" id="serviceSecondaryFloatingSub">Dedicated 1-on-1 Patient Discussion</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2B. CLINICAL PROTOCOL & CARE PHASES (EXPANDED CLINICAL DEPTH) ================= -->
+  <section class="oa-section pt-0">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5" style="background: linear-gradient(135deg, var(--oa-card-bg) 0%, var(--oa-bg-subtle) 100%); border: 1px solid var(--oa-border);">
+        <div class="oa-section-header text-center mx-auto mb-4" style="max-width: 740px;">
+          <span class="oa-badge oa-badge-amber mb-2"><i class="bi bi-diagram-3"></i> Clinical Care Pathway</span>
+          <h3 class="display-6 fw-bold">STEP-BY-STEP TREATMENT WORKFLOW</h3>
+          <p class="text-muted small mx-auto">
+            From initial pathology verification to cycle recovery, your care follows an unbroken clinical roadmap designed to ensure safety and comfort.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="p-3 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-amber text-dark rounded-pill px-2 py-1 fw-bold">Phase 01</span>
+                <span class="small text-muted">0–48 Hours</span>
+              </div>
+              <strong class="text-cocoa d-block mb-1">Pathology & Target Audit</strong>
+              <p class="small text-muted mb-0">Our multidisciplinary tumor board confirms outside biopsy glass slides, scans, and molecular biomarker suitability.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="p-3 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-amber text-dark rounded-pill px-2 py-1 fw-bold">Phase 02</span>
+                <span class="small text-muted">Pre-Session</span>
+              </div>
+              <strong class="text-cocoa d-block mb-1">Calibrated Pre-Medication</strong>
+              <p class="small text-muted mb-0">Protective anti-nausea agents and organ-shielding infusions administered 30 minutes ahead of scheduled dosing.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="p-3 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-amber text-dark rounded-pill px-2 py-1 fw-bold">Phase 03</span>
+                <span class="small text-muted">Active Cycle</span>
+              </div>
+              <strong class="text-cocoa d-block mb-1">Chairside Delivery</strong>
+              <p class="small text-muted mb-0">Administered in private garden-view suites or stereotactic vaults under continuous telemetric nurse observation.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="p-3 rounded-4 bg-surface border h-100 shadow-sm">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-amber text-dark rounded-pill px-2 py-1 fw-bold">Phase 04</span>
+                <span class="small text-muted">Post-Cycle</span>
+              </div>
+              <strong class="text-cocoa d-block mb-1">24/7 Triage Interception</strong>
+              <p class="small text-muted mb-0">Dedicated oncology nurse navigators call within 24 hours to track recovery, review labs, and answer family questions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Pillars of Safety -->
+        <div class="row g-3 pt-2">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-surface border">
+              <i class="bi bi-shield-lock-fill text-amber fs-3 flex-shrink-0"></i>
+              <div>
+                <strong class="small text-cocoa d-block">Dual-Pharmacist Double Check</strong>
+                <span class="small text-muted" style="font-size: 0.8rem;">Independent barcode verification of dose calculations and compounding records.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-surface border">
+              <i class="bi bi-thermometer-half text-amber fs-3 flex-shrink-0"></i>
+              <div>
+                <strong class="small text-cocoa d-block">Cold-Chain Temperature Monitored</strong>
+                <span class="small text-muted" style="font-size: 0.8rem;">Every biologic and cytotoxic agent is maintained in digital temperature-logged vaults.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-surface border">
+              <i class="bi bi-heart-pulse-fill text-amber fs-3 flex-shrink-0"></i>
+              <div>
+                <strong class="small text-cocoa d-block">Real-Time Telemetry & Safety</strong>
+                <span class="small text-muted" style="font-size: 0.8rem;">On-site emergency response protocols, rapid reversal medications, and telemetry backup.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. FREQUENTLY ASKED QUESTIONS ================= -->
+  <section class="oa-section" id="faq">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-cocoa"><i class="bi bi-question-circle"></i> Answers for Patients</span>
+        <h2 class="display-6 fw-bold">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="text-muted mx-auto" id="faqSubtitle">
+          Common clinical and practical inquiries regarding this treatment modality.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion oa-accordion" id="oaDynamicFaqContainer">
+            <!-- FAQs populated dynamically based on service -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. CONSULTATION & APPOINTMENT CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 860px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">Begin With Confidence</span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          READY TO DISCUSS YOUR TREATMENT PLAN?
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 620px;">
+          Connect with an OncoAid oncology specialist to review your medical history, explore clinical trial alternatives, and build an unhurried, evidence-based care roadmap.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar2-check"></i> Book Consultation
+          </a>
+          <a href="services.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-diagram-3"></i> View All Treatments
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="supportive-care.html">Supportive Care</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Treatments</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html?service=immunotherapy">Immunotherapy</a></li>
+            <li><a href="service-details.html?service=targeted-therapy">Targeted Therapy</a></li>
+            <li><a href="service-details.html?service=radiation-oncology">Radiation Oncology</a></li>
+            <li><a href="service-details.html?service=chemotherapy">Chemotherapy</a></li>
+            <li><a href="service-details.html?service=cart-cell">CAR-T Cell Therapy</a></li>
+            <li><a href="service-details.html?service=robotic-surgery">Robotic Surgery</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ================= DYNAMIC SERVICE CONTENT SCRIPT ================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      // Comprehensive Service Catalog matching exact card images from services.html
+      const servicesData = {
+        'radiation-oncology': {
+          title: 'PRECISION RADIATION ONCOLOGY',
+          breadcrumb: 'Precision Radiation Oncology',
+          badge: '<i class="bi bi-crosshair2"></i> Radiative Clearance',
+          subtitle: 'Sub-millimeter TrueBeam SBRT, IMRT, and stereotactic beam guidance delivering millimeter-focused photon beams to destroy tumor DNA while preserving vital organs.',
+          heroImage: 'assets/images/service-radiation-oncology.jpg',
+          heroImageAlt: 'TrueBeam linear accelerator radiotherapy suite with precision robotic treatment couch',
+          floatingTag: 'Sub-Millimeter LINAC',
+          floatingSub: '4D Motion & Organ Tracking',
+          secondaryImage: 'assets/images/service-radiation-oncology-varian.jpg',
+          secondaryImageAlt: 'TrueBeam STx precision linear accelerator treatment vault',
+          secondaryFloatingTag: 'TrueBeam STx Vault',
+          secondaryFloatingSub: 'Sub-Millimeter Beam Guidance',
+          pills: [
+            '<i class="bi bi-bullseye me-1"></i> Stereotactic Body Radiotherapy (SBRT)',
+            '<i class="bi bi-clock-history me-1"></i> 15–20 Minute Outpatient Sessions',
+            '<i class="bi bi-shield-check me-1"></i> Spares Surrounding Healthy Tissue'
+          ],
+          explanationHeading: 'HOW PRECISION RADIATION CLEARS MALIGNANT TISSUE',
+          explanationLead: 'Modern radiation oncology utilizes computerized multi-leaf collimators and real-time breathing tracking to shape high-energy X-ray or photon beams precisely to the three-dimensional geometry of your tumor.',
+          points: [
+            {
+              icon: 'bi-crosshair',
+              title: 'Intensity-Modulated Radiation Therapy (IMRT)',
+              desc: 'Varies the intensity of thousands of individual beamlets to deliver maximal lethal dose to the tumor core while steep dose-falloffs shield neighboring spinal, cardiac, or rectal tissue.'
+            },
+            {
+              icon: 'bi-camera-video',
+              title: '4D Real-Time Respiratory Gating',
+              desc: 'Scanners track tumor movement during patient respiration in lung, breast, and liver cancers, pausing radiation delivery whenever the tumor shifts outside the target window.'
+            },
+            {
+              icon: 'bi-speedometer2',
+              title: 'Hypofractionated SBRT Regimens',
+              desc: 'Delivers concentrated curative doses in 3 to 5 non-invasive outpatient visits instead of 30 daily sessions, drastically shortening treatment duration without sacrificing clearance.'
+            }
+          ],
+          candidateTitle: 'Who Is Radiation Indicated For?',
+          candidateText: 'Patients with localized solid tumors (lung, prostate, breast, brain, spine, head & neck), post-surgical margin clearance, or oligometastatic lesions seeking non-invasive ablation.',
+          faqs: [
+            {
+              q: 'Does precision radiation therapy hurt?',
+              a: 'No. The radiation beam itself is completely painless and invisible, identical to having an ordinary diagnostic X-ray taken. You can listen to music during your 15-minute treatment.'
+            },
+            {
+              q: 'Will I be radioactive after external beam treatments?',
+              a: 'No. External beam radiotherapy (TrueBeam LINAC) leaves zero lingering radiation in your body. It is completely safe to be around family members, children, and pets immediately after each session.'
+            },
+            {
+              q: 'How many treatment sessions will I need?',
+              a: 'Depending on tumor staging and histology, regimens range from 1 to 5 stereotactic sessions (SBRT/SRS) up to 20–30 daily fractions (IMRT). Your radiation oncologist maps your exact schedule during simulation.'
+            }
+          ]
+        },
+
+        'immunotherapy': {
+          title: 'IMMUNOTHERAPY & CHECKPOINT INHIBITORS',
+          breadcrumb: 'Immunotherapy',
+          badge: '<i class="bi bi-shield-shaded"></i> Immune Clearance',
+          subtitle: 'Trains and unleashes the patient\'s own immune T-cells to identify, dismantle, and systematically eliminate cancer cells with durable systemic protection.',
+          heroImage: 'assets/images/service-immunotherapy.jpg',
+          heroImageAlt: 'Clinical molecular genomics and immunotherapy laboratory',
+          floatingTag: 'Immune Activation',
+          floatingSub: 'PD-1 / PD-L1 & CTLA-4 Blockers',
+          secondaryImage: 'assets/images/service-targeted-immunotherapy.jpg',
+          secondaryImageAlt: 'Immune checkpoint and monoclonal antibody research suite',
+          secondaryFloatingTag: 'Molecular Immunology',
+          secondaryFloatingSub: 'T-Cell Checkpoint Profiling',
+          pills: [
+            '<i class="bi bi-shield-check me-1"></i> Systemic Long-Term Defense',
+            '<i class="bi bi-dna me-1"></i> High Response in Lung, Melanoma & Renal',
+            '<i class="bi bi-heart-pulse me-1"></i> Spares Non-Malignant Cells'
+          ],
+          explanationHeading: 'RE-AWAKENING YOUR IMMUNE DEFENSE',
+          explanationLead: 'Cancer cells evade the immune system by expressing disguise proteins like PD-L1 that bind to T-cell checkpoints and turn off immune attacks. Immunotherapy blocks these deceitful receptors, reactivating your body\'s natural defenses.',
+          points: [
+            {
+              icon: 'bi-shield-shaded',
+              title: 'Monoclonal Checkpoint Inhibitors',
+              desc: 'Antibodies targeting PD-1 (Pembrolizumab, Nivolumab) and CTLA-4 remove the molecular brakes from cytotoxic killer T-cells, enabling them to recognize and destroy hidden tumors.'
+            },
+            {
+              icon: 'bi-activity',
+              title: 'Durable Systemic Memory',
+              desc: 'Unlike standard chemotherapy, activated memory T-cells remain vigilant throughout the body for years, providing continuous surveillance against disease recurrence.'
+            },
+            {
+              icon: 'bi-droplet-half',
+              title: 'Convenient Outpatient Infusions',
+              desc: 'Administered via 30 to 60-minute IV infusions every 2 to 6 weeks, often combined with mild supportive pre-medications in our daylit private suites.'
+            }
+          ],
+          candidateTitle: 'Who Qualifies for Immunotherapy?',
+          candidateText: 'Patients with positive PD-L1 expression, high tumor mutation burden (TMB-H), or microsatellite instability (MSI-H) across melanoma, non-small cell lung cancer, bladder, kidney, and triple-negative breast cancer.',
+          faqs: [
+            {
+              q: 'How does immunotherapy differ from conventional chemotherapy?',
+              a: 'Chemotherapy directly poisons rapidly dividing cells, while immunotherapy empowers your own natural immune system to identify and kill cancer cells, generally resulting in fewer hair loss and severe nausea symptoms.'
+            },
+            {
+              q: 'What side effects should I watch for?',
+              a: 'Because the immune system is stimulated, immune-related adverse events can cause inflammation in the skin (rash), intestines (diarrhea), lungs, or endocrine glands. Our 24/7 triage team monitors and treats these early with gentle steroids.'
+            },
+            {
+              q: 'How do you check if immunotherapy is working?',
+              a: 'We evaluate clinical response through follow-up PET/CT scans every 8 to 12 weeks and monitor circulating tumor DNA (ctDNA) blood markers to track tumor clearance.'
+            }
+          ]
+        },
+
+        'targeted-therapy': {
+          title: 'PRECISION TARGETED MOLECULAR THERAPY',
+          breadcrumb: 'Targeted Therapy',
+          badge: '<i class="bi bi-bullseye"></i> Molecular Target',
+          subtitle: 'Designer therapeutics engineered to specifically disable oncogenic driver mutations (EGFR, HER2, BRAF, ALK, KRAS) and shut off malignant cell survival signaling.',
+          heroImage: 'assets/images/service_targeted_immunotherapy_1792059313408.jpg',
+          heroImageAlt: 'Precision oncology genomic analysis and molecular targeting',
+          floatingTag: 'Precision Oncology',
+          floatingSub: 'Kinase & Oncogenic Signal Blockers',
+          secondaryImage: 'assets/images/service-genomics-trials.jpg',
+          secondaryImageAlt: 'Next-generation sequencing panel and targeted molecular profiling',
+          secondaryFloatingTag: 'Genomic Sequencing',
+          secondaryFloatingSub: 'Actionable Mutation Target',
+          pills: [
+            '<i class="bi bi-dna me-1"></i> Guided Mutation Specificity',
+            '<i class="bi bi-capsule me-1"></i> Oral Tablets & Monoclonal IVs',
+            '<i class="bi bi-shield-check me-1"></i> Minimizes Healthy Tissue Impact'
+          ],
+          explanationHeading: 'SWITCHING OFF ONCOGENIC SURVIVAL SIGNALS',
+          explanationLead: 'Targeted drugs act like precise biochemical keys that fit into the mutated lock mechanisms driving your tumor\'s growth, shutting off the signals cancer cells need to multiply and survive.',
+          points: [
+            {
+              icon: 'bi-cpu',
+              title: 'Small-Molecule Tyrosine Kinase Inhibitors (TKIs)',
+              desc: 'Oral medications that penetrate inside cancer cells to block abnormal enzyme pathways (e.g. Osimertinib for EGFR, Alectinib for ALK).'
+            },
+            {
+              icon: 'bi-gem',
+              title: 'Antibody-Drug Conjugates (ADCs)',
+              desc: 'Biochemical guided missiles that bind to surface receptors like HER2, delivering concentrated cytotoxic payloads exclusively into cancer cells while sparing healthy tissue.'
+            },
+            {
+              icon: 'bi-search',
+              title: 'Comprehensive NGS Genomic Profiling',
+              desc: 'Every targeted therapy plan begins with next-generation sequencing of 500+ genes to guarantee the drug matches your specific mutation.'
+            }
+          ],
+          candidateTitle: 'Who Benefits from Targeted Therapy?',
+          candidateText: 'Patients whose tumors test positive for actionable somatic mutations, including EGFR/ALK/ROS1 in lung cancer, HER2 in breast and gastric cancers, and BRAF in melanoma.',
+          faqs: [
+            {
+              q: 'Are targeted therapies taken as pills or IV infusions?',
+              a: 'Many targeted therapies are convenient daily oral tablets you take at home, while others like monoclonal antibodies and ADCs are given via short outpatient IV infusions.'
+            },
+            {
+              q: 'What testing is needed before starting?',
+              a: 'A formal next-generation genomic sequencing (NGS) panel or liquid biopsy is required to identify targetable gene mutations in your tumor tissue or blood.'
+            },
+            {
+              q: 'Can tumors become resistant to targeted therapies?',
+              a: 'Yes, cancers can acquire secondary mutations over time. When this happens, our molecular tumor board performs re-biopsies or ctDNA testing to switch to next-generation inhibitor drugs.'
+            }
+          ]
+        },
+
+        'cart-cell': {
+          title: 'CAR-T CELL LIVING CELLULAR THERAPY',
+          breadcrumb: 'CAR-T Cell Therapy',
+          badge: '<i class="bi bi-cpu"></i> Cellular Engineering',
+          subtitle: 'Patient T-cells are harvested, genetically re-engineered with chimeric antigen receptors, and re-infused to seek out and eradicate refractory blood cancers.',
+          heroImage: 'assets/images/service-cart-cell.jpg',
+          heroImageAlt: 'Cellular biotechnology and genetic T-cell engineering',
+          floatingTag: 'Living Therapeutics',
+          floatingSub: 'CD19 / BCMA Gene Reprogramming',
+          secondaryImage: 'assets/images/conf_test3.jpg',
+          secondaryImageAlt: 'Cellular therapy clean-room laboratory and living cell processing',
+          secondaryFloatingTag: 'Cellular Engineering',
+          secondaryFloatingSub: 'Living Cell Infusion Suite',
+          pills: [
+            '<i class="bi bi-lightning-charge me-1"></i> One-Time Cell Infusion',
+            '<i class="bi bi-shield-shaded me-1"></i> Curative Intent in Lymphoma & Myeloma',
+            '<i class="bi bi-hospital me-1"></i> Specialized Inpatient Monitoring'
+          ],
+          explanationHeading: 'TRANSFORMING YOUR CELLS INTO LIVING CANCER FIGHTERS',
+          explanationLead: 'CAR-T therapy represents the cutting edge of personalized medicine. Your own immune cells are collected and genetically upgraded in specialized clean-room laboratories to recognize and eliminate stubborn malignant cells.',
+          points: [
+            {
+              icon: 'bi-arrow-repeat',
+              title: 'Leukapheresis & Cell Harvesting',
+              desc: 'White blood cells are safely collected through a gentle outpatient blood filtration procedure and shipped to accredited cell manufacturing facilities.'
+            },
+            {
+              icon: 'bi-cpu',
+              title: 'Chimeric Antigen Receptor Insertion',
+              desc: 'A synthetic gene is introduced into your T-cells, producing surface receptors specifically keyed to lock onto CD19 or BCMA cancer antigens.'
+            },
+            {
+              icon: 'bi-shield-check',
+              title: 'Re-Infusion & Intensive Patient Monitoring',
+              desc: 'Millions of reprogrammed CAR-T cells are infused back into your bloodstream, multiplying exponentially to clear cancer across lymph nodes and bone marrow.'
+            }
+          ],
+          candidateTitle: 'Who Is Eligible for CAR-T Therapy?',
+          candidateText: 'Patients with relapsed or refractory diffuse large B-cell lymphoma (DLBCL), B-cell acute lymphoblastic leukemia (ALL), or multiple myeloma following two or more prior lines of therapy.',
+          faqs: [
+            {
+              q: 'How long does the CAR-T manufacturing process take?',
+              a: 'The laboratory cell modification and multiplication process typically takes 2 to 4 weeks. During this window, gentle bridging therapy can be provided to maintain disease stability.'
+            },
+            {
+              q: 'What is Cytokine Release Syndrome (CRS)?',
+              a: 'As CAR-T cells vigorously attack cancer, they release signaling proteins causing temporary fever and blood pressure shifts. Our intensive care oncology team manages CRS using targeted medications like Tocilizumab.'
+            },
+            {
+              q: 'Is CAR-T therapy a permanent treatment?',
+              a: 'Yes, CAR-T is administered as a single one-time infusion. The living cells can persist in your bone marrow for months or years, offering sustained surveillance against cancer relapse.'
+            }
+          ]
+        },
+
+        'robotic-surgery': {
+          title: 'ROBOTIC & MINIMALLY INVASIVE SURGICAL ONCOLOGY',
+          breadcrumb: 'Robotic Surgery',
+          badge: '<i class="bi bi-scissors"></i> Surgical Margins',
+          subtitle: 'High-definition 3D visualization and robotic wrist articulation achieving clear surgical margins, accelerated healing, and minimal post-operative scarring.',
+          heroImage: 'assets/images/service-robotic-surgery.jpg',
+          heroImageAlt: 'Surgical oncology team performing precision minimally invasive resection',
+          floatingTag: 'Minimally Invasive',
+          floatingSub: 'DaVinci 3D Optical Resection',
+          secondaryImage: 'assets/images/doc_test2.jpg',
+          secondaryImageAlt: 'Robotic surgical oncology console and surgeon microsurgical guidance',
+          secondaryFloatingTag: 'DaVinci 3D Optics',
+          secondaryFloatingSub: 'Micro-Incision Margins',
+          pills: [
+            '<i class="bi bi-check2-circle me-1"></i> Micro-Incisions & Rapid Recovery',
+            '<i class="bi bi-eye me-1"></i> 10x 3D Magnification Optics',
+            '<i class="bi bi-shield-check me-1"></i> Nerves & Healthy Tissues Spared'
+          ],
+          explanationHeading: 'MICROSURGICAL PRECISION THROUGH ROBOTIC ASSISTANCE',
+          explanationLead: 'Robotic oncologic surgery combines the clinical mastery of board-certified cancer surgeons with computerized mechanical micro-instruments that exceed the physical range of the human hand.',
+          points: [
+            {
+              icon: 'bi-scissors',
+              title: 'Sub-Millimeter Tumor Resection',
+              desc: 'Articulated EndoWrist instruments rotate 540 degrees, allowing surgeons to excise complex tumors nestled near critical blood vessels and nerve bundles with surgical margins.'
+            },
+            {
+              icon: 'bi-camera',
+              title: 'High-Definition 3D True-Depth Vision',
+              desc: 'Dual stereoscopic cameras provide crystal-clear 10x magnified visualization of tissue planes, distinguishing between cancerous infiltration and normal organ structures.'
+            },
+            {
+              icon: 'bi-bandaid',
+              title: 'Significantly Reduced Recovery Times',
+              desc: 'Tiny keyhole incisions reduce post-operative pain, shorten hospital stays from days to hours, and enable patients to resume systemic treatments sooner.'
+            }
+          ],
+          candidateTitle: 'Who Qualifies for Robotic Oncology Surgery?',
+          candidateText: 'Patients with localized resectable prostate, colorectal, gynecologic (endometrial/ovarian), thoracic, and renal tumors seeking optimal functional preservation.',
+          faqs: [
+            {
+              q: 'Does a robot perform the surgery automatically?',
+              a: 'No. The robot is completely controlled every second by your experienced oncology surgeon from the master surgical console. The robot cannot make any independent movements.'
+            },
+            {
+              q: 'How long is the typical hospital stay?',
+              a: 'Most robotic surgery patients are discharged within 24 to 48 hours and resume light daily activities within one to two weeks, compared to 5–7 days for traditional open surgery.'
+            },
+            {
+              q: 'How do you ensure all cancer has been removed?',
+              a: 'Frozen-section biopsies are performed chair-side in the operating room during the procedure to confirm all outer margins are negative for malignant cells.'
+            }
+          ]
+        },
+
+        'hormone-therapy': {
+          title: 'HORMONE & ENDOCRINE CANCER THERAPY',
+          breadcrumb: 'Hormone Therapy',
+          badge: '<i class="bi bi-droplet-half"></i> Hormone Blockade',
+          subtitle: 'Targeted receptor antagonists that cut off hormone fuel in breast, ovarian, and prostate cancers to prevent disease recurrence and halt malignant progression.',
+          heroImage: 'assets/images/service-targeted-therapy.jpg',
+          heroImageAlt: 'Targeted receptor antagonists and oral endocrine cancer medications',
+          floatingTag: 'Endocrine Care',
+          floatingSub: 'Aromatase & Androgen Blockade',
+          secondaryImage: 'assets/images/service-hormone-therapy.jpg',
+          secondaryImageAlt: 'Hormone receptor blockade and endocrine therapy planning',
+          secondaryFloatingTag: 'Endocrine Blockade',
+          secondaryFloatingSub: 'Receptor Saturation Assay',
+          pills: [
+            '<i class="bi bi-shield-check me-1"></i> Long-Term Recurrence Protection',
+            '<i class="bi bi-capsule me-1"></i> Oral Medications & Gentle Injections',
+            '<i class="bi bi-heart me-1"></i> Preserves Daily Quality of Life'
+          ],
+          explanationHeading: 'BLOCKING HORMONAL SIGNALS THAT FUEL CANCER',
+          explanationLead: 'Certain cancers depend on naturally occurring hormones like estrogen, progesterone, or testosterone to grow. Endocrine therapy alters hormone production or blocks receptors on cancer cells, starving the tumor of essential growth signals.',
+          points: [
+            {
+              icon: 'bi-droplet-half',
+              title: 'Receptor Antagonists (Tamoxifen, Enzalutamide)',
+              desc: 'Molecules that attach directly to estrogen or androgen receptors on cancer cells, preventing natural hormones from fueling tumor proliferation.'
+            },
+            {
+              icon: 'bi-slash-circle',
+              title: 'Aromatase & Androgen Synthesis Inhibitors',
+              desc: 'Block key enzymes responsible for converting precursor hormones into active tumor fuels in post-menopausal women and men with prostate cancer.'
+            },
+            {
+              icon: 'bi-shield-check',
+              title: 'Adjuvant Long-Term Remission Maintenance',
+              desc: 'Taken daily at home over 5 to 10 years, endocrine therapy lowers recurrence rates by up to 50% in hormone-receptor-positive malignancies.'
+            }
+          ],
+          candidateTitle: 'Who Is Indicated for Hormone Therapy?',
+          candidateText: 'Patients with ER/PR-positive breast cancer, metastatic or high-risk prostate cancer, and certain ovarian and uterine stromal malignancies.',
+          faqs: [
+            {
+              q: 'Is hormone therapy the same as hormone replacement therapy (HRT)?',
+              a: 'No, it is the exact opposite. While HRT adds hormones to ease menopause, cancer endocrine therapy reduces or blocks hormones to prevent tumor growth.'
+            },
+            {
+              q: 'What side effects can occur?',
+              a: 'Common side effects mirror menopausal or andropausal changes, including hot flashes, fatigue, and joint stiffness. Our supportive oncology team provides lifestyle remedies, acupuncture, and non-hormonal medications to keep you comfortable.'
+            },
+            {
+              q: 'How long will I take hormone therapy?',
+              a: 'In breast cancer, standard guidelines recommend 5 to 10 years of daily treatment. In prostate cancer, durations range from 6 months to continuous therapy depending on risk category.'
+            }
+          ]
+        },
+
+        'clinical-trials': {
+          title: 'PRECISION GENOMICS & NOVEL CLINICAL TRIALS',
+          breadcrumb: 'Clinical Trials',
+          badge: '<i class="bi bi-dna"></i> Investigational Access',
+          subtitle: 'Next-generation whole-exome sequencing connects patients with breakthrough investigational therapeutics, targeted clinical trials, and novel curative candidates.',
+          heroImage: 'assets/images/knowledge-care-journey.jpg',
+          heroImageAlt: 'Comprehensive next-generation genomic sequencing and trial consultation',
+          floatingTag: 'Novel Therapies',
+          floatingSub: 'Tumor Mutation Burden Matching',
+          secondaryImage: 'assets/images/therapeutic-innovation-lab.jpg',
+          secondaryImageAlt: 'Clinical research genomics laboratory and trial coordination',
+          secondaryFloatingTag: 'Trial Coordination',
+          secondaryFloatingSub: 'Active Phase Registry',
+          pills: [
+            '<i class="bi bi-search me-1"></i> National Trial Registry Matching',
+            '<i class="bi bi-dna me-1"></i> 500+ Gene Mutation Panels',
+            '<i class="bi bi-award me-1"></i> Early Access to Next-Gen Drugs'
+          ],
+          explanationHeading: 'ACCELERATING ACCESS TO TOMORROW\'S CURES TODAY',
+          explanationLead: 'Clinical trials are not a last resort; they are often the preferred standard of care for patients seeking novel therapies engineered to outperform existing options.',
+          points: [
+            {
+              icon: 'bi-search',
+              title: 'Comprehensive Trial Registry Screening',
+              desc: 'Our molecular tumor board matches your unique genomic alterations with over 150 active phase I–III clinical trials across academic oncology networks.'
+            },
+            {
+              icon: 'bi-dna',
+              title: 'Tumor-Agnostic Novel Therapies',
+              desc: 'Enables patients to receive breakthrough medications approved for specific mutations (e.g. NTRK, KRAS G12C, HER2 mutations) regardless of tumor origin.'
+            },
+            {
+              icon: 'bi-person-heart',
+              title: 'Dedicated Trial Navigation Support',
+              desc: 'A specialized clinical trial nurse coordinator manages your screening labs, monitors medication protocols, and assists with travel coordination.'
+            }
+          ],
+          candidateTitle: 'Who Should Consider a Clinical Trial?',
+          candidateText: 'Patients with rare cancers, advanced disease seeking innovative options, or newly diagnosed patients eligible for first-line randomized trials of novel combinations.',
+          faqs: [
+            {
+              q: 'Will I receive a placebo instead of active cancer medicine?',
+              a: 'No. In cancer clinical trials, patients never receive a placebo alone if an effective standard treatment exists. You receive either the best standard therapy OR the standard therapy plus the investigational agent.'
+            },
+            {
+              q: 'Can I leave a clinical trial if I change my mind?',
+              a: 'Yes, participation is 100% voluntary. You have the right to withdraw from a trial at any point without affecting your routine care with your oncologist.'
+            },
+            {
+              q: 'Does insurance cover clinical trial costs?',
+              a: 'Federal law requires insurers to cover routine patient care costs (scans, doctor visits, hospital stays). The study sponsor provides the investigational study drug at no cost to you.'
+            }
+          ]
+        },
+
+        'consultation': {
+          title: 'ONCOLOGY CONSULTATION & 2ND OPINIONS',
+          breadcrumb: 'Oncology Consultation',
+          badge: '<i class="bi bi-clipboard2-pulse"></i> Diagnostic Care',
+          subtitle: 'Unhurried 60-to-90 minute diagnostic evaluations with board-certified medical oncologists to confirm pathology, interpret molecular profiling, and map curative options.',
+          heroImage: 'assets/images/service-oncology-consultation.jpg',
+          heroImageAlt: 'Unhurried diagnostic oncologist consultation with care charts and patient discussion',
+          floatingTag: 'Diagnostic Clarity',
+          floatingSub: 'Independent Slide & Scan Audit',
+          secondaryImage: 'assets/images/service-details-consultation-dialogue.jpg',
+          secondaryImageAlt: 'Unhurried oncologist consultation with patient',
+          secondaryFloatingTag: 'Unhurried Dialogue',
+          secondaryFloatingSub: 'Dedicated 1-on-1 Discussion',
+          pills: [
+            '<i class="bi bi-clock-history me-1"></i> 60–90 Min Unhurried Visits',
+            '<i class="bi bi-diagram-3-fill me-1"></i> Multidisciplinary Board Review',
+            '<i class="bi bi-people me-1"></i> Family Advocates Welcome'
+          ],
+          explanationHeading: 'WHAT OUR COMPREHENSIVE CONSULTATION INVOLVES',
+          explanationLead: 'We take the time to review your complete medical story, ensuring nothing is overlooked before outlining personalized, evidence-based treatment avenues.',
+          points: [
+            {
+              icon: 'bi-file-earmark-diff',
+              title: 'Independent Outside Slide Re-Staining',
+              desc: 'Outside biopsy glass slides and paraffin blocks are re-examined by our board-certified oncopathologists to confirm histological subtype and margin status.'
+            },
+            {
+              icon: 'bi-dna',
+              title: 'Actionable Biomarker Discovery',
+              desc: 'Reviewing next-generation sequencing to evaluate targets like EGFR, KRAS, BRAF, HER2, and PD-L1 to map optimal curative drug therapies.'
+            },
+            {
+              icon: 'bi-chat-heart',
+              title: 'Empathetic Bedside Dialogue',
+              desc: 'Translating complex medical staging into clear, plain terms with ample time to address all questions from you and your family advocates.'
+            }
+          ],
+          candidateTitle: 'When to Seek a Second Opinion?',
+          candidateText: 'Whenever you receive a new cancer diagnosis, when surgery or chemotherapy is recommended, or when you wish to confirm whether clinical trial alternatives exist.',
+          faqs: [
+            {
+              q: 'How quickly can I be scheduled for an initial consultation?',
+              a: 'We prioritize urgent diagnostic reviews. Once preliminary pathology or diagnosis notes are received, our intake team typically schedules your visit within 24 to 72 business hours.'
+            },
+            {
+              q: 'Can family members or loved ones accompany me?',
+              a: 'Yes, wholeheartedly. We warmly encourage you to bring up to three caregivers or family advocates. Secure video conference links are also provided for out-of-town family.'
+            },
+            {
+              q: 'Do you accept outside biopsy pathology slides and CT scans?',
+              a: 'Yes. Our medical records team coordinates the formal requisition and courier transfer of all physical slides and DICOM imaging discs directly from your prior hospital.'
+            }
+          ]
+        },
+
+        'medication-management': {
+          title: 'SPECIALTY ONCOLOGY MEDICATION MANAGEMENT',
+          breadcrumb: 'Medication Management',
+          badge: '<i class="bi bi-capsule"></i> Pharmacology',
+          subtitle: 'Specialty pharmacy navigation, oral oncolytic dose schedules, proactive side-effect interception, and patient assistance co-pay coordination.',
+          heroImage: 'assets/images/service-pharmacy-lab.jpg',
+          heroImageAlt: 'Specialty oncology prescription therapeutics and medication management',
+          floatingTag: 'Pharmacology Desk',
+          floatingSub: 'Oral Oncolytic Dosing Safety',
+          secondaryImage: 'assets/images/satellite_pharmacy.jpg',
+          secondaryImageAlt: 'Specialty clean-room pharmacy compounding oncology drugs',
+          secondaryFloatingTag: 'Specialty Pharmacy',
+          secondaryFloatingSub: 'Oncolytic Dosing Safeguards',
+          pills: [
+            '<i class="bi bi-calendar-check me-1"></i> Strict Cycle Tracking',
+            '<i class="bi bi-shield-check me-1"></i> Drug-Drug Interaction Screen',
+            '<i class="bi bi-coin me-1"></i> Co-Pay Assistance Grants'
+          ],
+          explanationHeading: 'SAFEGUARDING YOUR ORAL & SYSTEMIC REGIMENS',
+          explanationLead: 'Modern cancer treatments increasingly include potent oral oncolytics taken at home. Our clinical oncology pharmacists ensure safe administration and early side-effect management.',
+          points: [
+            {
+              icon: 'bi-calendar3',
+              title: 'Synchronized Dosing Schedules',
+              desc: 'Customized digital medication calendars and blister packaging ensure oral chemotherapy and supportive medications are taken at precise therapeutic intervals.'
+            },
+            {
+              icon: 'bi-shield-exclamation',
+              title: 'Cross-Screening for Interactions',
+              desc: 'Comprehensive pharmaceutical reviews screen for dangerous interactions between cancer drugs, routine blood pressure medications, and over-the-counter supplements.'
+            },
+            {
+              icon: 'bi-cash-coin',
+              title: 'Financial Co-Pay & Grant Navigation',
+              desc: 'We connect eligible patients with manufacturer assistance foundations and grant programs to eliminate exorbitant out-of-pocket prescription expenses.'
+            }
+          ],
+          candidateTitle: 'Who Needs Oncology Pharmacy Navigation?',
+          candidateText: 'Any patient prescribed oral targeted therapy, hormonal blockade, self-administered injectables, or supportive antiemetic and pain management regimens.',
+          faqs: [
+            {
+              q: 'What should I do if I miss an oral chemotherapy dose?',
+              a: 'Never take a double dose. Contact your dedicated OncoAid pharmacy coordinator or nurse navigator immediately for specific guidance tailored to your medication.'
+            },
+            {
+              q: 'How are expensive specialty cancer medications delivered?',
+              a: 'Our team coordinates secure temperature-controlled overnight courier delivery straight to your doorstep, with signature confirmation and cold-pack insulation.'
+            },
+            {
+              q: 'Are generic versions of targeted oncology medications available?',
+              a: 'Whenever FDA-approved bioequivalent generics are available, our pharmacy coordinates substitution to save you thousands of dollars while maintaining identical efficacy.'
+            }
+          ]
+        },
+
+        'survivorship': {
+          title: 'SURVIVORSHIP & RECURRENCE SURVEILLANCE',
+          breadcrumb: 'Survivorship Care',
+          badge: '<i class="bi bi-award"></i> Remission Care',
+          subtitle: 'Structured post-treatment roadmaps, ctDNA liquid biopsy monitoring, scheduled biomarker scans, and lifelong health restoration to protect your durable remission.',
+          heroImage: 'assets/images/hero-oncology-care.jpg',
+          heroImageAlt: 'Compassionate oncology survivorship consultation and care plan review',
+          floatingTag: 'Lifelong Vitality',
+          floatingSub: 'ctDNA Liquid Biopsy Surveillance',
+          secondaryImage: 'assets/images/knowledge-care-journey.jpg',
+          secondaryImageAlt: 'Survivorship consultation and remission surveillance planning',
+          secondaryFloatingTag: 'Survivorship Blueprint',
+          secondaryFloatingSub: 'ctDNA Remission Surveillance',
+          pills: [
+            '<i class="bi bi-droplet-half me-1"></i> Highly Sensitive ctDNA Blood Tests',
+            '<i class="bi bi-journal-medical me-1"></i> Survivorship Care Passport',
+            '<i class="bi bi-heart-pulse me-1"></i> Late-Effect Physical Recovery'
+          ],
+          explanationHeading: 'PROTECTING YOUR REMISSION FOR LIFE',
+          explanationLead: 'Completing active cancer treatment is a celebrated milestone that transitions into a new phase of vigilant surveillance and bodily restoration.',
+          points: [
+            {
+              icon: 'bi-droplet',
+              title: 'ctDNA Liquid Biopsy Molecular Surveillance',
+              desc: 'Simple blood draws detect microscopic fragments of circulating tumor DNA months before any recurrent disease could appear on traditional CT scans.'
+            },
+            {
+              icon: 'bi-card-checklist',
+              title: 'Personalized Survivorship Care Passport',
+              desc: 'A comprehensive document detailing all chemotherapy drugs received, cumulative radiation doses, and an exact schedule for future blood tests and scans.'
+            },
+            {
+              icon: 'bi-heart',
+              title: 'Rehabilitation & Late-Effect Mitigation',
+              desc: 'Proactive management of post-treatment neuropathy, cardiac wellness, metabolic energy restoration, and scan anxiety counseling.'
+            }
+          ],
+          candidateTitle: 'Who Enters the Survivorship Program?',
+          candidateText: 'Patients who have completed active curative surgery, chemotherapy, or radiotherapy and are entering short or long-term clinical remission.',
+          faqs: [
+            {
+              q: 'How frequently will I need surveillance scans during remission?',
+              a: 'Follow-up scan intervals typically occur every 3 to 6 months for the first two years, transitioning to annually thereafter based on your specific cancer type and NCCN guidelines.'
+            },
+            {
+              q: 'How does ctDNA liquid biopsy improve upon standard CT imaging?',
+              a: 'ctDNA detects residual cancer at the molecular level, allowing oncologists to detect potential recurrence up to 8–10 months earlier than standard radiographic scans.'
+            },
+            {
+              q: 'What is a Survivorship Care Passport?',
+              a: 'It is a permanent medical record detailing your treatments, potential long-term side effects to watch for, and health maintenance guidelines for your primary care doctor.'
+            }
+          ]
+        },
+
+        'chemotherapy': {
+          title: 'CHEMOTHERAPY & BIOLOGIC INFUSION CARE',
+          breadcrumb: 'Chemotherapy Care',
+          badge: '<i class="bi bi-capsule"></i> Daylight Infusion',
+          subtitle: 'Calibrated systemic medicine, monoclonal antibodies, and antibody-drug conjugates delivered in tranquil, garden-facing private infusion suites with pre-emptive antiemetic protection.',
+          heroImage: 'assets/images/service_chemotherapy_infusion_1792059290445.jpg',
+          heroImageAlt: 'Private sunlit garden infusion suite with luxury heated recliner',
+          floatingTag: 'Systemic Oncology',
+          floatingSub: 'Garden-Facing Private Infusion Bays',
+          secondaryImage: 'assets/images/service-chemotherapy-infusion-bay.jpg',
+          secondaryImageAlt: 'Sunlit private garden infusion bay with luxury heated massage recliner',
+          secondaryFloatingTag: 'Garden-View Infusion Suite',
+          secondaryFloatingSub: 'Calibrated Pre-Medication & Comfort',
+          pills: [
+            '<i class="bi bi-shield-check me-1"></i> Pre-Emptive Anti-Nausea Protocols',
+            '<i class="bi bi-snow me-1"></i> Scalp Cooling for Hair Preservation',
+            '<i class="bi bi-heart-pulse me-1"></i> Dedicated Chair-Side Oncology Nurse'
+          ],
+          explanationHeading: 'CALIBRATED SYSTEMIC PRECISION & PATIENT COMFORT',
+          explanationLead: 'Chemotherapy at OncoAid combines advanced cytotoxic agents with intensive supportive pre-medications to destroy malignant cells while keeping you comfortable and energized.',
+          points: [
+            {
+              icon: 'bi-droplet-half',
+              title: 'Private Garden-View Infusion Suites',
+              desc: 'Heated massage recliners, personal circadian lighting, high-speed Wi-Fi, and panoramic views of our tranquil outdoor healing garden.'
+            },
+            {
+              icon: 'bi-shield-check',
+              title: 'Triple-Shield Antiemetic Pre-Medication',
+              desc: 'Neurokinin-1 blockers and 5-HT3 antagonists administered 30 minutes before infusions prevent nausea receptor activation before treatment begins.'
+            },
+            {
+              icon: 'bi-snow',
+              title: 'Cold-Cap Scalp Cooling Technology',
+              desc: 'Automated scalp hypothermia systems reduce blood flow to hair follicles during infusion, significantly minimizing hair loss in eligible regimens.'
+            }
+          ],
+          candidateTitle: 'Who Receives Chemotherapy?',
+          candidateText: 'Patients undergoing neoadjuvant treatment to shrink tumors before surgery, adjuvant therapy to destroy residual cells, or systemic management for advanced disease.',
+          faqs: [
+            {
+              q: 'Will I feel sick during or after my chemotherapy infusion?',
+              a: 'Thanks to modern pre-medication regimens (triple antiemetics), severe nausea is now rare. Most patients rest comfortably during treatment and take oral anti-nausea tablets at home.'
+            },
+            {
+              q: 'Can a family member sit with me in the infusion suite?',
+              a: 'Yes, each private infusion bay includes comfortable seating for a companion to stay with you throughout your appointment.'
+            },
+            {
+              q: 'How long does an infusion session last?',
+              a: 'Sessions range from 1 to 4 hours depending on the drugs and hydration protocol. Your nurse navigator provides an exact arrival and completion time for each visit.'
+            }
+          ]
+        }
+      };
+
+      // Determine selected service from URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const requestedKey = (urlParams.get('service') || '').toLowerCase().trim();
+      
+      // Fallback matching
+      let serviceKey = 'consultation';
+      if (servicesData[requestedKey]) {
+        serviceKey = requestedKey;
+      } else if (requestedKey.includes('rad')) {
+        serviceKey = 'radiation-oncology';
+      } else if (requestedKey.includes('immuno')) {
+        serviceKey = 'immunotherapy';
+      } else if (requestedKey.includes('target')) {
+        serviceKey = 'targeted-therapy';
+      } else if (requestedKey.includes('cart') || requestedKey.includes('cell')) {
+        serviceKey = 'cart-cell';
+      } else if (requestedKey.includes('surg') || requestedKey.includes('robot')) {
+        serviceKey = 'robotic-surgery';
+      } else if (requestedKey.includes('hormone') || requestedKey.includes('endo')) {
+        serviceKey = 'hormone-therapy';
+      } else if (requestedKey.includes('trial') || requestedKey.includes('genom')) {
+        serviceKey = 'clinical-trials';
+      } else if (requestedKey.includes('med') || requestedKey.includes('pharm')) {
+        serviceKey = 'medication-management';
+      } else if (requestedKey.includes('surviv')) {
+        serviceKey = 'survivorship';
+      } else if (requestedKey.includes('chemo')) {
+        serviceKey = 'chemotherapy';
+      }
+
+      const data = servicesData[serviceKey];
+
+      // Update Page Meta
+      document.getElementById('pageTitle').textContent = `${data.title} | OncoAid Cancer Care Center`;
+      document.getElementById('pageMetaDesc').setAttribute('content', data.subtitle);
+
+      // 1. Hero Section Updates
+      document.getElementById('serviceBreadcrumb').textContent = data.breadcrumb;
+      document.getElementById('serviceBadge').innerHTML = data.badge;
+      document.getElementById('serviceTitle').textContent = data.title;
+      document.getElementById('serviceSubtitle').textContent = data.subtitle;
+      
+      // Hero Image: strictly the service card image
+      const heroImg = document.getElementById('serviceHeroImg');
+      heroImg.src = data.heroImage;
+      heroImg.alt = data.heroImageAlt;
+
+      document.getElementById('serviceFloatingTag').textContent = data.floatingTag;
+      document.getElementById('serviceFloatingSub').textContent = data.floatingSub;
+
+      // Pills
+      const pillsContainer = document.getElementById('servicePillsContainer');
+      pillsContainer.innerHTML = '';
+      data.pills.forEach(pill => {
+        const span = document.createElement('span');
+        span.className = 'oa-badge oa-badge-cocoa';
+        span.innerHTML = pill;
+        pillsContainer.appendChild(span);
+      });
+
+      // 2. Explanation Section Updates
+      document.getElementById('explanationHeading').textContent = data.explanationHeading;
+      document.getElementById('explanationLead').textContent = data.explanationLead;
+      document.getElementById('candidateTitle').textContent = data.candidateTitle;
+      document.getElementById('candidateText').textContent = data.candidateText;
+
+      // Secondary Image & Floating Badge Update (Distinct for every service)
+      const secImg = document.getElementById('serviceSecondaryImg');
+      if (secImg && data.secondaryImage) {
+        secImg.src = data.secondaryImage;
+        secImg.alt = data.secondaryImageAlt || data.title;
+      }
+      const secTag = document.getElementById('serviceSecondaryFloatingTag');
+      if (secTag && data.secondaryFloatingTag) {
+        secTag.textContent = data.secondaryFloatingTag;
+      }
+      const secSub = document.getElementById('serviceSecondaryFloatingSub');
+      if (secSub && data.secondaryFloatingSub) {
+        secSub.textContent = data.secondaryFloatingSub;
+      }
+
+      const pointsContainer = document.getElementById('explanationPointsContainer');
+      pointsContainer.innerHTML = '';
+      data.points.forEach(point => {
+        const item = document.createElement('div');
+        item.className = 'd-flex align-items-start gap-3 p-3 rounded-3 bg-surface border';
+        item.innerHTML = `
+          <div class="oa-card-icon mb-0 flex-shrink-0" style="width: 42px; height: 42px; font-size: 1.25rem;">
+            <i class="bi ${point.icon} text-amber"></i>
+          </div>
+          <div>
+            <strong class="text-cocoa d-block mb-1">${point.title}</strong>
+            <span class="small text-muted">${point.desc}</span>
+          </div>
+        `;
+        pointsContainer.appendChild(item);
+      });
+
+      // 3. FAQ Section Updates
+      document.getElementById('faqSubtitle').textContent = `Common clinical and practical inquiries regarding ${data.breadcrumb}.`;
+      const faqContainer = document.getElementById('oaDynamicFaqContainer');
+      faqContainer.innerHTML = '';
+      data.faqs.forEach((faq, index) => {
+        const collapseId = `faqCollapse${index + 1}`;
+        const headingId = `faqHeading${index + 1}`;
+        const isFirst = index === 0;
+
+        const faqItem = document.createElement('div');
+        faqItem.className = 'accordion-item mb-3';
+        faqItem.innerHTML = `
+          <h2 class="accordion-header" id="${headingId}">
+            <button class="accordion-button fw-bold text-cocoa ${isFirst ? '' : 'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${isFirst ? 'true' : 'false'}" aria-controls="${collapseId}">
+              <i class="bi bi-question-circle text-amber me-2"></i> ${faq.q}
+            </button>
+          </h2>
+          <div id="${collapseId}" class="accordion-collapse collapse ${isFirst ? 'show' : ''}" aria-labelledby="${headingId}" data-bs-parent="#oaDynamicFaqContainer">
+            <div class="accordion-body text-muted small">
+              ${faq.a}
+            </div>
+          </div>
+        `;
+        faqContainer.appendChild(faqItem);
+      });
+    })();
+  </script>
+</body>
+</html>

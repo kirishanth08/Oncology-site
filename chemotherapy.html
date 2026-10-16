@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemotherapy Coordination | OncoAid Cancer Care Center</title>
+  <meta name="description" content="Discover OncoAid's compassionate chemotherapy coordination, infusion preparation, premedication guidance, and dedicated nurse navigation.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarChemo" aria-controls="oncoaidNavbarChemo" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarChemo">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="oa-section oa-hero-with-bg py-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="oa-badge oa-badge-amber mb-3">Core Specialty</span>
+          <h1 class="display-4 fw-bold mb-4">
+            COORDINATED CARE FOR YOUR TREATMENT JOURNEY.
+          </h1>
+          <p class="lead text-muted mb-4">
+            Undergoing chemotherapy or immunotherapy requires more than an infusion chair. OncoAid provides structured coordination — managing pre-labs, scheduling, premedications, and symptom check-ins with unwavering warmth.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="appointment.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-calendar2-heart"></i> Schedule Infusion Coordination
+            </a>
+            <a href="patient-dashboard/treatment-schedule.html" class="btn btn-outline-brand btn-lg">
+              <i class="bi bi-calendar3"></i> View Schedule Demo
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="oa-hero-visual-frame" style="height: 420px;">
+            <img src="assets/images/hero-chemotherapy.jpg" alt="Chemotherapy coordination suite with calm, patient-friendly environment" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: WHAT CHEMOTHERAPY COORDINATION MEANS ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 740px;">
+        <span class="oa-badge oa-badge-cocoa">Comprehensive Support</span>
+        <h2 class="display-6 fw-bold">WHAT CHEMOTHERAPY COORDINATION MEANS</h2>
+        <p class="text-muted mx-auto">
+          We oversee the entire ecosystem surrounding infusion treatments. You never have to worry about who is approving your labs or tracking pharmacy deliveries.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-card oa-card-has-media">
+            <div class="oa-card-media">
+              <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=800&q=80" alt="Laboratory blood count synchronization for safe chemotherapy" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-droplet-half"></i> Blood Safety</span>
+            </div>
+            <div class="oa-card-body">
+              <h5 class="fw-bold mb-2">Laboratory Synchronization</h5>
+              <p class="text-muted small mb-0">We coordinate complete blood panels and kidney/liver function tests 24-48 hours before each cycle so doctors verify safety prior to infusion day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-card oa-card-has-media">
+            <div class="oa-card-media">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Calibrated pre-medication regimen to prevent chemotherapy nausea" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-shield-check"></i> Proactive Relief</span>
+            </div>
+            <div class="oa-card-body">
+              <h5 class="fw-bold mb-2">Pre-Medication Regimens</h5>
+              <p class="text-muted small mb-0">Calibrated anti-emetic medications, steroids, and antihistamines are administered in careful timing to prevent infusion-related reactions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-card oa-card-has-media">
+            <div class="oa-card-media">
+              <img src="https://images.unsplash.com/photo-1594824813627-c189b87c7ca2?auto=format&fit=crop&w=800&q=80" alt="Direct nurse communication and personalized care navigator" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-telephone-inbound"></i> Direct Line</span>
+            </div>
+            <div class="oa-card-body">
+              <h5 class="fw-bold mb-2">Direct Nurse Communication</h5>
+              <p class="text-muted small mb-0">Access to your specific oncology nurse navigator for side-effect guidance, avoiding generic triage phone queues.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: APPOINTMENT AND SCHEDULING SUPPORT ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="oa-badge oa-badge-amber mb-3">Stress-Free Logistics</span>
+          <h2 class="display-6 fw-bold mb-4">ORGANIZING YOUR CALENDAR WITH RESPECT</h2>
+          <p class="text-muted mb-4">
+            Multiple cycles over months can complicate family routines and employment. Our scheduling coordinators plan cycles weeks in advance, matching dates with your preferred times and transportation logistics.
+          </p>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-calendar-check text-amber fs-4"></i>
+              <div>
+                <strong class="d-block text-cocoa">Predictable Treatment Cycles</strong>
+                <span class="small text-muted">Clear multi-week schedules with rest intervals planned upfront.</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-car-front text-amber fs-4"></i>
+              <div>
+                <strong class="d-block text-cocoa">Caregiver & Ride Alignment</strong>
+                <span class="small text-muted">Estimated departure times so family members know exactly when to pick you up.</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-clock-history text-amber fs-4"></i>
+              <div>
+                <strong class="d-block text-cocoa">Gentle Rescheduling Assistance</strong>
+                <span class="small text-muted">If blood counts are low or you feel unwell, we coordinate recovery rest days smoothly.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="oa-card p-4" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h5 class="mb-0 text-cocoa">Infusion Day Timeline (Sample)</h5>
+              <span class="oa-demo-pill">Sample Demo</span>
+            </div>
+            <ul class="list-unstyled d-flex flex-column gap-3 small text-muted mb-0">
+              <li class="d-flex gap-3">
+                <strong class="text-cocoa" style="min-width: 75px;">08:30 AM</strong>
+                <span>Vital checks, warm greeting, and private suite seating</span>
+              </li>
+              <li class="d-flex gap-3">
+                <strong class="text-cocoa" style="min-width: 75px;">09:00 AM</strong>
+                <span>Supportive pre-medications & hydration IV begins</span>
+              </li>
+              <li class="d-flex gap-3">
+                <strong class="text-cocoa" style="min-width: 75px;">09:45 AM</strong>
+                <span>Targeted infusion administration under nurse observation</span>
+              </li>
+              <li class="d-flex gap-3">
+                <strong class="text-cocoa" style="min-width: 75px;">12:00 PM</strong>
+                <span>Post-infusion flush, recovery snack, and discharge review</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: CARE TEAM COMMUNICATION ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Always Accessible</span>
+        <h2 class="display-6 fw-bold">PROACTIVE CARE TEAM COMMUNICATION</h2>
+        <p class="text-muted mx-auto">
+          We reach out to you before you even have to ask. Day-after check-in calls ensure unexpected nausea, chills, or fatigue are addressed immediately.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card p-4 text-center">
+            <i class="bi bi-telephone-plus fs-1 text-amber mb-3"></i>
+            <h5>Day +1 Follow-Up Call</h5>
+            <p class="text-muted small">Your nurse navigator calls the morning after infusion to review how you slept and assess gastrointestinal comfort.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card p-4 text-center">
+            <i class="bi bi-chat-dots fs-1 text-amber mb-3"></i>
+            <h5>Patient Portal Messaging</h5>
+            <p class="text-muted small">Send non-urgent questions about diet, hydration, or medications directly to your oncology care team.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card p-4 text-center">
+            <i class="bi bi-shield-exclamation fs-1 text-amber mb-3"></i>
+            <h5>24/7 Clinical Triage</h5>
+            <p class="text-muted small">Clear instructions and on-call oncology physician guidance if you experience fever (>100.4°F) or acute symptoms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: FOLLOW-UP AND COMFORT ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Restoration</span>
+        <h2 class="display-6 fw-bold">SUPPORT BEYOND THE INFUSION SUITE</h2>
+        <p class="text-muted mx-auto">
+          Our supportive care specialists partner with you between infusion cycles to preserve appetite, protect blood counts, and rebuild strength.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="oa-card p-4">
+            <h5 class="text-cocoa"><i class="bi bi-cup-straw text-amber me-2"></i> Hydration & Oral Rinse Protocols</h5>
+            <p class="text-muted">
+              Customized electrolyte formulations and soothing non-alcoholic oral rinses to prevent mucositis and keep your mouth comfortable throughout therapy.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="oa-card p-4">
+            <h5 class="text-cocoa"><i class="bi bi-brightness-high text-amber me-2"></i> Gentle Fatigue Coaching</h5>
+            <p class="text-muted">
+              Energy pacing techniques and structured rest periods that allow you to engage in cherished daily moments with family without exhaustion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 1: INFUSION COMFORT & COLD CAPPING ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 800px;">
+        <span class="oa-badge oa-badge-cocoa"><i class="bi bi-heart-pulse"></i> Dignity in Infusion</span>
+        <h2 class="display-6 fw-bold">CHAIR-SIDE COMFORT & SCALP COOLING TECHNOLOGY</h2>
+        <p class="text-muted mx-auto">
+          We believe receiving chemotherapy should be as calming and restorative as modern medical architecture allows.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4">
+            <div class="oa-card-icon mb-3"><i class="bi bi-snow"></i></div>
+            <h5 class="fw-bold mb-2">Paxman Scalp Cooling</h5>
+            <p class="text-muted small mb-0">
+              Clinically proven hypothermic scalp caps that constrict blood vessels to reduce chemotherapy drug delivery to hair follicles, significantly preserving hair.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4">
+            <div class="oa-card-icon mb-3"><i class="bi bi-sun"></i></div>
+            <h5 class="fw-bold mb-2">Heated Ergonomic Recliners</h5>
+            <p class="text-muted small mb-0">
+              Adjustable warming massage chairs with lumbar support, clean linen blankets, and direct sightlines to our outdoor healing botanical garden.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="oa-card h-100 p-4">
+            <div class="oa-card-icon mb-3"><i class="bi bi-headphones"></i></div>
+            <h5 class="fw-bold mb-2">Peace & Privacy Pods</h5>
+            <p class="text-muted small mb-0">
+              Noise-dampening acoustic dividers, high-speed Wi-Fi, audio relaxation tracks, and companion seating for your chosen family caregiver.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 2: 24/7 TRIAGE & SYMPTOM RED-FLAGS ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5" style="background: linear-gradient(135deg, var(--oa-card-bg) 0%, var(--oa-bg-subtle) 100%);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="oa-badge oa-badge-amber mb-3">At-Home Protection</span>
+            <h3 class="display-6 fw-bold mb-3">WHEN TO CALL YOUR 24/7 ONCOLOGY DESK</h3>
+            <p class="text-muted mb-4">
+              Between infusion cycles, you are never without clinical backup. Our direct nurse triage desk is reachable 24 hours a day, 7 days a week.
+            </p>
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-thermometer-high text-danger fs-4 flex-shrink-0"></i>
+                <div>
+                  <strong class="d-block text-cocoa">Fever Over 100.4°F (38°C)</strong>
+                  <span class="small text-muted">Never wait or self-medicate a fever during chemotherapy. Call immediately for antibiotic and blood count triage.</span>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-exclamation-triangle text-amber fs-4 flex-shrink-0"></i>
+                <div>
+                  <strong class="d-block text-cocoa">Uncontrolled Nausea or Inability to Keep Fluids Down</strong>
+                  <span class="small text-muted">Our triage nurse can coordinate prescription anti-emetic adjustments or same-day clinic IV rehydration.</span>
+                </div>
+              </div>
+            </div>
+            <a href="tel:5552346626" class="btn btn-outline-brand">
+              <i class="bi bi-telephone-inbound me-1"></i> (555) 234-ONCO (Direct Triage)
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="oa-hero-visual-frame" style="height: 380px;">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=80" alt="Oncology nurse reviewing medication protocol" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: PATIENT PORTAL CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 860px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">Interactive Coordination</span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          TRACK YOUR SESSIONS IN THE PATIENT PORTAL.
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 600px;">
+          View your upcoming treatment calendar, check care team notes from recent visits, and manage supportive medication reminders in one calm dashboard.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="patient-dashboard/treatment-schedule.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar3"></i> Open Treatment Schedule
+          </a>
+          <a href="appointment.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-calendar-plus"></i> Request Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Services</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html">Oncology Consultation</a></li>
+            <li><a href="chemotherapy.html">Chemotherapy Prep</a></li>
+            <li><a href="service-details.html">Treatment Support</a></li>
+            <li><a href="service-details.html">Medication Support</a></li>
+            <li><a href="supportive-care.html">Supportive Care</a></li>
+            <li><a href="about.html#patient-support">Patient Education</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

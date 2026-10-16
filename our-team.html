@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Care Team | Oncology Specialists | OncoAid</title>
+  <meta name="description" content="Meet the multidisciplinary oncology specialists, nurse navigators, dietitians, and counselors dedicated to your care at OncoAid.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarTeam" aria-controls="oncoaidNavbarTeam" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarTeam">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="oa-section oa-hero-with-bg py-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="oa-badge oa-badge-amber mb-3">Clinical Leadership</span>
+          <h1 class="display-4 fw-bold mb-4">THE PEOPLE BEHIND YOUR CARE.</h1>
+          <p class="lead text-muted mb-4">
+            Our clinicians combine rigorous oncology credentials from leading medical institutions with a profound commitment to compassionate, dignified care. We work as one unified team around you.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="appointment.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-calendar2-plus"></i> Request Specialist Visit
+            </a>
+            <a href="doctor-details.html" class="btn btn-outline-brand btn-lg">
+              <i class="bi bi-person-badge"></i> View Lead Oncologist Profile
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="oa-hero-visual-frame" style="height: 420px;">
+            <img src="assets/images/hero-team.jpg" alt="Oncology care specialist team smiling reassuringly in clinic environment" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: MEDICAL ONCOLOGISTS ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Board-Certified Clinicians</span>
+        <h2 class="display-6 fw-bold">ONCOLOGY PHYSICIAN SPECIALISTS</h2>
+        <p class="text-muted mx-auto">
+          Leading medical oncologists, hematologists, and radiation consultants who oversee evidence-based diagnostic validation and therapy selection.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Doctor 1: Dr. Sarah Jenkins -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-doctor-card">
+            <div class="oa-doctor-media-wrap">
+              <img src="assets/images/doctor-sarah-jenkins.jpg" alt="Dr. Sarah Jenkins, Chief of Medical Oncology" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-patch-check-fill text-amber"></i> Board Certified</span>
+              <span class="oa-doctor-status"><span class="oa-pulse-indicator"></span> Available for Consults</span>
+            </div>
+            <div class="oa-doctor-body">
+              <h4 class="oa-doctor-name">Dr. Sarah Jenkins, MD</h4>
+              <div class="oa-doctor-role">Chief of Medical Oncology</div>
+              <div class="oa-doctor-pills">
+                <span class="oa-doctor-pill"><i class="bi bi-mortarboard-fill text-amber me-1"></i> Harvard Medical</span>
+                <span class="oa-doctor-pill">Targeted Therapies</span>
+                <span class="oa-doctor-pill">GI & Breast</span>
+              </div>
+              <p class="oa-doctor-bio">
+                Specializing in genomic tumor profiling, targeted oral regimens, and sequencing complex multi-agent cancer care pathways with deep empathy.
+              </p>
+              <div class="oa-doctor-footer">
+                <span class="small text-muted"><i class="bi bi-clock-history me-1 text-amber"></i> 60-min consults</span>
+                <a href="doctor-details.html" class="btn btn-outline-brand btn-sm">Full Profile <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2: Dr. Michael Sterling -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-doctor-card">
+            <div class="oa-doctor-media-wrap">
+              <img src="assets/images/doctor-michael-sterling.jpg" alt="Dr. Michael Sterling, Lead Radiation Oncologist" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-patch-check-fill text-amber"></i> Board Certified</span>
+              <span class="oa-doctor-status"><span class="oa-pulse-indicator"></span> Available for Consults</span>
+            </div>
+            <div class="oa-doctor-body">
+              <h4 class="oa-doctor-name">Dr. Michael Sterling, MD</h4>
+              <div class="oa-doctor-role">Radiation Oncology Lead & SBRT Specialist</div>
+              <div class="oa-doctor-pills">
+                <span class="oa-doctor-pill"><i class="bi bi-mortarboard-fill text-amber me-1"></i> Johns Hopkins</span>
+                <span class="oa-doctor-pill">SBRT / IMRT</span>
+                <span class="oa-doctor-pill">Organ Preservation</span>
+              </div>
+              <p class="oa-doctor-bio">
+                Expertise in stereotactic body radiotherapy, advanced image-guided beam alignment, and safeguarding adjacent healthy tissues.
+              </p>
+              <div class="oa-doctor-footer">
+                <span class="small text-muted"><i class="bi bi-clock-history me-1 text-amber"></i> SBRT Specialist</span>
+                <a href="doctor-details.html" class="btn btn-outline-brand btn-sm">Full Profile <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3: Dr. Aris Thorne -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-doctor-card">
+            <div class="oa-doctor-media-wrap">
+              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80" alt="Dr. Aris Thorne, Hematology & Immunotherapy Lead" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-patch-check-fill text-amber"></i> Board Certified</span>
+              <span class="oa-doctor-status"><span class="oa-pulse-indicator"></span> Accepting Referrals</span>
+            </div>
+            <div class="oa-doctor-body">
+              <h4 class="oa-doctor-name">Dr. Aris Thorne, MD, PhD</h4>
+              <div class="oa-doctor-role">Hematology & Immunotherapy Lead</div>
+              <div class="oa-doctor-pills">
+                <span class="oa-doctor-pill"><i class="bi bi-mortarboard-fill text-amber me-1"></i> Stanford Medicine</span>
+                <span class="oa-doctor-pill">Checkpoint Inhibitors</span>
+                <span class="oa-doctor-pill">Lymphoma Care</span>
+              </div>
+              <p class="oa-doctor-bio">
+                Dedicated to checkpoint inhibitor coordination, antibody therapies, and managing immune-related response thresholds safely.
+              </p>
+              <div class="oa-doctor-footer">
+                <span class="small text-muted"><i class="bi bi-clock-history me-1 text-amber"></i> Immuno Lead</span>
+                <a href="doctor-details.html" class="btn btn-outline-brand btn-sm">Full Profile <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: CARE COORDINATION TEAM ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Nurse Navigators</span>
+        <h2 class="display-6 fw-bold">YOUR CARE NAVIGATION PARTNERS</h2>
+        <p class="text-muted mx-auto">
+          These experienced oncology nurses act as your constant anchors — guiding you through appointment schedules, interpreting questions, and triaging side effects.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1: Elena Jensen -->
+        <div class="col-lg-6">
+          <div class="oa-doctor-horizontal-card">
+            <div class="oa-doctor-horizontal-media">
+              <img src="assets/images/nurse-navigator-elena.jpg" alt="Elena Jensen, Lead Oncology Nurse Navigator" loading="lazy">
+            </div>
+            <div class="oa-doctor-horizontal-body">
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <h4 class="oa-doctor-name mb-0">Elena Jensen, MSN, RN, OCN</h4>
+              </div>
+              <div class="oa-doctor-role mb-2">Lead Oncology Nurse Navigator</div>
+              <div class="oa-doctor-pills mb-2">
+                <span class="oa-doctor-pill">12+ Yrs Experience</span>
+                <span class="oa-doctor-pill">Chemo Scheduling</span>
+                <span class="oa-doctor-pill">Family Advocate</span>
+              </div>
+              <p class="oa-doctor-bio mb-3">
+                Acts as your single point of contact between oncologists, lab techs, infusion suites, and at-home side effect monitoring.
+              </p>
+              <a href="appointment.html" class="btn btn-primary btn-sm align-self-start">
+                <i class="bi bi-chat-heart me-1"></i> Connect with Nurse Elena
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Sarah Jensen -->
+        <div class="col-lg-6">
+          <div class="oa-doctor-horizontal-card">
+            <div class="oa-doctor-horizontal-media">
+              <img src="assets/images/nurse-sarah-jensen.jpg" alt="Sarah Jensen, BSN, RN, OCN - Infusion Suite Care Coordinator" loading="lazy">
+            </div>
+            <div class="oa-doctor-horizontal-body">
+              <div class="d-flex align-items-center justify-content-between mb-1">
+                <h4 class="oa-doctor-name mb-0">Sarah Jensen, BSN, RN, OCN</h4>
+              </div>
+              <div class="oa-doctor-role mb-2">Infusion Suite Care Coordinator</div>
+              <div class="oa-doctor-pills mb-2">
+                <span class="oa-doctor-pill">Chair-Side Care</span>
+                <span class="oa-doctor-pill">Anti-Nausea Timing</span>
+                <span class="oa-doctor-pill">Day-After Checks</span>
+              </div>
+              <p class="oa-doctor-bio mb-3">
+                Dedicated to clinical chair-side comfort, calibrating anti-emetic infusion timing, and reassuring next-day symptom follow-ups.
+              </p>
+              <a href="appointment.html" class="btn btn-primary btn-sm align-self-start">
+                <i class="bi bi-chat-heart me-1"></i> Connect with Nurse Sarah
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: SUPPORTIVE & WELLNESS TEAM ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Integrative Specialists</span>
+        <h2 class="display-6 fw-bold">SUPPORTIVE DISCIPLINES SPECIALISTS</h2>
+        <p class="text-muted mx-auto">
+          Caring for the whole person means providing clinical nutrition, family counseling, and emotional solace at every crossroad.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1: Nathaniel Cole -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-doctor-card">
+            <div class="oa-doctor-media-wrap" style="height: 280px;">
+              <img src="assets/images/specialist-nathaniel-cole.jpg" alt="Nathaniel Cole, Oncology Counselor & Social Worker" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-heart-pulse text-amber"></i> Psychosocial Care</span>
+            </div>
+            <div class="oa-doctor-body">
+              <h4 class="oa-doctor-name">Nathaniel Cole, LCSW, OSW-C</h4>
+              <div class="oa-doctor-role">Director of Psychosocial Care & Family Resilience</div>
+              <div class="oa-doctor-pills">
+                <span class="oa-doctor-pill">Emotional Coping</span>
+                <span class="oa-doctor-pill">Caregiver Support</span>
+              </div>
+              <p class="oa-doctor-bio">
+                Specializing in coping mechanisms for scanxiety, couple counseling through cancer diagnosis, and practical caregiver respite planning.
+              </p>
+              <div class="oa-doctor-footer">
+                <a href="appointment.html" class="btn btn-outline-brand btn-sm w-100">Consult Nathaniel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Nora Bennett -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-doctor-card">
+            <div class="oa-doctor-media-wrap" style="height: 280px;">
+              <img src="assets/images/specialist-nora-bennett.jpg" alt="Nora Bennett, Board-Certified Oncology Dietitian" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-cup-hot text-amber"></i> Clinical Nutrition</span>
+            </div>
+            <div class="oa-doctor-body">
+              <h4 class="oa-doctor-name">Nora Bennett, MS, RD, CSO</h4>
+              <div class="oa-doctor-role">Board-Certified Oncology Dietitian</div>
+              <div class="oa-doctor-pills">
+                <span class="oa-doctor-pill">Taste Restoration</span>
+                <span class="oa-doctor-pill">Calorie Preservation</span>
+              </div>
+              <p class="oa-doctor-bio">
+                Formulating tailored digestive regimens, anti-nausea meal strategies, and high-protein intake plans to safeguard weight and stamina.
+              </p>
+              <div class="oa-doctor-footer">
+                <a href="appointment.html" class="btn btn-outline-brand btn-sm w-100">Consult Nora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Rachel Sterling -->
+        <div class="col-md-6 col-lg-4">
+          <div class="oa-doctor-card">
+            <div class="oa-doctor-media-wrap" style="height: 280px;">
+              <img src="assets/images/specialist-rachel-sterling.jpg" alt="Rachel Sterling, Certified Cancer Genetic Counselor" loading="lazy">
+              <span class="oa-doctor-badge"><i class="bi bi-dna text-amber"></i> Genetics Lead</span>
+            </div>
+            <div class="oa-doctor-body">
+              <h4 class="oa-doctor-name">Rachel Sterling, MS, CGC</h4>
+              <div class="oa-doctor-role">Certified Cancer Genetic Counselor</div>
+              <div class="oa-doctor-pills">
+                <span class="oa-doctor-pill">BRCA / Lynch Syndrome</span>
+                <span class="oa-doctor-pill">Family Risk</span>
+              </div>
+              <p class="oa-doctor-bio">
+                Helping families understand inherited mutations, pre-symptomatic surveillance options, and hereditary risk-reduction choices.
+              </p>
+              <div class="oa-doctor-footer">
+                <a href="appointment.html" class="btn btn-outline-brand btn-sm w-100">Consult Rachel</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: TEAM PHILOSOPHY ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 740px;">
+        <span class="oa-badge oa-badge-amber">Collaborative Culture</span>
+        <h2 class="display-6 fw-bold">OUR COMMITMENT TO UNHURRIED CONSULTATION</h2>
+        <p class="text-muted mx-auto">
+          We operate with strict limits on daily patient appointments to ensure your care team never rushes through your visit or cuts off your questions.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="p-4 rounded-4" style="background-color: var(--oa-bg-subtle);">
+            <div class="h3 fw-bold text-cocoa">60+ Mins</div>
+            <div class="small fw-semibold text-amber">Initial Consultations</div>
+            <p class="text-muted small mt-2 mb-0">Plenty of time to review diagnostic scans, answer family questions, and breathe.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-4" style="background-color: var(--oa-bg-subtle);">
+            <div class="h3 fw-bold text-cocoa">1:1</div>
+            <div class="small fw-semibold text-amber">Nurse Navigator Pairing</div>
+            <p class="text-muted small mt-2 mb-0">One dedicated clinical contact who stays with you across your entire care trajectory.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-4" style="background-color: var(--oa-bg-subtle);">
+            <div class="h3 fw-bold text-cocoa">Weekly</div>
+            <div class="small fw-semibold text-amber">Tumor Board Synchronization</div>
+            <p class="text-muted small mt-2 mb-0">Multidisciplinary reviews of every active case to ensure consensus across specialties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 1: MULTIDISCIPLINARY TUMOR BOARD PROTOCOL ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 800px;">
+        <span class="oa-badge oa-badge-cocoa"><i class="bi bi-people-fill"></i> Clinical Governance</span>
+        <h2 class="display-6 fw-bold">HOW OUR MULTIDISCIPLINARY TUMOR BOARD WORKS</h2>
+        <p class="text-muted mx-auto">
+          Cancer is never managed in isolation. Every patient benefits from the collective intellect of multiple oncology subspecialists sitting in consensus review.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100">
+            <div class="oa-card-icon mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-file-earmark-medical"></i>
+            </div>
+            <h5 class="fw-bold mb-2">1. Slide & Scan Re-Review</h5>
+            <p class="text-muted small mb-0">Biopsy pathology slides and CT/PET imaging are independently validated by our diagnostic team prior to the board convening.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100">
+            <div class="oa-card-icon mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">2. Multi-Specialist Debate</h5>
+            <p class="text-muted small mb-0">Medical oncologists, radiation oncologists, and surgical partners evaluate sequencing options according to NCCN benchmarks.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100">
+            <div class="oa-card-icon mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h5 class="fw-bold mb-2">3. Consensus Blueprint</h5>
+            <p class="text-muted small mb-0">A unified, written clinical recommendation is produced, outlining curative intent, supportive therapies, and scheduled milestones.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100">
+            <div class="oa-card-icon mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-chat-heart"></i>
+            </div>
+            <h5 class="fw-bold mb-2">4. Patient Delivery</h5>
+            <p class="text-muted small mb-0">Your primary oncologist and assigned nurse navigator sit down with you and your family to explain every finding in plain, reassuring language.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 2: SPECIALIST MATCHING & RAPID CONSULTATION TRIAGE ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5" style="background: linear-gradient(135deg, var(--oa-card-bg) 0%, var(--oa-bg-subtle) 100%);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <span class="oa-badge oa-badge-amber mb-3">Care Concierge</span>
+            <h3 class="display-6 fw-bold mb-3">NOT SURE WHICH SPECIALIST YOU NEED?</h3>
+            <p class="text-muted mb-4">
+              Send us your recent pathology summary or diagnosis notes. Our intake nurse navigator will match you with the appropriate subspecialist within 24 hours.
+            </p>
+            <div class="d-flex flex-column gap-2 mb-4">
+              <div class="d-flex align-items-center gap-2 small text-muted">
+                <i class="bi bi-check-circle-fill text-amber"></i> No commitment required for preliminary record triage
+              </div>
+              <div class="d-flex align-items-center gap-2 small text-muted">
+                <i class="bi bi-check-circle-fill text-amber"></i> Secure HIPAA-compliant document transmission
+              </div>
+              <div class="d-flex align-items-center gap-2 small text-muted">
+                <i class="bi bi-check-circle-fill text-amber"></i> Direct phone coordination with our intake desk
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-outline-brand">
+              <i class="bi bi-telephone-inbound me-1"></i> Speak with Intake Desk
+            </a>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-4 rounded-4 h-100 border" style="background-color: var(--oa-card-bg);">
+                  <div class="fw-bold text-cocoa mb-1"><i class="bi bi-gender-female text-amber me-1"></i> Breast & Gynecologic</div>
+                  <div class="small text-muted mb-3">HER2+, ER/PR+, BRCA-related carcinomas and targeted endocrine therapies.</div>
+                  <span class="badge bg-subtle text-cocoa">Lead: Dr. Sarah Jenkins</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4 rounded-4 h-100 border" style="background-color: var(--oa-card-bg);">
+                  <div class="fw-bold text-cocoa mb-1"><i class="bi bi-bullseye text-amber me-1"></i> Thoracic & GI Tumors</div>
+                  <div class="small text-muted mb-3">Colorectal, pancreatic, lung, and gastric malignancies with biomarker-informed therapies.</div>
+                  <span class="badge bg-subtle text-cocoa">Lead: Dr. Sarah Jenkins</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4 rounded-4 h-100 border" style="background-color: var(--oa-card-bg);">
+                  <div class="fw-bold text-cocoa mb-1"><i class="bi bi-radioactive text-amber me-1"></i> Radiation & SBRT</div>
+                  <div class="small text-muted mb-3">Stereotactic ablative body therapy, intensity-modulated radiation, and organ preservation.</div>
+                  <span class="badge bg-subtle text-cocoa">Lead: Dr. Michael Sterling</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4 rounded-4 h-100 border" style="background-color: var(--oa-card-bg);">
+                  <div class="fw-bold text-cocoa mb-1"><i class="bi bi-droplet-half text-amber me-1"></i> Hematology & Lymphoma</div>
+                  <div class="small text-muted mb-3">Multiple myeloma, lymphomas, leukemia support, and cellular immunotherapy sequencing.</div>
+                  <span class="badge bg-subtle text-cocoa">Lead: Dr. Aris Thorne</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: APPOINTMENT CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 860px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">Begin Your Care</span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          CONSULT WITH OUR EXPERIENCED CARE TEAM.
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 600px;">
+          Reach out today to schedule a consultation with our medical oncologists and meet your assigned nurse coordinator.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar2-check"></i> Book An Appointment
+          </a>
+          <a href="contact.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-chat-square-text"></i> Contact Our Clinic
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Services</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html">Oncology Consultation</a></li>
+            <li><a href="chemotherapy.html">Chemotherapy Prep</a></li>
+            <li><a href="service-details.html">Treatment Support</a></li>
+            <li><a href="service-details.html">Medication Support</a></li>
+            <li><a href="supportive-care.html">Supportive Care</a></li>
+            <li><a href="about.html#patient-support">Patient Education</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

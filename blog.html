@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oncology Insights & Patient Resources | OncoAid Blog</title>
+  <meta name="description" content="Explore compassionate cancer guides, chemotherapy preparation tips, caregiver advice, and nutrition resources from OncoAid specialists.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarBlog" aria-controls="oncoaidNavbarBlog" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarBlog">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="oa-section oa-hero-with-bg py-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-amber mb-3">Evidence-Based & Compassionate</span>
+        <h1 class="display-4 fw-bold mb-3">
+          ONCOLOGY INSIGHTS & PATIENT GUIDES.
+        </h1>
+        <p class="lead text-muted mb-0">
+          Thoughtful, doctor-reviewed articles designed to replace medical confusion with calm, practical understanding for patients and families.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: FEATURED ARTICLE ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5" style="background-color: var(--oa-bg-subtle);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <div class="oa-hero-visual-frame" style="height: 380px;">
+              <img src="assets/images/blog-first-30-days.jpg" alt="Doctor providing gentle explanation of first thirty days of cancer care" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <span class="oa-badge oa-badge-amber">Featured Guide</span>
+              <span class="small text-muted"><i class="bi bi-clock me-1"></i> 6 min read</span>
+              <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Oct 12, 2026</span>
+            </div>
+            <h2 class="display-6 fw-bold mb-3">
+              What to Expect During Your First 30 Days of Cancer Care Coordination
+            </h2>
+            <p class="text-muted mb-4">
+              Receiving a diagnosis can trigger a whirlwind of medical jargon and scheduling anxiety. Here is a week-by-week guide to taking control of your records, questions, and team alignment.
+            </p>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="small fw-semibold text-cocoa">By Dr. Sarah Jenkins, Chief of Medical Oncology</div>
+              <a href="blog-details.html?id=first-30-days" class="btn btn-primary btn-sm">
+                Read Full Article <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: ARTICLES GRID & INTERACTIVE FILTERS ================= -->
+  <section class="oa-section oa-section-subtle" id="care-guides">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto mb-4" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-cocoa">Curated Reading</span>
+        <h2 class="display-6 fw-bold">LATEST CARE GUIDES</h2>
+        <p class="text-muted mx-auto">
+          Practical strategies written by oncologists, nurse navigators, and licensed oncology counselors.
+        </p>
+      </div>
+
+      <!-- Working Category Filter Bar (Placed Directly Before Blog Cards) -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-4 pb-2" id="blogFilterBar">
+        <button type="button" class="btn btn-primary btn-sm rounded-pill oa-blog-filter active" data-filter="all">All Resources</button>
+        <button type="button" class="btn btn-outline-brand btn-sm rounded-pill oa-blog-filter" data-filter="understanding-care">Understanding Cancer Care</button>
+        <button type="button" class="btn btn-outline-brand btn-sm rounded-pill oa-blog-filter" data-filter="treatment-support">Treatment Support</button>
+        <button type="button" class="btn btn-outline-brand btn-sm rounded-pill oa-blog-filter" data-filter="nutrition">Nutrition & Appetite</button>
+        <button type="button" class="btn btn-outline-brand btn-sm rounded-pill oa-blog-filter" data-filter="caregiver-support">Caregiver Support</button>
+        <button type="button" class="btn btn-outline-brand btn-sm rounded-pill oa-blog-filter" data-filter="appointment-prep">Appointment Preparation</button>
+      </div>
+
+      <div class="row g-4" id="blogGrid">
+        <!-- Article 1: Chemo Prep -->
+        <div class="col-md-6 col-lg-4 oa-blog-item" data-category="treatment-support appointment-prep">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-chemo-prep.jpg" alt="Sunlit private chemotherapy infusion suite with reclining armchair and garden view" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-tag"></i> Treatment Support</span>
+            </div>
+            <div class="oa-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Oct 08, 2026</span>
+                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 5 min</span>
+              </div>
+              <h5 class="fw-bold mb-2">How to Prepare for Your First Chemotherapy Infusion</h5>
+              <p class="text-muted small flex-grow-1">
+                Practical tips on what to wear, comforting items to pack in your infusion bag, and why premedication timing matters.
+              </p>
+              <a href="blog-details.html?id=chemo-prep" class="fw-bold text-cocoa small mt-2">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2: Nutrition & Taste -->
+        <div class="col-md-6 col-lg-4 oa-blog-item" data-category="nutrition treatment-support">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-taste-nutrition.jpg" alt="Fresh wholesome oncology nutrition and citrus smoothie" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-cup-hot"></i> Nutrition & Appetite</span>
+            </div>
+            <div class="oa-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Oct 04, 2026</span>
+                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 4 min</span>
+              </div>
+              <h5 class="fw-bold mb-2">Taste Changes During Treatment: Calorie-Dense Strategies</h5>
+              <p class="text-muted small flex-grow-1">
+                Gentle culinary adjustments using mild herbs, tart marinades, and cool smoothies to maintain weight when food tastes metallic.
+              </p>
+              <a href="blog-details.html?id=taste-nutrition" class="fw-bold text-cocoa small mt-2">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3: Caregiver Burnout -->
+        <div class="col-md-6 col-lg-4 oa-blog-item" data-category="caregiver-support understanding-care">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-caregiver-burnout.jpg" alt="Compassionate oncology counseling session in supportive wellness room" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-people"></i> Caregiver Support</span>
+            </div>
+            <div class="oa-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Sep 29, 2026</span>
+                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 6 min</span>
+              </div>
+              <h5 class="fw-bold mb-2">Caregiver Burnout: How to Set Boundaries With Love</h5>
+              <p class="text-muted small flex-grow-1">
+                Practical techniques for spouses and family members to delegate chores, accept outside help, and recharge emotional energy.
+              </p>
+              <a href="blog-details.html?id=caregiver-burnout" class="fw-bold text-cocoa small mt-2">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4: Oral Medications -->
+        <div class="col-md-6 col-lg-4 oa-blog-item" data-category="treatment-support">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-oral-medications.jpg" alt="Weekly prescription pill organizer with daily oncology medication doses" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-capsule"></i> Treatment Support</span>
+            </div>
+            <div class="oa-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Sep 22, 2026</span>
+                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 5 min</span>
+              </div>
+              <h5 class="fw-bold mb-2">Managing Oral Oncology Medications at Home</h5>
+              <p class="text-muted small flex-grow-1">
+                Organizing pill organizers, setting safe digital reminders, and understanding why consistent daily timing is essential for efficacy.
+              </p>
+              <a href="blog-details.html?id=oral-medications" class="fw-bold text-cocoa small mt-2">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5: Treatment Change -->
+        <div class="col-md-6 col-lg-4 oa-blog-item" data-category="appointment-prep understanding-care">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-treatment-change.jpg" alt="Physician and patient holding thoughtful care plan discussion" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-chat-heart"></i> Appointment Preparation</span>
+            </div>
+            <div class="oa-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Sep 15, 2026</span>
+                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 4 min</span>
+              </div>
+              <h5 class="fw-bold mb-2">10 Questions to Ask When Discussing a Treatment Change</h5>
+              <p class="text-muted small flex-grow-1">
+                How to communicate with your doctor if scan results show a new direction or if you wish to explore alternative supportive options.
+              </p>
+              <a href="blog-details.html?id=treatment-change-questions" class="fw-bold text-cocoa small mt-2">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6: Scanxiety -->
+        <div class="col-md-6 col-lg-4 oa-blog-item" data-category="understanding-care">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media">
+              <img src="assets/images/blog-managing-scanxiety.jpg" alt="Mindful breathing and peaceful natural sunlight grounding" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-peace"></i> Understanding Cancer Care</span>
+            </div>
+            <div class="oa-card-body">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Sep 08, 2026</span>
+                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 7 min</span>
+              </div>
+              <h5 class="fw-bold mb-2">Managing ‘Scanxiety’: Grounding Tools Before Imaging Days</h5>
+              <p class="text-muted small flex-grow-1">
+                Psychologist-approved relaxation and breathing exercises to overcome the acute nervousness that precedes follow-up surveillance scans.
+              </p>
+              <a href="blog-details.html?id=managing-scanxiety" class="fw-bold text-cocoa small mt-2">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: NEWSLETTER SIGNUP ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-card p-4 p-lg-5 text-center mx-auto" style="max-width: 820px; background-color: var(--oa-bg-subtle);">
+        <i class="bi bi-envelope-paper-heart fs-1 text-amber mb-3"></i>
+        <h3 class="fw-bold text-cocoa mb-2">Receive Monthly Care Insights & Seasonal Recipes</h3>
+        <p class="text-muted small mx-auto mb-4" style="max-width: 580px;">
+          Join over 3,000 patients and caregivers who receive our monthly digest of physician-reviewed oncology tips, restorative recipes, and upcoming community circles.
+        </p>
+        <form class="row g-2 justify-content-center" onsubmit="event.preventDefault(); alert('Thank you for subscribing to OncoAid Care Insights (Demo)!');">
+          <div class="col-sm-8 col-md-6">
+            <input type="email" class="form-control" placeholder="Enter your email address" required>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+          </div>
+        </form>
+        <div class="small text-muted mt-3">We respect your privacy. Unsubscribe anytime.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 1: FREE DOWNLOADABLE GUIDES (CLINICAL BOOKLETS) ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 800px;">
+        <span class="oa-badge oa-badge-amber"><i class="bi bi-file-earmark-pdf"></i> Clinical Booklets</span>
+        <h2 class="display-6 fw-bold">FREE DOWNLOADABLE PATIENT & CAREGIVER GUIDES</h2>
+        <p class="text-muted mx-auto">
+          Written by our oncologists and nurse navigators to give you structured, calm clarity to read at your own pace at home.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Booklet 1 -->
+        <div class="col-md-4">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media" style="height: 190px;">
+              <img src="assets/images/booklet-first-30-days.jpg" alt="The First 30 Days Guidebook cover" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-file-earmark-pdf"></i> PDF Guide</span>
+            </div>
+            <div class="oa-card-body p-4 d-flex flex-column">
+              <span class="oa-nav-card-category mb-1">Foundational Navigation</span>
+              <h5 class="fw-bold mb-2">The First 30 Days Guidebook</h5>
+              <p class="text-muted small flex-grow-1">
+                A week-by-week blueprint covering biopsy validation, gathering records, and organizing questions for your oncologist.
+              </p>
+              <a href="blog-details.html?id=first-30-days" class="btn btn-outline-brand btn-sm mt-3"><i class="bi bi-eye me-1"></i> View Full Guide</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booklet 2 -->
+        <div class="col-md-4">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media" style="height: 190px;">
+              <img src="assets/images/booklet-treatment-nutrition.jpg" alt="Treatment Nutrition Handbook cover" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-cup-hot"></i> Nutrition Book</span>
+            </div>
+            <div class="oa-card-body p-4 d-flex flex-column">
+              <span class="oa-nav-card-category mb-1">Clinical Dietetics</span>
+              <h5 class="fw-bold mb-2">Treatment Nutrition Handbook</h5>
+              <p class="text-muted small flex-grow-1">
+                Practical culinary strategies, soothing broths, and high-calorie smoothies crafted by oncology dietitians for taste changes.
+              </p>
+              <a href="blog-details.html?id=taste-nutrition" class="btn btn-outline-brand btn-sm mt-3"><i class="bi bi-eye me-1"></i> View Full Guide</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booklet 3 -->
+        <div class="col-md-4">
+          <div class="oa-card oa-card-has-media h-100">
+            <div class="oa-card-media" style="height: 190px;">
+              <img src="assets/images/booklet-caregiver-organizer.jpg" alt="Family Caregiver Organizer cover" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+              <span class="oa-card-media-badge"><i class="bi bi-journal-bookmark"></i> Organizer</span>
+            </div>
+            <div class="oa-card-body p-4 d-flex flex-column">
+              <span class="oa-nav-card-category mb-1">Family Support</span>
+              <h5 class="fw-bold mb-2">Family Caregiver Organizer</h5>
+              <p class="text-muted small flex-grow-1">
+                Printable family shift templates, emergency contact trees, and boundary-setting techniques for spouses and primary caregivers.
+              </p>
+              <a href="blog-details.html?id=caregiver-burnout" class="btn btn-outline-brand btn-sm mt-3"><i class="bi bi-eye me-1"></i> View Full Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEW SEGMENT 2: ONCOLOGY LITERACY & GLOSSARY ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 820px;">
+        <span class="oa-badge oa-badge-cocoa"><i class="bi bi-translate"></i> Medical Literacy</span>
+        <h2 class="display-6 fw-bold">ONCOLOGY VOCABULARY DEMYSTIFIED</h2>
+        <p class="text-muted mx-auto">
+          Understanding the vocabulary on your pathology report gives you control and confidence during consultations.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100 text-start">
+            <span class="badge bg-subtle text-cocoa mb-2">Genomics</span>
+            <h5 class="fw-bold mb-2">Biomarker / Mutation</h5>
+            <p class="text-muted small mb-0">Specific biological traits in DNA or proteins (such as HER2 or EGFR) that indicate which targeted therapies will be most effective.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100 text-start">
+            <span class="badge bg-subtle text-cocoa mb-2">Timing</span>
+            <h5 class="fw-bold mb-2">Neoadjuvant vs Adjuvant</h5>
+            <p class="text-muted small mb-0">Neoadjuvant therapy is delivered before surgery to shrink tumors; adjuvant therapy is given after surgery to destroy stray cells.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100 text-start">
+            <span class="badge bg-subtle text-cocoa mb-2">Surveillance</span>
+            <h5 class="fw-bold mb-2">Liquid Biopsy (ctDNA)</h5>
+            <p class="text-muted small mb-0">A simple blood test detecting circulating tumor DNA to monitor treatment response months earlier than traditional scans.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-accreditation-card h-100 text-start">
+            <span class="badge bg-subtle text-cocoa mb-2">Outcome</span>
+            <h5 class="fw-bold mb-2">Complete Remission</h5>
+            <p class="text-muted small mb-0">The complete disappearance of all evidence of cancer on physical exams, scans, and blood counts following therapeutic protocols.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: CONSULTATION CTA ================= -->
+  <section class="oa-section oa-section-dark">
+    <div class="container">
+      <div class="oa-footer-cta-card text-center mx-auto" style="max-width: 860px; margin-bottom: 0;">
+        <span class="oa-badge oa-badge-amber mb-3">Compassionate Connection</span>
+        <h2 class="display-6 fw-bold text-ivory mb-3">
+          HAVE QUESTIONS ABOUT YOUR CARE ROADMAP?
+        </h2>
+        <p class="text-ivory opacity-75 mb-4 mx-auto" style="max-width: 600px;">
+          Connect with our nurse navigation team today to discuss your diagnosis, second opinions, and personalized supportive resources.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="appointment.html" class="btn btn-primary btn-lg">
+            <i class="bi bi-calendar2-check"></i> Book An Appointment
+          </a>
+          <a href="contact.html" class="btn btn-outline-ivory btn-lg">
+            <i class="bi bi-chat-text"></i> Contact Care Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Services</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html">Oncology Consultation</a></li>
+            <li><a href="chemotherapy.html">Chemotherapy Prep</a></li>
+            <li><a href="service-details.html">Treatment Support</a></li>
+            <li><a href="service-details.html">Medication Support</a></li>
+            <li><a href="supportive-care.html">Supportive Care</a></li>
+            <li><a href="about.html#patient-support">Patient Education</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ================= WORKING BLOG CATEGORY FILTER SCRIPT ================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterButtons = document.querySelectorAll('.oa-blog-filter');
+      const blogItems = document.querySelectorAll('.oa-blog-item');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          // Toggle Active States
+          filterButtons.forEach(btn => {
+            btn.classList.remove('active', 'btn-primary');
+            btn.classList.add('btn-outline-brand');
+          });
+          this.classList.add('active', 'btn-primary');
+          this.classList.remove('btn-outline-brand');
+
+          const filterValue = this.getAttribute('data-filter');
+
+          // Filter Cards
+          blogItems.forEach(item => {
+            const categories = (item.getAttribute('data-category') || '').split(' ');
+            if (filterValue === 'all' || categories.includes(filterValue)) {
+              item.style.display = '';
+              item.classList.remove('d-none');
+            } else {
+              item.style.display = 'none';
+              item.classList.add('d-none');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

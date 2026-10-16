@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Reminders | My OncoAid</title>
+  <meta name="description" content="Organize daily oral oncology medications, supportive pre-meds, and hydration reminders with interactive tracking in My OncoAid.">
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <div class="oa-dash-wrapper">
+    <aside class="oa-dash-sidebar">
+      <div class="oa-dash-brand">
+        <a class="oa-brand-logo text-decoration-none" href="../index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title text-ivory">MY ONCO<span class="text-amber">AID</span></span>
+            <span class="oa-brand-tagline text-amber">Care Companion</span>
+          </div>
+        </a>
+      </div>
+
+      <ul class="oa-dash-nav">
+        <li>
+          <a href="dashboard.html" class="oa-dash-nav-link">
+            <i class="bi bi-grid-1x2-fill"></i>
+            <span>Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-schedule.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar3"></i>
+            <span>Treatment Schedule</span>
+          </a>
+        </li>
+        <li>
+          <a href="appointments.html" class="oa-dash-nav-link">
+            <i class="bi bi-calendar-check"></i>
+            <span>Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="medication-reminders.html" class="oa-dash-nav-link active">
+            <i class="bi bi-capsule"></i>
+            <span>Med Reminders</span>
+          </a>
+        </li>
+        <li>
+          <a href="treatment-history.html" class="oa-dash-nav-link">
+            <i class="bi bi-clock-history"></i>
+            <span>Treatment History</span>
+          </a>
+        </li>
+        <li>
+          <a href="documents.html" class="oa-dash-nav-link">
+            <i class="bi bi-file-earmark-pdf"></i>
+            <span>Documents & Plans</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="oa-dash-nav-link">
+            <i class="bi bi-person-circle"></i>
+            <span>Profile & Settings</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-3 border-top border-secondary border-opacity-25 mt-auto">
+        <a href="../index.html" class="oa-dash-nav-link text-danger">
+          <i class="bi bi-box-arrow-left text-danger"></i>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="oa-dash-content">
+      <div class="oa-dash-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-brand btn-icon-only d-lg-none" id="oaSidebarToggle" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h5 class="mb-0 text-cocoa fw-bold">Supportive Medication Reminders</h5>
+            <span class="small text-muted">Daily schedule tracking and anti-nausea premed management</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Toggle RTL" aria-label="Toggle RTL">
+            <i class="bi bi-arrow-left-right text-amber"></i>
+          </button>
+          <button class="btn btn-primary btn-sm ms-2" type="button" data-bs-toggle="modal" data-bs-target="#oaAddMedModal">
+            <i class="bi bi-plus-circle me-1"></i> Add Reminder
+          </button>
+        </div>
+      </div>
+
+      <!-- Prominent Medical Content Safety Alert -->
+      <div class="oa-safety-notice p-3 p-md-4 rounded-3 mb-3" style="background-color: rgba(240, 187, 120, 0.2);">
+        <i class="bi bi-shield-exclamation text-amber fs-3"></i>
+        <div>
+          <strong class="text-cocoa d-block mb-1">Important Patient Safety Notice:</strong>
+          <span class="small text-muted">
+            Medication information shown here is sample template data. Patients should follow medication instructions provided by their healthcare professional. Do not alter doses or start new medications without direct oncologist authorization.
+          </span>
+        </div>
+      </div>
+
+      <!-- Medication Reminders Interactive Container -->
+      <div class="oa-card p-3 p-md-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3 border-bottom pb-2">
+          <div>
+            <h5 class="mb-0 text-cocoa fw-bold">Today's Schedule & Reminders</h5>
+            <span class="small text-muted">Interactive demonstration: check off medications as taken</span>
+          </div>
+          <button class="btn btn-outline-brand btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#oaAddMedModal">
+            <i class="bi bi-plus-lg me-1"></i> Add New Reminder
+          </button>
+        </div>
+
+        <!-- Dynamic List Handled by assets/js/medication.js -->
+        <div id="oaMedicationList">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Reminder Modal -->
+  <div class="modal fade" id="oaAddMedModal" tabindex="-1" aria-labelledby="addMedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content oa-card border-0 p-4">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title text-cocoa fw-bold" id="addMedModalLabel">
+            <i class="bi bi-alarm text-amber me-2"></i> Add Supportive Reminder
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="oaAddMedForm">
+          <div class="modal-body pt-3">
+            <div class="mb-3">
+              <label for="medName" class="form-label">Medication or Supportive Formula Name *</label>
+              <input type="text" class="form-control" id="medName" required placeholder="e.g. Oral Hydration Electrolyte Solution">
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="medTime" class="form-label">Reminder Time *</label>
+                <input type="time" class="form-control" id="medTime" required value="08:00">
+              </div>
+              <div class="col-6">
+                <label for="medFreq" class="form-label">Frequency</label>
+                <select class="form-select" id="medFreq">
+                  <option value="Daily with breakfast">Daily with breakfast</option>
+                  <option value="Twice daily">Twice daily</option>
+                  <option value="Three times daily">Three times daily</option>
+                  <option value="Before bedtime">Before bedtime</option>
+                  <option value="As needed for nausea">As needed for nausea</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="medNotes" class="form-label">Care Notes / Instructions</label>
+              <input type="text" class="form-control" id="medNotes" placeholder="e.g. Take with 8oz water before meals">
+            </div>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+            <button type="button" class="btn btn-outline-brand" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save Reminder</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/medication.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

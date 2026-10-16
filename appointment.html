@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | OncoAid Cancer Care Center</title>
+  <meta name="description" content="Schedule a consultation with OncoAid's medical oncology specialists and nurse navigators. Patient-friendly booking with unhurried care.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= GLOBAL NAVBAR ================= -->
+  <header class="oa-navbar-wrapper sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl oa-navbar" aria-label="Main navigation">
+        <a class="oa-brand-logo" href="index.html">
+          <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+          <div class="oa-brand-text">
+            <span class="oa-brand-title">ONCO<span>AID</span></span>
+            <span class="oa-brand-tagline">Cancer Care Center</span>
+          </div>
+        </a>
+
+        <button class="oa-hamburger d-xl-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#oncoaidNavbarAppt" aria-controls="oncoaidNavbarAppt" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="oncoaidNavbarAppt">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — Care & Journey</a></li>
+                <li><a class="dropdown-item py-2 fw-semibold" href="home-2.html">Home 2 — Editorial Care</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="our-team.html">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="patient-dashboard/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <div class="oa-nav-tools">
+            <button class="oa-tool-btn oa-theme-toggle" type="button" title="Toggle Calm Evening Care" aria-label="Toggle Calm Evening Care">
+              <i class="bi bi-moon-stars-fill text-amber"></i>
+            </button>
+            <button class="oa-tool-btn oa-rtl-toggle" type="button" title="Switch text direction" aria-label="Switch text direction">
+              <i class="bi bi-arrow-left-right text-amber"></i>
+            </button>
+            <a href="auth/login.html" class="btn btn-outline-brand btn-sm ms-lg-2">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+              <span>Login</span>
+            </a>
+            <a href="appointment.html" class="btn btn-primary btn-sm ms-lg-2 active">
+              <i class="bi bi-calendar2-check me-1"></i>
+              <span>Book Appointment</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="oa-section oa-hero-with-bg py-5 mb-4" style="background-image: url('assets/images/hero-bg-hospital-architecture.jpg');">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-amber mb-3">Begin Your Consultation</span>
+        <h1 class="display-4 fw-bold mb-3">
+          BOOK AN APPOINTMENT WITH OUR CARE TEAM.
+        </h1>
+        <p class="lead text-muted mb-0">
+          Whether you are scheduling an initial oncology consultation, seeking a second opinion, or connecting with our nurse coordination staff, we are here to support your schedule.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: BOOKING FORM & SUMMARY ================= -->
+  <section class="oa-section oa-section-subtle pt-0">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Booking Form Column -->
+        <div class="col-lg-8">
+          <div class="oa-card p-4 p-lg-5">
+            <h3 class="mb-4 text-cocoa">Patient Consultation Request</h3>
+            
+            <form id="oaAppointmentForm" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <!-- Patient Name -->
+                <div class="col-md-6">
+                  <label for="oaPatientName" class="form-label">Patient Full Name *</label>
+                  <input type="text" class="form-control" id="oaPatientName" data-oa-type="name" required placeholder="e.g. Alex Morgan">
+                  <div class="invalid-feedback">Please enter letters only (no numbers).</div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="oaPatientEmail" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="oaPatientEmail" required placeholder="e.g. alex@example.com">
+                  <div class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label for="oaPatientPhone" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="oaPatientPhone" data-oa-type="phone" required placeholder="(555) 000-0000">
+                  <div class="invalid-feedback">Please provide digits only.</div>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="col-md-6">
+                  <label for="oaPatientDOB" class="form-label">Date of Birth *</label>
+                  <input type="date" class="form-control" id="oaPatientDOB" required>
+                  <div class="invalid-feedback">Please enter date of birth.</div>
+                </div>
+
+                <!-- Appointment Type -->
+                <div class="col-md-6">
+                  <label for="oaAppointmentType" class="form-label">Appointment Type *</label>
+                  <select class="form-select" id="oaAppointmentType" required>
+                    <option value="" selected disabled>Select Appointment Category</option>
+                    <option value="Oncology Consultation">Initial Oncology Consultation (60 min)</option>
+                    <option value="Second Opinion Review">Second Opinion Pathology & Scan Review</option>
+                    <option value="Care Coordination">Chemotherapy & Care Coordination Session</option>
+                    <option value="Supportive Care Consultation">Supportive Oncology & Nutrition Session</option>
+                    <option value="Follow-Up Visit">Follow-Up & Survivorship Visit</option>
+                  </select>
+                  <div class="invalid-feedback">Please select an appointment type.</div>
+                </div>
+
+                <!-- Preferred Doctor -->
+                <div class="col-md-6">
+                  <label for="oaPreferredDoctor" class="form-label">Preferred Specialist</label>
+                  <select class="form-select" id="oaPreferredDoctor">
+                    <option value="First Available Care Specialist">First Available Care Specialist</option>
+                    <option value="Dr. Sarah Jenkins (Medical Oncology)">Dr. Sarah Jenkins, MD (Medical Oncology)</option>
+                    <option value="Dr. Michael Sterling (Radiation Oncology)">Dr. Michael Sterling, MD (Radiation Oncology)</option>
+                    <option value="Dr. Aris Thorne (Hematology / Immunotherapy)">Dr. Aris Thorne, MD, PhD (Hematology)</option>
+                    <option value="Elena Jensen, MSN, RN (Nurse Coordinator)">Elena Jensen, MSN, RN (Lead Nurse Coordinator)</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="col-md-6">
+                  <label for="oaPreferredDate" class="form-label">Preferred Date *</label>
+                  <input type="date" class="form-control" id="oaPreferredDate" required>
+                  <div class="invalid-feedback">Please select a preferred date.</div>
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="col-md-6">
+                  <label for="oaPreferredTime" class="form-label">Preferred Time of Day *</label>
+                  <select class="form-select" id="oaPreferredTime" required>
+                    <option value="" selected disabled>Select Time Window</option>
+                    <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM – 12:00 PM)</option>
+                    <option value="Early Afternoon (12:30 PM - 3:00 PM)">Early Afternoon (12:30 PM – 3:00 PM)</option>
+                    <option value="Late Afternoon (3:00 PM - 5:30 PM)">Late Afternoon (3:00 PM – 5:30 PM)</option>
+                  </select>
+                  <div class="invalid-feedback">Please select preferred time window.</div>
+                </div>
+
+                <!-- Reason for Visit -->
+                <div class="col-12">
+                  <label for="oaVisitReason" class="form-label">Reason for Visit / Primary Diagnosis Summary</label>
+                  <textarea class="form-control" id="oaVisitReason" rows="3" placeholder="Briefly describe your cancer type, recent biopsy, or symptoms you would like to discuss..."></textarea>
+                </div>
+
+                <!-- Additional Notes / Accommodations -->
+                <div class="col-12">
+                  <label for="oaNotes" class="form-label">Caregiver Attendance or Accessibility Accommodations</label>
+                  <input type="text" class="form-control" id="oaNotes" placeholder="e.g. Bringing spouse; wheelchair access requested">
+                </div>
+
+                <!-- Disclaimer checkbox -->
+                <div class="col-12 mt-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="oaTermsCheck" required>
+                    <label class="form-check-label small text-muted" for="oaTermsCheck">
+                      I understand this booking is a frontend demonstration template. No real protected health information (PHI) is transmitted or stored.
+                    </label>
+                    <div class="invalid-feedback">You must acknowledge the template demonstration notice.</div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    <i class="bi bi-calendar2-check"></i> Submit Appointment Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Appointment Info & Support Column -->
+        <div class="col-lg-4">
+          <div class="oa-card p-4 mb-4">
+            <h5 class="text-cocoa mb-3"><i class="bi bi-info-circle text-amber me-2"></i> What to Expect</h5>
+            <div class="d-flex flex-column gap-3 small text-muted">
+              <div>
+                <strong class="d-block text-cocoa">1. Nurse Coordinator Outreach</strong>
+                Within 24 business hours, our care navigation team will call to confirm your appointment time and intake details.
+              </div>
+              <div>
+                <strong class="d-block text-cocoa">2. Medical Records Retrieval</strong>
+                We can contact your previous specialists and imaging centers to request biopsy slides and digital scan discs.
+              </div>
+              <div>
+                <strong class="d-block text-cocoa">3. Unhurried Consultation</strong>
+                Your visit will include thorough diagnostic review, answering all questions with dignity and calm.
+              </div>
+            </div>
+          </div>
+
+          <div class="oa-card p-4 text-center" style="background-color: var(--oa-bg-subtle);">
+            <i class="bi bi-telephone-fill text-amber fs-2 mb-2"></i>
+            <h6 class="text-cocoa mb-1">Prefer to Book by Phone?</h6>
+            <p class="small text-muted mb-3">Our intake desk is available Monday through Friday, 8:00 AM – 6:00 PM EST.</p>
+            <a href="tel:5552346626" class="btn btn-outline-brand btn-sm">
+              <i class="bi bi-telephone me-1"></i> (555) 234-ONCO
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: WHAT HAPPENS AFTER YOU BOOK ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Seamless Transition</span>
+        <h2 class="display-6 fw-bold">YOUR NEXT STEPS AFTER SCHEDULING</h2>
+        <p class="text-muted mx-auto">
+          We take care of the details so you never have to wonder what is happening behind the scenes.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="oa-card text-center h-100">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-file-earmark-arrow-down"></i></div>
+            <h5 class="fw-bold mb-2">Pre-Visit Records Prep</h5>
+            <p class="text-muted small mb-0">Our medical record coordinators assemble prior reports so your oncologist reviews them before you walk in the door.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card text-center h-100">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-bell"></i></div>
+            <h5 class="fw-bold mb-2">Digital Reminder & Directions</h5>
+            <p class="text-muted small mb-0">Receive automated appointment reminders, parking directions, and visitor guidelines via email or SMS.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="oa-card text-center h-100">
+            <div class="oa-card-icon mx-auto"><i class="bi bi-heart-pulse"></i></div>
+            <h5 class="fw-bold mb-2">Compassionate Welcome</h5>
+            <p class="text-muted small mb-0">Arrive at our calm center where your nurse navigator will meet you personally in our quiet welcome lounge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: IN-PERSON & TELEHEALTH ================= -->
+  <section class="oa-section oa-section-subtle">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="oa-badge oa-badge-cocoa mb-3">Flexible Options</span>
+          <h2 class="display-6 fw-bold mb-4">IN-PERSON & VIRTUAL CONSULTATIONS</h2>
+          <p class="text-muted mb-4">
+            For initial second opinions or long-distance family meetings, we provide secure telehealth consultations alongside in-person visits.
+          </p>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-laptop text-amber fs-4 flex-shrink-0"></i>
+              <div>
+                <strong class="d-block text-cocoa">Secure Virtual Video Visits</strong>
+                <span class="small text-muted">Join from the comfort of home, allowing out-of-town family members to participate on video.</span>
+              </div>
+            </div>
+            <div class="d-flex gap-3 align-items-start">
+              <i class="bi bi-hospital text-amber fs-4 flex-shrink-0"></i>
+              <div>
+                <strong class="d-block text-cocoa">Peaceful Clinic Suites</strong>
+                <span class="small text-muted">Sunlit, quiet consultation rooms with private seating for you and up to three caregivers.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="oa-hero-visual-frame" style="height: 400px;">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80" alt="Serene clinic reception lounge at OncoAid" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: CLINICAL SAFETY NOTICE ================= -->
+  <section class="oa-section py-4">
+    <div class="container">
+      <div class="oa-safety-notice p-4 rounded-4" style="background-color: rgba(240, 187, 120, 0.15);">
+        <i class="bi bi-exclamation-triangle-fill fs-3 text-amber"></i>
+        <div>
+          <h6 class="text-cocoa fw-bold mb-1">Notice for Acute Medical Symptoms</h6>
+          <p class="small text-muted mb-0">
+            Online appointment booking is intended for non-urgent consultations and scheduled care. If you are experiencing high fever (>100.4°F), sudden shortness of breath, acute pain, or other medical emergencies, please contact emergency services (911) or proceed immediately to the nearest hospital emergency room.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: FAQS ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 720px;">
+        <span class="oa-badge oa-badge-amber">Common Inquiries</span>
+        <h2 class="display-6 fw-bold">APPOINTMENT FAQS</h2>
+        <p class="text-muted mx-auto">
+          Helpful answers to common questions about booking, record transfers, and consultation preparation.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion oa-accordion" id="oaApptAccordion">
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold text-cocoa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How quickly can I be seen for an initial consultation?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#oaApptAccordion">
+                <div class="accordion-body small text-muted">
+                  We strive to schedule new oncology consultations within 2 to 3 business days of receiving your request and preliminary medical records. If urgency is indicated, our nurse coordinator will expedite your intake.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold text-cocoa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Can family members or caregivers join the consultation?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#oaApptAccordion">
+                <div class="accordion-body small text-muted">
+                  Yes, wholeheartedly. We encourage you to bring loved ones or connect them via virtual conference. Having trusted companions helps ensure all questions are voiced and remembered.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-bold text-cocoa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What insurance plans are accepted?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#oaApptAccordion">
+                <div class="accordion-body small text-muted">
+                  OncoAid participates with most major commercial insurance providers, Medicare, and supplemental plans. Our financial counseling team verifies pre-authorizations before treatment begins.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6B (SEGMENT 1): PRE-CONSULTATION RECORDS CHECKLIST ================= -->
+  <section class="oa-section py-5" style="background-color: var(--oa-bg-surface); border-top: 1px solid rgba(84, 58, 20, 0.08); border-bottom: 1px solid rgba(84, 58, 20, 0.08);">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-cocoa">Preparation Guidance</span>
+        <h2 class="display-6 fw-bold">WHAT TO PREPARE BEFORE YOUR FIRST VISIT</h2>
+        <p class="text-muted mx-auto">
+          Gathering these essentials helps your oncologist spend more time discussing your personalized treatment strategy and less time hunting down paperwork.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 h-100">
+            <div class="oa-card-icon"><i class="bi bi-disc"></i></div>
+            <h6 class="fw-bold text-cocoa mb-2">Imaging & Scan Discs</h6>
+            <p class="small text-muted mb-0">Request digital CD copies or portal transfer links of your recent CT, PET, MRI, or mammogram images from previous imaging centers.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 h-100">
+            <div class="oa-card-icon"><i class="bi bi-file-earmark-medical"></i></div>
+            <h6 class="fw-bold text-cocoa mb-2">Pathology Reports</h6>
+            <p class="small text-muted mb-0">Any biopsy, surgical pathology, or biomarker test results (such as HER2, ER/PR, EGFR, KRAS, PD-L1, or BRCA testing).</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 h-100">
+            <div class="oa-card-icon"><i class="bi bi-capsule"></i></div>
+            <h6 class="fw-bold text-cocoa mb-2">Current Medication List</h6>
+            <p class="small text-muted mb-0">Write down all prescription medications, over-the-counter vitamins, and herbal supplements along with exact dosages.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="oa-card p-4 h-100">
+            <div class="oa-card-icon"><i class="bi bi-person-heart"></i></div>
+            <h6 class="fw-bold text-cocoa mb-2">Trusted Companion</h6>
+            <p class="small text-muted mb-0">Bring a spouse, family member, or trusted friend to take notes, ask questions, and provide calm emotional support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6C (SEGMENT 2): UNHURRIED CONSULTATION CHARTER PLEDGE ================= -->
+  <section class="oa-section">
+    <div class="container">
+      <div class="oa-section-header text-center mx-auto" style="max-width: 760px;">
+        <span class="oa-badge oa-badge-amber">Patient Respect</span>
+        <h2 class="display-6 fw-bold">OUR UNHURRIED CONSULTATION CHARTER</h2>
+        <p class="text-muted mx-auto">
+          We protect your consultation from the rushed fifteen-minute slots of standard medicine with four clinical guarantees.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="oa-card p-4 h-100 d-flex gap-3 align-items-start">
+            <div class="flex-shrink-0">
+              <span class="badge bg-amber text-cocoa rounded-circle p-3 fs-5"><i class="bi bi-clock-history"></i></span>
+            </div>
+            <div>
+              <h5 class="fw-bold text-cocoa mb-2">Full 60-Minute New Patient Consults</h5>
+              <p class="small text-muted mb-0">Your initial appointment will never be cut short. Dr. Carter and our senior oncologists allocate a full hour so every question, scan, and concern is thoroughly explored.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="oa-card p-4 h-100 d-flex gap-3 align-items-start">
+            <div class="flex-shrink-0">
+              <span class="badge bg-amber text-cocoa rounded-circle p-3 fs-5"><i class="bi bi-file-earmark-text"></i></span>
+            </div>
+            <div>
+              <h5 class="fw-bold text-cocoa mb-2">Plain-English Care Roadmaps</h5>
+              <p class="small text-muted mb-0">Before you leave our office, you will receive a printed summary of today's clinical conclusions written in understandable language, not cryptic medical abbreviations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="oa-card p-4 h-100 d-flex gap-3 align-items-start">
+            <div class="flex-shrink-0">
+              <span class="badge bg-amber text-cocoa rounded-circle p-3 fs-5"><i class="bi bi-person-badge"></i></span>
+            </div>
+            <div>
+              <h5 class="fw-bold text-cocoa mb-2">Named Nurse Navigator on Day One</h5>
+              <p class="small text-muted mb-0">You won't leave with a generic hospital call center number. You will receive the direct phone extension and email of your personal oncology nurse coordinator.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="oa-card p-4 h-100 d-flex gap-3 align-items-start">
+            <div class="flex-shrink-0">
+              <span class="badge bg-amber text-cocoa rounded-circle p-3 fs-5"><i class="bi bi-shield-heart"></i></span>
+            </div>
+            <div>
+              <h5 class="fw-bold text-cocoa mb-2">Zero Double-Booking Guarantee</h5>
+              <p class="small text-muted mb-0">We respect your time. Our scheduling policy strictly forbids overlapping patient slots, maintaining a peaceful, uncrowded, and prompt clinic experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONFIRMATION MODAL ================= -->
+  <div class="modal fade" id="oaAppointmentSuccessModal" tabindex="-1" aria-labelledby="oaSuccessModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content oa-card border-0 p-4">
+        <div class="modal-header border-0 pb-0">
+          <div class="oa-card-icon mx-auto mb-2 text-success" style="background-color: rgba(40, 167, 69, 0.15);">
+            <i class="bi bi-check-circle-fill"></i>
+          </div>
+        </div>
+        <div class="modal-body text-center pt-2">
+          <span class="oa-badge oa-badge-amber mb-2">Request Confirmed</span>
+          <h4 class="modal-title fw-bold text-cocoa mb-3" id="oaSuccessModalLabel">Appointment Request Received</h4>
+          <p class="text-muted small mb-4">
+            Thank you, <strong id="summaryPatientName" class="text-cocoa">Patient</strong>. Your consultation request has been submitted to the OncoAid care navigation desk.
+          </p>
+
+          <div class="p-3 rounded-4 text-start small mb-4" style="background-color: var(--oa-bg-subtle);">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Service Type:</span>
+              <strong class="text-cocoa" id="summaryApptType">Consultation</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Specialist:</span>
+              <strong class="text-cocoa" id="summaryDoctor">Assigned Clinician</strong>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="text-muted">Requested Window:</span>
+              <strong class="text-cocoa" id="summaryDateTime">Date & Time</strong>
+            </div>
+          </div>
+
+          <div class="small text-muted mb-4">
+            <i class="bi bi-telephone text-amber me-1"></i> Nurse Coordinator Elena Jensen will call you within 24 hours to confirm appointment details.
+          </div>
+
+          <div class="d-flex flex-column gap-2">
+            <a href="patient-dashboard/dashboard.html" class="btn btn-primary w-100">
+              <i class="bi bi-person-lock"></i> Go to Patient Dashboard
+            </a>
+            <button type="button" class="btn btn-outline-brand w-100" data-bs-dismiss="modal">
+              Close Window
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="oa-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="oa-brand-logo mb-3" href="index.html">
+            <div class="oa-logo-symbol">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none">
+              <path d="M24 4C12.95 4 4 12.95 4 24C4 32.8 9.73 40.26 17.65 42.85C18.8 43.23 20 42.36 20 41.15V41.15C20 40.23 19.38 39.43 18.5 39.18C12.44 37.45 8 31.9 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 29.52 37.2 34.39 32.9 37.25C32.1 37.78 31.85 38.83 32.32 39.66C32.78 40.48 33.82 40.76 34.66 40.25C39.8 36.83 44 30.9 44 24C44 12.95 35.05 4 24 4Z" fill="#F0BB78"/>
+              <circle cx="26" cy="24" r="4" fill="#FFF0DC"/>
+            </svg>
+          </div>
+            <div class="oa-brand-text">
+              <span class="oa-brand-title text-ivory">ONCO<span class="text-amber">AID</span></span>
+              <span class="oa-brand-tagline text-amber">Cancer Care Center</span>
+            </div>
+          </a>
+          <p class="text-ivory opacity-75 mb-2">“Compassionate Care. Every Step of the Way.”</p>
+          <p class="text-ivory opacity-75 small mb-3" style="line-height: 1.65; max-width: 360px;">
+            A premier oncology center integrating advanced molecular therapies, TrueBeam radiotherapy, clinical trials, and dedicated whole-person supportive care to ensure comfort, clarity, and dignity.
+          </p>
+          <div class="oa-footer-socials mt-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="oa-social-btn" aria-label="X (Twitter)" title="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="oa-footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="about.html#care-journey">Care Journey</a></li>
+            <li><a href="about.html#patient-support">Patient Support</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Services</h5>
+          <ul class="oa-footer-links">
+            <li><a href="service-details.html">Oncology Consultation</a></li>
+            <li><a href="chemotherapy.html">Chemotherapy Prep</a></li>
+            <li><a href="service-details.html">Treatment Support</a></li>
+            <li><a href="service-details.html">Medication Support</a></li>
+            <li><a href="supportive-care.html">Supportive Care</a></li>
+            <li><a href="about.html#patient-support">Patient Education</a></li>
+            <li><a href="pricing.html">Financial Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Patient Portal</h5>
+          <ul class="oa-footer-links">
+            <li><a href="auth/login.html">Portal Login</a></li>
+            <li><a href="patient-dashboard/dashboard.html">My Dashboard</a></li>
+            <li><a href="patient-dashboard/treatment-schedule.html">Treatment Schedule</a></li>
+            <li><a href="patient-dashboard/care-team-notes.html">Care Team Notes</a></li>
+            <li><a href="patient-dashboard/medication-reminders.html">Med Reminders</a></li>
+            <li><a href="patient-dashboard/documents.html">Care Documents</a></li>
+            <li><a href="patient-dashboard/profile.html">Profile & Records</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Care Center</h5>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-geo-alt text-amber me-1"></i> 742 Evergreen Healthcare Blvd, Boston, MA
+          </p>
+          <p class="small text-ivory opacity-75 mb-2">
+            <i class="bi bi-telephone text-amber me-1"></i> (555) 234-ONCO (6626)
+          </p>
+          <p class="small text-ivory opacity-75 mb-3">
+            <i class="bi bi-envelope text-amber me-1"></i> care@oncoaid-center.org
+          </p>
+        </div>
+      </div>
+
+      <div class="oa-footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 OncoAid Oncology Support & Cancer Care Center. Fictional Template for Healthcare Demonstration.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Privacy Policy</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Terms of Care</a>
+          <a href="utility/maintenance.html" class="text-ivory opacity-75">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="oa-back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/appointments.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
