@@ -360,6 +360,8 @@ body.dark-mode a.btn-primary:hover * {
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .oa-badge-amber {
@@ -451,7 +453,7 @@ body.dark-mode .oa-footer-cta-card .oa-badge * {
   overflow: hidden;
 }
 
-.row > [class*="col"] > .oa-card,
+.row > [class*="col"] > .oa-card:only-child,
 .oa-card.h-100 {
   height: 100%;
   display: flex;
@@ -1639,6 +1641,8 @@ body.dark-mode .oa-hero-floating-card .oa-card-icon {
   border-radius: 50px;
   font-size: 0.82rem;
   font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .oa-status-upcoming {
@@ -2520,6 +2524,9 @@ body.dark-mode .oa-social-btn i,
   color: var(--oa-text-primary);
   margin-bottom: 0.25rem;
   letter-spacing: -0.01em;
+  min-height: 1.85rem;
+  display: flex;
+  align-items: center;
 }
 
 .oa-doctor-role {
@@ -2528,8 +2535,10 @@ body.dark-mode .oa-social-btn i,
   font-weight: 600;
   margin-bottom: 0.75rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.35rem;
+  min-height: 2.75rem;
+  line-height: 1.35;
 }
 
 [data-theme="dark"] .oa-doctor-role {
@@ -2541,6 +2550,8 @@ body.dark-mode .oa-social-btn i,
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 1rem;
+  min-height: 1.85rem;
+  align-items: center;
 }
 
 .oa-doctor-pill {
@@ -2551,6 +2562,7 @@ body.dark-mode .oa-social-btn i,
   background-color: var(--oa-bg-subtle);
   color: var(--oa-text-primary);
   border: 1px solid var(--oa-border-color);
+  white-space: nowrap;
 }
 
 .oa-doctor-bio {
@@ -3366,6 +3378,7 @@ body.dark-mode .oa-nav-card:hover {
   color: #B5741E;
   margin-bottom: 0.4rem;
   display: block;
+  min-height: 1.25rem;
 }
 
 [data-theme="dark"] .oa-nav-card-category,
@@ -3379,6 +3392,9 @@ body.dark-mode .oa-nav-card-category {
   color: var(--oa-text);
   margin-bottom: 0.65rem;
   line-height: 1.35;
+  min-height: 3.25rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .oa-nav-card-desc {
@@ -3386,6 +3402,7 @@ body.dark-mode .oa-nav-card-category {
   color: var(--oa-text-muted);
   line-height: 1.55;
   margin-bottom: 1.1rem;
+  flex-grow: 1;
 }
 
 .oa-nav-card-features {

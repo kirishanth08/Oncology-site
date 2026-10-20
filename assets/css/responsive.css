@@ -219,6 +219,25 @@ html, body {
     width: 100%;
   }
 
+  /* Prevent button overflow & ensure proper mobile container padding */
+  .btn {
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .btn-lg {
+    padding: 0.65rem 1.15rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .oa-back-to-top {
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
   .oa-hero-actions {
     flex-direction: column;
     width: 100%;
